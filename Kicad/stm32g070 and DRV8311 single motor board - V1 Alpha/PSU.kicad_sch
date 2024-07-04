@@ -2683,16 +2683,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 104.14) (xy 27.94 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34d9e57a-e54e-4a49-8604-37dabe898250")
-	)
-	(wire
-		(pts
 			(xy 90.17 49.53) (xy 90.17 54.61)
 		)
 		(stroke
@@ -2710,16 +2700,6 @@
 			(type default)
 		)
 		(uuid "3753c2ac-445c-4e12-b559-2dec98aee4fd")
-	)
-	(wire
-		(pts
-			(xy 40.64 101.6) (xy 36.83 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd2a11c-2102-4f29-9fb4-b2b6f12439ba")
 	)
 	(wire
 		(pts
@@ -3033,16 +3013,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 101.6) (xy 29.21 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "904916e6-34d7-4610-871c-fbe14721ccd2")
-	)
-	(wire
-		(pts
 			(xy 212.09 128.27) (xy 214.63 128.27)
 		)
 		(stroke
@@ -3143,16 +3113,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 101.6) (xy 45.72 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3b5c4a9-61a8-49b1-a0f4-53b134c10fa1")
-	)
-	(wire
-		(pts
 			(xy 143.51 125.73) (xy 151.13 125.73)
 		)
 		(stroke
@@ -3180,16 +3140,6 @@
 			(type default)
 		)
 		(uuid "bea67629-c479-4278-90ff-8ddd476bb29c")
-	)
-	(wire
-		(pts
-			(xy 48.26 92.71) (xy 48.26 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0856627-4092-4b41-ae9c-6d8f37605f47")
 	)
 	(wire
 		(pts
@@ -3398,25 +3348,6 @@
 		)
 		(uuid "1709d1bc-e467-4ed0-93bf-84a192c07673")
 	)
-	(text_box "Not sure if this circuit will work. It should take the path of least resistance though, through chg"
-		(exclude_from_sim no)
-		(at 54.61 93.98 0)
-		(size 22.86 11.43)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "43fd0f44-20ff-41b0-9a2e-ce66be1e23ba")
-	)
 	(text_box "Psuedo temp senser. This should divide the voltage directly between Vhot and Vcold. See datasheet. By my calculations this is 0.91875 v"
 		(exclude_from_sim no)
 		(at 52.07 109.22 0)
@@ -3593,7 +3524,7 @@
 		(uuid "7d17248c-b665-404f-9064-42cb0c651ced")
 	)
 	(label "~{CHG}"
-		(at 48.26 95.25 0)
+		(at 48.26 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3671,18 +3602,6 @@
 		)
 		(uuid "a2fa2fde-dc63-4ac6-a795-f346d51fd19d")
 	)
-	(hierarchical_label "GND"
-		(shape bidirectional)
-		(at 27.94 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8d8058e-3412-452b-bcf2-e8ef560c5b1d")
-	)
 	(hierarchical_label "GNDPWR"
 		(shape bidirectional)
 		(at 163.83 93.98 90)
@@ -3708,74 +3627,6 @@
 		(uuid "e2761d04-7c4b-410d-a0f7-1b48c4a1232a")
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 33.02 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01feddf0-366d-4fcc-becb-284248f0f0f0")
-		(property "Reference" "D2"
-			(at 31.4325 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "green_LED"
-			(at 31.4325 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 33.02 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 33.02 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70ed8044-970f-4f1c-a8fd-026ac90c0c3f")
-		)
-		(pin "2"
-			(uuid "8ab08c2e-9b7b-43b9-b60e-0a9fc0d629a3")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 30.48 92.71 90)
 		(unit 1)
@@ -3793,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "402 ohm"
 			(at 30.48 90.17 90)
 			(effects
 				(font
@@ -4138,7 +3989,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS, SQS142ENW"
+		(property "Value" "NMOS, sir404dp"
 			(at 152.4 21.59 90)
 			(effects
 				(font
@@ -4514,7 +4365,7 @@
 				)
 			)
 		)
-		(property "Value" "red_LED"
+		(property "Value" "Osram LT Q99G.01 green led"
 			(at 39.624 89.662 0)
 			(effects
 				(font
@@ -5279,7 +5130,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PMOS,SiSS61DN"
+		(property "Value" "PMOS,Si7157DP"
 			(at 132.08 122.174 0)
 			(effects
 				(font
@@ -5529,74 +5380,6 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 43.18 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a958c17b-5eae-44c0-945f-4377755a493d")
-		(property "Reference" "R9"
-			(at 43.18 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 ohm"
-			(at 43.18 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 43.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 43.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8dcd44a-66b9-476d-a9f2-e1211e8d900c")
-		)
-		(pin "2"
-			(uuid "d4c0cbdd-8da5-4d71-97d1-9174aecf6119")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "R9")
 					(unit 1)
 				)
 			)

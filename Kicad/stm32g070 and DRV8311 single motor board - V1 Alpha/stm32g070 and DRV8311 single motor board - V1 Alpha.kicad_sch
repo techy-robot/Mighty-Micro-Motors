@@ -6792,7 +6792,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "150k"
 			(at 78.232 182.372 0)
 			(effects
 				(font
@@ -6994,8 +6994,8 @@
 				)
 			)
 		)
-		(property "Value" "100k, or maybe 27k to get  more range"
-			(at 97.536 172.466 0)
+		(property "Value" "100k"
+			(at 78.232 173.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9210,7 +9210,7 @@
 				)
 			)
 		)
-		(property "Value" "green_LED"
+		(property "Value" "Osram LT Q99G.01 green led"
 			(at 38.4175 163.83 0)
 			(effects
 				(font
@@ -9342,7 +9342,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "80.6 ohm"
 			(at 27.94 166.37 90)
 			(effects
 				(font

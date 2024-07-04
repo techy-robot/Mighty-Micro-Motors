@@ -2313,9 +2313,9 @@
 		(at 85.09 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "531c1fa6-56dd-4ab8-9867-ac0192db7fb8")
 		(property "Reference" "C8"
 			(at 81.28 61.468 0)
