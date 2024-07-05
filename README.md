@@ -16,13 +16,13 @@ A lot of care has been taken to design for EMI, which is why I have separate gro
 
 At it's current state the control PCB has been assembled and power tested. Nothing blew up or heated up, though I have discovered that the battery protection chip is not working. I will probably just bypass that circuit and move on.
 
-[Schematic](stm32g070%20and%20DRV8311%20single%20motor%20board%20-%20V1 Alpha.pdf)
+[Schematic](Media/stm32g070%20and%20DRV8311%20single%20motor%20board%20-%20V1%20Alpha.pdf)
 
 **Specs:**
-- bq25060 single-cell battery charger along with a bq298012 battery protection chip. 
+- TI BQ25060 single-cell battery charger along with a BQ298012 battery protection chip. 
 - 4 mosfets on board to control system power, 60+ amps of current
-- drv8311 motor driver, which can drive a brushless motor at 5 amps current (I fully expect heat problems due to the small size of the chip!)
-- stm32g070cb, clocked at the max 64mhz (16mhz crystal scaled internally). 128kb mem, 64kb ram. The stm32 I chose is relatively inexpensive and powerful, and can handle up 3 motors.
+- TI DRV8311 motor driver, which can drive a brushless motor at 5 amps current (I fully expect heat problems due to the small size of the chip!)
+- STM32G070CB, clocked at the max 64mhz (16mhz crystal scaled internally). 128kb mem, 64kb ram. The stm32 I chose is relatively inexpensive and powerful, and can handle up 3 motors.
 
 The motor driver section is 16x11mm, which hopefully is small enough and easily tileable for a small robot controller with lots of motors. The biggest part of the board is the power management, followed by the stm32.
 
@@ -51,4 +51,4 @@ The board is barely bigger than the jst sh connector on top for SPI communicatio
 The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymium magnet to operate. I used a 6x3mm from K&J magnetics: [D42DIA](https://www.kjmagnetics.com/proddetail.asp?prod=D42DIA).
 
 ## Code
-There is no code yet, though I am planning on using the wonderful SimpleFOC library as a starting point, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
+There is no code yet, though I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
