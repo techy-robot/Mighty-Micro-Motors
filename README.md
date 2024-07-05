@@ -1,6 +1,8 @@
 # Mighty Micro Motors
 My goal with this project is to recreate the expensive and highly advanced motors typically found in big robots, such as in Boston Dynamics or MIT's robots, but at a **much** smaller scale. These are essentially tiny drone motors with a high reduction gearbox, a magnetic encoder, and a FOC controller.
 
+You can check out my project log [here](Progress%20Log.md).
+
 ## Gearbox
 This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The drone motors are 10mm in diameter, so the gearbox should be a similar size.
 
