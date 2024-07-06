@@ -125,3 +125,11 @@ All ready for blast testing!
 ![1](Media/Build%20Log/IMG_20240703_201545.jpg)
 
 It did not blow up when I applied power, but unfortunately it didn't do anything. For some reason the power protection chip is failing and not opening up the mosfets. I tested manually by appling a small current to the mosfets, which opened up and let power through the whole board. I think I will have to bypass the circuit to continue testing, because visually I don't see anything wrong. There may be a short hidden underneath the chip, or the chip may be faulty.
+
+## July 5th, 2024
+
+I spent most of my afternoon debugging. I have identified two more design flaws. Since I'm using 3x pwm mode for the driver, I should have tied the unused pins to 3.3v, and not left them floating! I found this in the datasheet. To fix on my board, I have to solder a little wire to several leads on the QFN package, which is a hassle. I also can't get a 3.3volt power output from the driver chip, and discovered a recursive design flaw causing this. The driver chip has an enable pin with an internal weak pulldown. I put a pull-up resistor on the outside, to always keep the chip on. Guess what that is connected to though? The regulator output from the chip, which is disabled! :skull:
+
+BTW I added a file for [Design Errata](Design%20Errata.md)
+
+
