@@ -1,44 +1,42 @@
-Reference,Value,Datasheet,Footprint,Qty,DNP
-"C1,C10,C18,C19",0.1uF,~,-- mixed values --,4,
-"C2,C5",4.7uF,~,-- mixed values --,2,
-"C3,C4",12pF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,
-"C6,C7,C9","0.1uF, 16v",~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3,
-C11,8nF,~,Capacitor_SMD:C_0603_1608Metric,1,
-C12,"1uF, 16v",~,Capacitor_SMD:C_0603_1608Metric,1,
-"C13,C14,C16","10uF, 16v",~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3,
-C15,"1000uF, 16v",~,Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm,1,
-C17,1uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
-"D1,D3",Osram LT Q99G.01 green led,~,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,2,
-FB1,120ohm imp @100mhz,~,Inductor_SMD:L_0603_1608Metric,1,
-J1,JST SH SM04B,~,Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,1,
-J2,JST SH SM06B,~,Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal,1,
-J3,Molex_PicoBlade_53048-0310 Horizontal 3P,~,Connector_Molex:Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal,1,
-J4,Conn_01x02_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,
-L1,GND joiner,~,Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm,1,
-Q1,"NMOS, sir404dp",https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs,Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic,1,
-Q2,NMOS,https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs,Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic,1,
-Q3,"PMOS,Si7157DP",https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs,Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic,1,
-Q4,PMOS,https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs,Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic,1,
-"R1,R2",47k,~,-- mixed values --,2,
-R3,20ohm,~,Resistor_SMD:R_0603_1608Metric,1,
-"R4,R13",2k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,
-R5,300ohm,~,Resistor_SMD:R_0603_1608Metric,1,
-R6,"Same, 1000uOhm",~,vishay_wslf:RES_WSLF2512_VIS-M,1,
-R7,"Vishay WSLF2512, 1%, 300uOhm",~,vishay_wslf:RES_WSLF2512_VIS-M,1,
-R8,402 ohm,~,Resistor_SMD:R_0603_1608Metric,1,
-"R10,R12",1k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,
-R11,230ohm,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
-"R14,R15,R16",10k,~,Resistor_SMD:R_0603_1608Metric,3,
-R17,100k,~,Resistor_SMD:R_0603_1608Metric,1,
-R18,150k,~,Resistor_SMD:R_0603_1608Metric,1,
-R19,80.6 ohm,~,Resistor_SMD:R_0603_1608Metric,1,
-SW1,SW_Push,~,Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2,1,
-"TP1,TP2,TP3,TP4,TP5,TP6",TestPoint,~,TestPoint:TestPoint_Pad_D1.5mm,6,
-"TP7,TP8,TP9,TP10,TP11,TP12",~,~,TestPoint:TestPoint_Pad_D1.5mm,6,
-U1,STM32G070CBTr,https://www.st.com/resource/en/datasheet/stm32g070cb.pdf,Package_QFP:LQFP-48_7x7mm_P0.5mm,1,
-U2,DRV8311HRRWR,https://www.ti.com/lit/ds/symlink/drv8311.pdf,custom_Driver_Motor:DRV8311_0.3mmVias,1,
-U3,BQ298012RUGT,BQ298000RUGT,bq298rugt:RUG8_TEX,1,
-U4,BQ25060,https://www.ti.com/lit/ds/symlink/bq25060.pdf,custom_Power:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias_0.3mm,1,
-Y1,ABM8-16.000MHZ-10-1-U-T,~,Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm,1,
-ADDED LATER,"A06SR06SR30K152A. JST sh 6pin cable, 6in",,,,
-ADDED LATER,"A04SR04SR30K152A. JST sh 4pin cable, 6in",,,,
+"Reference","Value","Datasheet","Footprint","Qty","DNP"
+"C1,C10,C18,C19","0.1uF","~","-- mixed values --","4",""
+"C2,C5","4.7uF","~","-- mixed values --","2",""
+"C3,C4","12pF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","2",""
+"C6,C7,C9","0.1uF, 16v","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","3",""
+"C11","8nF","~","Capacitor_SMD:C_0603_1608Metric","1",""
+"C12","1uF, 16v","~","Capacitor_SMD:C_0603_1608Metric","1",""
+"C13,C14,C16","10uF, 16v","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","3",""
+"C15","1000uF, 16v","~","Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm","1",""
+"C17","1uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
+"D1,D3","Osram LT Q99G.01 green led","~","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","2",""
+"FB1","120ohm imp @100mhz","~","Inductor_SMD:L_0603_1608Metric","1",""
+"J1","JST SH SM04B","~","Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal","1",""
+"J2","JST SH SM06B","~","Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal","1",""
+"J3","Molex_PicoBlade_53048-0310 Horizontal 3P","~","Connector_Molex:Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal","1",""
+"J4","Conn_01x02_Pin","~","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","1",""
+"L1","GND joiner","~","Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm","1",""
+"Q1","NMOS, sir404dp","https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs","Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic","1",""
+"Q2","NMOS","https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs","Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic","1",""
+"Q3","PMOS,Si7157DP","https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs","Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic","1",""
+"Q4","PMOS","https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs","Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic","1",""
+"R1,R17","100k","~","Resistor_SMD:R_0603_1608Metric","2",""
+"R2","47k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
+"R3","20ohm","~","Resistor_SMD:R_0603_1608Metric","1",""
+"R4,R13","2k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","2",""
+"R5","300ohm","~","Resistor_SMD:R_0603_1608Metric","1",""
+"R6","Same, 1000uOhm","~","vishay_wslf:RES_WSLF2512_VIS-M","1",""
+"R7","Vishay WSLF2512, 1%, 300uOhm","~","vishay_wslf:RES_WSLF2512_VIS-M","1",""
+"R8","402 ohm","~","Resistor_SMD:R_0603_1608Metric","1",""
+"R9,R18","150k","~","Resistor_SMD:R_0603_1608Metric","2",""
+"R10,R12","1k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","2",""
+"R11","230ohm","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
+"R14,R15,R16","10k","~","Resistor_SMD:R_0603_1608Metric","3",""
+"R19","80.6 ohm","~","Resistor_SMD:R_0603_1608Metric","1",""
+"SW1","SW_Push","~","Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2","1",""
+"TP1,TP2,TP3,TP4,TP5,TP6","TestPoint","~","TestPoint:TestPoint_Pad_D1.5mm","6",""
+"TP7,TP8,TP9,TP10,TP11,TP12","~","~","TestPoint:TestPoint_Pad_D1.5mm","6",""
+"U1","STM32G070CBTr","https://www.st.com/resource/en/datasheet/stm32g070cb.pdf","Package_QFP:LQFP-48_7x7mm_P0.5mm","1",""
+"U2","DRV8311HRRWR","https://www.ti.com/lit/ds/symlink/drv8311.pdf","custom_Driver_Motor:DRV8311_0.3mmVias","1",""
+"U3","BQ298012RUGT","BQ298000RUGT","bq298rugt:RUG8_TEX","1",""
+"U4","BQ25060","https://www.ti.com/lit/ds/symlink/bq25060.pdf","custom_Power:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias_0.3mm","1",""
+"Y1","ABM8-16.000MHZ-10-1-U-T","~","Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm","1",""

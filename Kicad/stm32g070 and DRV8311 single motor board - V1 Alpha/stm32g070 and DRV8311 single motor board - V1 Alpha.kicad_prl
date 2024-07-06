@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 31,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -78,6 +78,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "stm32g070 and DRV8311 single motor board - V1 Alpha.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 530,
+          "pos_y": 0,
+          "size_x": 768,
+          "size_y": 920
+        }
+      },
+      {
+        "name": "stm32g070 and DRV8311 single motor board - V1 Alpha.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 0,
+          "pos_y": 0,
+          "size_x": 1280,
+          "size_y": 666
+        }
+      }
+    ]
   }
 }
