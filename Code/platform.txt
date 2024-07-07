@@ -7,4 +7,4 @@ tools.openocd.cmd.windows=bin/openocd.exe
 
 tools.openocd.program.params.verbose=-d2
 tools.openocd.program.params.quiet=-d0
-tools.openocd.program.pattern="{path}/{cmd}" {program.verbose} -s "{path}/openocd/scripts/" -f "interface/{protocol}" -c "set telnet_port 0" {extra_params} -f "target/stm32g0x.cfg" -c "telnet_port disabled; program {{build.path}/{build.project_name}.bin} verify reset; shutdown"
+tools.openocd.program.pattern="{path}/{cmd}" {program.verbose} -s "{path}/openocd/scripts/" -f "interface/{protocol}" -c "set telnet_port 0" {extra_params} -f "target/stm32g0x.cfg" -c "telnet_port disabled; program {{build.path}/{build.project_name}.elf} verify reset; shutdown"
