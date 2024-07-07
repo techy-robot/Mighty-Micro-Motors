@@ -1,0 +1,10 @@
+# Just the part I created
+
+# custom programmer upload
+tools.openocd.path={runtime.tools.openocd-0.10.0-arduino7.path} # change to actual path
+tools.openocd.cmd=bin/openocd
+tools.openocd.cmd.windows=bin/openocd.exe
+
+tools.openocd.program.params.verbose=-d2
+tools.openocd.program.params.quiet=-d0
+tools.openocd.program.pattern="{path}/{cmd}" {program.verbose} -s "{path}/share/openocd/scripts/" -f "interface/{protocol}" -c "set telnet_port 0" {extra_params} -f "target/at91samdXX.cfg" -c "telnet_port disabled; program {{build.path}/{build.project_name}.hex} verify reset; shutdown"
