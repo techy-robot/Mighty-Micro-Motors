@@ -132,4 +132,26 @@ I spent most of my afternoon debugging. I have identified two more design flaws.
 
 BTW I added a file for [Design Errata](Design%20Errata.md)
 
+## July 6th, 2024
 
+I managed to solder on the very difficult bodge wire needed to the QFN chip. This ties the three lowside drive pins to 3.3 volts
+![1](Media/Build%20Log/IMG_20240706_152508.jpg)
+![1](Media/Build%20Log/IMG_20240706_153545.jpg)
+
+I also fixed the design errors I identified yesterday in the kicad files.
+
+## July 7th, 2024
+
+I finally figured out how to add custom programmers to arduino IDE! I wanted to use my Flipper zero with the DAP-link application to program my board, so I looked through the arduino manual and through some of the other programmers to figure out how to do it. There is a file called `programmers.txt` in every installed boards file definition, which in my case was in `.arduino15/packages/STMicroelectronics/hardware/stm32/2.8.0/` (I installed stm32 support from https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json) The only supported programmer was the stlink, so I added my own flipper zero support using openocd like I found in other examples:
+
+```txt
+flipper.name=Flipper Zero DAP-link
+flipper.communication=USB
+flipper.protocol=cmsis-dap.cfg
+flipper.program.tool=openocd
+flipper.program.tool.default=openocd
+flipper.extra_params=-c "transport select swd"
+flipper.extra_params=-c "adapter speed 9600"
+```
+
+I had to delete `.config/arduino-ide` for it to actually show up, because there were temporary files stored there. This may be different depending on platform, see https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer User Data folder.

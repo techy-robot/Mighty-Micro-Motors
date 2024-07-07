@@ -1,0 +1,17 @@
+stlink.name=STMicroelectronics ST-LINK
+stlink.communication=USB
+stlink.protocol=
+stlink.program.protocol=
+stlink.program.tool=openocd
+stlink.program.tool.default=openocd
+stlink.program.extra_params=
+stlink.programmer.protocol=stlink
+stlink.programmer.transport_script={runtime.platform.path}/debugger/select_hla.cfg
+
+flipper.name=Flipper Zero DAP-link
+flipper.communication=USB
+flipper.protocol=cmsis-dap.cfg
+flipper.program.tool=openocd
+flipper.program.tool.default=openocd
+flipper.extra_params=-c "transport select swd"
+flipper.extra_params=-c "adapter speed 9600"
