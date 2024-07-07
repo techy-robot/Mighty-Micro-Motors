@@ -17,16 +17,21 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
+#define LED PB12
+
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin PB12 as an output. This is the LED pin on my stm32 based motor control board
-  pinMode(PB12, OUTPUT);
+  pinMode(LED, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(PB12, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(PB12, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
+  float in, out;
+  
+  for (in = 0; in < 6.283; in = in + 0.001)
+  {
+    out = sin(in) * 127.5 + 127.5;
+    analogWrite(LED,out);
+  }
 }
