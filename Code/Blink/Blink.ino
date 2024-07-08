@@ -1,3 +1,5 @@
+#include <hal_conf_extra.h> 
+
 /*
   Blink
 
@@ -17,6 +19,9 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
+// All I have in here is definition for the external clock frequency I have
+
+// Clock settings
 extern "C" void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {};
@@ -26,7 +31,7 @@ extern "C" void SystemClock_Config(void)
   */
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
   /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
+  * in the RCC_OscInitTypeDef structure. Here I have enabled the external clcok as the source
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
@@ -74,5 +79,8 @@ void loop() {
     out = sin(in) * 127.5 + 127.5;
     analogWrite(LED,out);
   }
-  Serial1.println("hello world");//check system clock speed
+  Serial1.println("Hello. Clock freq is: ");//check system clock speed
+  Serial1.println(F_CPU);
+  Serial1.println(HSE_VALUE);
+
 }
