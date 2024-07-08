@@ -28,12 +28,10 @@ extern "C" void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
   RCC_OscInitStruct.PLL.PLLN = 8;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
@@ -56,19 +54,25 @@ extern "C" void SystemClock_Config(void)
 
 #define LED PB12
 
+//                      RX    TX
+HardwareSerial Serial1(PB7, PB6);
+
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin PB12 as an output. This is the LED pin on my stm32 based motor control board
-  pinMode(LED, OUTPUT);
+  //pinMode(LED, OUTPUT);
+  Serial1.begin(19200);
+  Serial1.println(F_CPU);//check system clock speed
 }
 
 // the loop function runs over and over again forever
 void loop() {
   float in, out;
   
-  for (in = 0; in < 6.283; in = in + 0.001)
+  for (in = 0; in < 6.283; in = in + 0.0005)
   {
     out = sin(in) * 127.5 + 127.5;
     analogWrite(LED,out);
   }
+  Serial1.println("hello world");//check system clock speed
 }

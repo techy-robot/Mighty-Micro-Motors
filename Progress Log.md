@@ -155,3 +155,9 @@ flipper.extra_params=-c "adapter speed 9600"
 ```
 
 I had to delete `.config/arduino-ide` for it to actually show up, because there were temporary files stored there. This may be different depending on platform, see https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer User Data folder.
+
+I was finally able to program the basic Blink.ino! It works!
+
+Now I'm trying to setup the clock usage. For some reason my blink code is taking up 40k bytes! Over head with absolutely no code is around 4.6k. The clock settings appear to get the clock to around 32 mhz, not 64. I think I set the wrong clock divisor...
+
+I also tried to setup serial out to print hello world. I failed at wiring several times, but finally got it to print gibberish (Which means the baud rate is wrong). For some reason the serial baud rate on the computer has to be twice that what was configured in code. Clock issues?
