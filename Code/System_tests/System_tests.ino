@@ -81,7 +81,7 @@ void setup() {
   pinMode(CSA_A, INPUT);
   pinMode(CSA_B, INPUT);
   pinMode(CSA_C, INPUT);
-  analogReadResolution(12);
+  analogReadResolution(12);//Max value is 4096, at 3.3v
 
   Serial1.begin(19200);
 
@@ -105,10 +105,15 @@ void loop() {
   
   Serial1.print("Clock freq is: ");//check system clock speed
   Serial1.println(F_CPU);
-  Serial1.print("CSA Analog Values: ");
-  Serial1.print(String(a) + ", ");
-  Serial1.print(String(b) + ", ");
-  Serial1.println(String(c));
+  Serial1.print("CSA Voltages: ");
+  Serial1.print(String(anToV(a, 12)) + ", ");
+  Serial1.print(String(anToV(b, 12)) + ", ");
+  Serial1.println(String(anToV(c, 12)));
   Serial1.println("Chip Select: " + String(cs));
   delay(500);
+}
+
+//Converts analog value to volts, taking the bit resolution into account.
+float anToV(int input, int res) {
+  return input * (3.3 / pow(2, res));
 }
