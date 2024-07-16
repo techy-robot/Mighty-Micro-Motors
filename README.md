@@ -53,4 +53,4 @@ The board is barely bigger than the jst sh connector on top for SPI communicatio
 The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymium magnet to operate. I used a 6x3mm from K&J magnetics: [D42DIA](https://www.kjmagnetics.com/proddetail.asp?prod=D42DIA).
 
 ## Code
-There is no code yet, though I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
+There is not that much code currently, just some tests to verify the board works, and a programmer definition for my Flipper Zero. I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point for the motor control, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
