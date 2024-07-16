@@ -78,6 +78,11 @@ void setup() {
   pinMode(LED, OUTPUT);
   pinMode(CS1, INPUT);//check if external pullup works
 
+  pinMode(CSA_A, INPUT);
+  pinMode(CSA_B, INPUT);
+  pinMode(CSA_C, INPUT);
+  analogReadResolution(12);
+
   Serial1.begin(19200);
 
   //Blink twice rapidly on start
@@ -101,9 +106,9 @@ void loop() {
   Serial1.print("Clock freq is: ");//check system clock speed
   Serial1.println(F_CPU);
   Serial1.print("CSA Analog Values: ");
-  Serial1.print(a + ", ");
-  Serial1.print(b + ", ");
-  Serial1.println(c);
-  Serial1.println("Chip Select: " + cs);
+  Serial1.print(String(a) + ", ");
+  Serial1.print(String(b) + ", ");
+  Serial1.println(String(c));
+  Serial1.println("Chip Select: " + String(cs));
   delay(500);
 }
