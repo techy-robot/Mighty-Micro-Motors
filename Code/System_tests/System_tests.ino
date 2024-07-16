@@ -6,9 +6,7 @@
 #include <hal_conf_extra.h> 
 #include <SPI.h>
 
-// All I have in here is definition for the external clock frequency I have
-
-// Clock settings
+// Clock settings, the only thing changed from default was the clock source for external
 extern "C" void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {};
@@ -44,8 +42,7 @@ extern "C" void SystemClock_Config(void)
   }
 }
 
-const byte READ = 0b01000000;     // MA735 read command
-const byte WRITE = 0b10000000;   // MA735's write command
+//-----------------Pins-------------------
 
 #define LED PB12
 
@@ -63,16 +60,23 @@ const byte WRITE = 0b10000000;   // MA735's write command
 #define VREFINT 1212
 #define ADC_RANGE 4096
 
+//-------------------Interfaces-------------------------
 //                      RX    TX
 HardwareSerial Serial1(PB7, PB6);
+
+//         MOSI  MISO  SCLK  SSEL
+SPIClass SPI_1(PB5, PB4, PB3);
+
+const byte READ = 0b01000000;     // MA735 read command
+const byte WRITE = 0b10000000;   // MA735's write command
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin PB12 as an output. This is the LED pin on my stm32 based motor control board
   pinMode(LED, OUTPUT);
 
-  //pinMode(CS1, OUTPUT);
-  //SPI.begin();
+  pinMode(CS1, OUTPUT);
+  SPI_1.begin();
 
   pinMode(CSA_A, INPUT);
   pinMode(CSA_B, INPUT);
@@ -108,7 +112,7 @@ void loop() {
   Serial1.println("Vref(mV):" + String(vref));
   Serial1.println("Vbat(V):" + String(readVoltage(vref, AVBAT)));
   Serial1.println("Temperature(°C):" + String(readTempSensor(vref)));
-  //Serial1.println("Sensor Data: " + String(readSensor()));
+  Serial1.println("Sensor Data: " + String(readSensor()));
   delay(2000);
 }
 
@@ -134,9 +138,9 @@ unsigned int readSensor() {
   // take the chip select low to select the device:
   digitalWrite(CS1, LOW);
   // send a value of 0 to read the bytes
-  result = SPI.transfer(0x00);//first part
+  result = SPI_1.transfer(0x00);//first part
   result = result << 8;
-  inByte = SPI.transfer(0x00);//second part
+  inByte = SPI_1.transfer(0x00);//second part
   // combine the byte you just got with the previous one:
   result = result | inByte;
   // take the chip select high to de-select:
@@ -160,16 +164,16 @@ unsigned int readRegister(byte thisRegister, int bytesToRead) {
   // take the chip select low to select the device:
   digitalWrite(CS1, LOW);
   // send the device the register you want to read:
-  SPI.transfer(dataToSend);
+  SPI_1.transfer(dataToSend);
   // send a value of 0 to read the first byte returned:
-  result = SPI.transfer(0x00);
+  result = SPI_1.transfer(0x00);
   // decrement the number of bytes left to read:
   bytesToRead--;
   // if you still have another byte to read:
   if (bytesToRead > 0) {
     // shift the first byte left, then get the second byte:
     result = result << 8;
-    inByte = SPI.transfer(0x00);
+    inByte = SPI_1.transfer(0x00);
     // combine the byte you just got with the previous one:
     result = result | inByte;
     // decrement the number of bytes left to read:
