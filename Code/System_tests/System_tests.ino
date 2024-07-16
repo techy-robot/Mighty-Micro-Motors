@@ -69,6 +69,10 @@ extern "C" void SystemClock_Config(void)
 
 #define CS1 PD2 //for the first SPI bus
 
+//Found in the datasheet. This is in mV
+#define VREFINT 1212
+#define ADC_RANGE 4096
+
 //                      RX    TX
 HardwareSerial Serial1(PB7, PB6);
 
@@ -102,18 +106,36 @@ void loop() {
   int b = analogRead(CSA_B);
   int c = analogRead(CSA_C);
   bool cs = digitalRead(CS1);
+  float vref = readVref();
   
   Serial1.print("Clock freq is: ");//check system clock speed
   Serial1.println(F_CPU);
   Serial1.print("CSA Voltages: ");
-  Serial1.print(String(anToV(a, 12)) + ", ");
-  Serial1.print(String(anToV(b, 12)) + ", ");
-  Serial1.println(String(anToV(c, 12)));
+  Serial1.print(String(anToV(a)) + ", ");
+  Serial1.print(String(anToV(b)) + ", ");
+  Serial1.println(String(anToV(c)));
   Serial1.println("Chip Select: " + String(cs));
+  Serial1.println("Vref(mV):" + String(vref));
+  Serial1.println("Vbat(mV):" + String(readVoltage(vref, AVBAT)));
+  Serial1.println("Temperature(°C):" + String(readTempSensor(vref)));
   delay(500);
 }
 
 //Converts analog value to volts, taking the bit resolution into account.
-float anToV(int input, int res) {
-  return input * (3.3 / pow(2, res));
+float anToV(int input) {
+  return input * (3.3 / ADC_RANGE);
+}
+
+//alternative analog to voltage, but accounting for voltage reference
+static int32_t readVoltage(int32_t VRef, uint32_t pin) {
+  return (__LL_ADC_CALC_DATA_TO_VOLTAGE(VRef, analogRead(pin), LL_ADC_RESOLUTION_12B));
+}
+
+
+static int32_t readVref() {
+  return (VREFINT * ADC_RANGE / analogRead(AVREF)); // ADC sample to mV
+}
+
+static int32_t readTempSensor(int32_t VRef) {
+  return (__LL_ADC_CALC_TEMPERATURE(VRef, analogRead(ATEMP), LL_ADC_RESOLUTION_12B));
 }
