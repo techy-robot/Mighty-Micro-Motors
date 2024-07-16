@@ -1,4 +1,7 @@
-#include <SimpleFOC.h>
+#include "SPI.h"
+#include "SimpleFOC.h"
+#include "SimpleFOCDrivers.h"
+#include "encoders/ma730/MagneticSensorMA730.h"
 #include <hal_conf_extra.h> 
 
 // Clock settings, the only thing changed from default was the clock source for external
@@ -65,12 +68,13 @@ SPIClass SPI_1(PB5, PB4, PB3);
 //-------------------Motor Driver--------------------
 
 //  BLDCMotor( pole_pairs , ( phase_resistance, KV_rating  optional) )
-BLDCMotor motor = BLDCMotor(6, 9.75, 19000);
+BLDCMotor motor = BLDCMotor(6, 0.2, 19000);
 //Pole pairs is the number of poles / 2. BTW I DON'T know the phase resistance yet
 
 // Update to the MA735 code after this
 // MagneticSensorSPI(int cs, float bit_resolution, int angle_register)
-MagneticSensorSPI sensor = MagneticSensorSPI(CS1, 13, 0x3FFF);
+//MagneticSensorSPI sensor = MagneticSensorSPI(CS1, 13, 0x3FFF);
+MagneticSensorMA730 sensor(CS1);
 
 //  BLDCDriver3PWM( pin_pwmA, pin_pwmB, pin_pwmC, enable (optional))
 BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
@@ -85,63 +89,63 @@ void doMotor(char* cmd){commander.motor(&motor, cmd);}
 void setup() {
   
   // MA735 supports mode 0 and mode 3
-  sensor.spi_mode = SPI_MODE0;
+  //sensor.spi_mode = SPI_MODE0;
   // speed of the SPI clock signal - default 1MHz
-  sensor.clock_speed = 1000000;
+  //sensor.clock_speed = 1000000;
   // initialize magnetic sensor hardware
   sensor.init(&SPI_1);
-  // link the motor to the sensor
-  motor.linkSensor(&sensor);
+  // // link the motor to the sensor
+  // motor.linkSensor(&sensor);
 
-  //init driver
-  // pwm frequency to be used [Hz]
-  driver.pwm_frequency = 20000;
-  // power supply voltage [V]
-  driver.voltage_power_supply = 4.2;
-  // Max DC voltage allowed - default voltage_power_supply
-  driver.voltage_limit = 5;
-  // driver init
-  driver.init();
-  // link the motor to the driver
-  motor.linkDriver(&driver);
+  // //init driver
+  // // pwm frequency to be used [Hz]
+  // driver.pwm_frequency = 20000;
+  // // power supply voltage [V]
+  // driver.voltage_power_supply = 4.2;
+  // // Max DC voltage allowed - default voltage_power_supply
+  // driver.voltage_limit = 5;
+  // // driver init
+  // driver.init();
+  // // link the motor to the driver
+  // motor.linkDriver(&driver);
 
-  // link the driver with the current sense
-  current_sense.linkDriver(&driver);
-  
-  // Changing gain values to those in the drv8311 docs. I have to figure this out still
-  current_sense.gain_a = 1.0 / shunt_resistor / gain;
-  current_sense.gain_b = 1.0 / shunt_resistor / gain;
-  current_sense.gain_c = 1.0 / shunt_resistor / gain;
+  // // link the driver with the current sense
+  // current_sense.linkDriver(&driver);
 
-
-  // init current sense
-  current_sense.init();
-   // link the motor to current sense
-  motor.linkCurrentSense(&current_sese);
-
-  // set control loop type to be used
-  motor.controller = MotionControlType::velocity;
-
-  // choose FOC modulation
-  // SinePWM; (default)
-  // SpaceVectorPWM; Similar to sine wave, not sure the diff
-  // Trapezoid_120; Faster,but less efficient
-  // Trapezoid_150; Same, except the angle offset is more
-  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
+  // // Changing gain values to those in the drv8311 docs. I have to figure this out still. I may have to modifiy the library source to implement what the docs need
+  // //current_sense.gain_a = 1.0 / shunt_resistor / gain;
+  // //current_sense.gain_b = 1.0 / shunt_resistor / gain;
+  // //current_sense.gain_c = 1.0 / shunt_resistor / gain;
 
 
+  // // init current sense
+  // current_sense.init();
+  //  // link the motor to current sense
+  // motor.linkCurrentSense(&current_sense);
 
-  // initialize motor
-  motor.init();
+  // // set control loop type to be used
+  // motor.controller = MotionControlType::velocity;
 
-  // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
-  motor.initFOC();
+  // // choose FOC modulation
+  // // SinePWM; (default)
+  // // SpaceVectorPWM; Similar to sine wave, not sure the diff
+  // // Trapezoid_120; Faster,but less efficient
+  // // Trapezoid_150; Same, except the angle offset is more
+  // motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
+
+  // motor.voltage_limit = 1;//Should be really low for drone motors
+
+  // // initialize motor
+  // motor.init();
+
+  // // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
+  // motor.initFOC();
 
 
   // use monitoring with the BLDCMotor
   Serial1.begin(115200);
   // monitoring port
-  motor.useMonitoring(Serial1);
+  //motor.useMonitoring(Serial1);
 }
 
 void loop() {
@@ -153,9 +157,35 @@ void loop() {
   //motor.move(2);
 
   // monitoring function outputting motor variables to the serial terminal 
-  motor.monitor();//This slows things down BTW!
+  //motor.monitor();//This slows things down BTW!
 
   // read user commands
-  commander.run();
+  //commander.run();
+
+    // update the sensor (only needed if using the sensor without a motor)
+  sensor.update();
+
+  // get the angle, in radians, including full rotations
+  float angle_sum = sensor.getAngle();
+
+  // get the velocity, in rad/s - note: you have to call getAngle() on a regular basis for it to work
+  float vel = sensor.getVelocity();
+
+  // get the angle, in radians, no full rotations
+  float angle = sensor.getCurrentAngle();
+  Serial1.print("Angle (rad): ");
+  Serial1.println(angle);
+
+  // get the raw 14 bit value
+  uint16_t raw = sensor.readRawAngle();
+
+  // get the field strength
+  FieldStrength fs = sensor.getFieldStrength();
+  Serial1.print("Field strength: ");
+  Serial1.println(fs);
+
+  delay(200);
+  // set pulses per turn for encoder mode
+  //sensor.setPulsesPerTurn(999); // set to 999 if we want 1000 PPR == 4000 CPR
 }
 
