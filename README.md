@@ -29,9 +29,18 @@ At it's current state the control PCB has been assembled and power tested. Nothi
 The motor driver section is 16x11mm, which hopefully is small enough and easily tileable for a small robot controller with lots of motors. The biggest part of the board is the power management, followed by the stm32.
 
 **Ordering info**
+
 I ordered my pcbs from JLCPCB, because they are inexpensive and can do advanced pcbs. 
 
 The pcb is a 4 layer board, with 1 oz copper. The power trace is exposed for solder if extra conductivity is needed. Also, it is **strongly recommended** to order a stencil for both PCBs and to do a good job pasting the board. I fortunately ordered a stencil for the controller, but I put too much solder paste on and had to fix a lot of bridges after the fact. For the encoder board I manually pasted it, and that was a real pain to do a tiny QFN chip.
+
+### Tested functionality:
+- Can be powered on without exploding
+- 3.3v regulator on the motor chip works (though with a flaw that requires a kickstart to get it going)
+- Can be programmed and flash an LED
+- Can be clocked to a max 64mhz
+- Power mosfet switching works on the charger
+- Can communicate over SPI, UART and the debug interface
 
 ### Photos
 ![top](Media/top.png)
