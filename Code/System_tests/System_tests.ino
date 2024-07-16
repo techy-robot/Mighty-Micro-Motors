@@ -1,23 +1,10 @@
-#include <hal_conf_extra.h> 
-
 /*
-  Blink
-
-  Turns an LED on for one second, then off for one second, repeatedly.
-
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-  modified 5 July 2024 for motor control board
-  by Asher Edwards
-
-  This example code is in the public domain.
-
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
+  Created by Asher Edwards
+  Last updated Jul 16, 2024
 */
+
+#include <hal_conf_extra.h> 
+#include <SPI.h>
 
 // All I have in here is definition for the external clock frequency I have
 
@@ -57,6 +44,9 @@ extern "C" void SystemClock_Config(void)
   }
 }
 
+const byte READ = 0b01000000;     // MA735 read command
+const byte WRITE = 0b10000000;   // MA735's write command
+
 #define LED PB12
 
 #define CSA_A PA0 //PA0 - 2
@@ -80,7 +70,9 @@ HardwareSerial Serial1(PB7, PB6);
 void setup() {
   // initialize digital pin PB12 as an output. This is the LED pin on my stm32 based motor control board
   pinMode(LED, OUTPUT);
-  pinMode(CS1, INPUT);//check if external pullup works
+
+  //pinMode(CS1, OUTPUT);
+  //SPI.begin();
 
   pinMode(CSA_A, INPUT);
   pinMode(CSA_B, INPUT);
@@ -89,13 +81,13 @@ void setup() {
 
   Serial1.begin(19200);
 
-  //Blink twice rapidly on start
+  //Blink twice on start
   digitalWrite(LED, HIGH);
-  delay(500);
+  delay(200);
   digitalWrite(LED, LOW);
-  delay(500);
+  delay(200);
   digitalWrite(LED, HIGH);
-  delay(500);
+  delay(200);
   digitalWrite(LED, LOW);
 }
 
@@ -105,19 +97,18 @@ void loop() {
   int a = analogRead(CSA_A);
   int b = analogRead(CSA_B);
   int c = analogRead(CSA_C);
-  bool cs = digitalRead(CS1);
   float vref = readVref();
-  
+
   Serial1.print("Clock freq is: ");//check system clock speed
   Serial1.println(F_CPU);
   Serial1.print("CSA Voltages: ");
   Serial1.print(String(readVoltage(vref, CSA_A)) + ", ");
   Serial1.print(String(readVoltage(vref, CSA_B)) + ", ");
   Serial1.println(String(readVoltage(vref, CSA_C)));
-  Serial1.println("Chip Select Status: " + String(cs));
   Serial1.println("Vref(mV):" + String(vref));
   Serial1.println("Vbat(V):" + String(readVoltage(vref, AVBAT)));
   Serial1.println("Temperature(°C):" + String(readTempSensor(vref)));
+  //Serial1.println("Sensor Data: " + String(readSensor()));
   delay(2000);
 }
 
@@ -134,3 +125,60 @@ static int32_t readVref() {
 static int32_t readTempSensor(int32_t VRef) {
   return (__LL_ADC_CALC_TEMPERATURE(VRef, analogRead(ATEMP), LL_ADC_RESOLUTION_12B));
 }
+
+//Read the sensor data
+unsigned int readSensor() {
+  byte inByte = 0;           // incoming byte from the SPI
+  unsigned int result = 0;   // result to return
+
+  // take the chip select low to select the device:
+  digitalWrite(CS1, LOW);
+  // send a value of 0 to read the bytes
+  result = SPI.transfer(0x00);//first part
+  result = result << 8;
+  inByte = SPI.transfer(0x00);//second part
+  // combine the byte you just got with the previous one:
+  result = result | inByte;
+  // take the chip select high to de-select:
+  digitalWrite(CS1, HIGH);
+  // return the result:
+  return (result);
+}
+
+//Read from a register:
+unsigned int readRegister(byte thisRegister, int bytesToRead) {
+  byte inByte = 0;           // incoming byte from the SPI
+  unsigned int result = 0;   // result to return
+  Serial.print(thisRegister, BIN);
+  Serial.print("\t");
+  // MA735 expects the register name to be in the lower 5 bits
+  // of the byte. So shift the bits right by three bits:
+  thisRegister = thisRegister >> 3;
+  // now combine the address and the command into one byte
+  uint16_t dataToSend = READ & thisRegister ; //Read should be 010 in binary
+  Serial.println(thisRegister, BIN);
+  // take the chip select low to select the device:
+  digitalWrite(CS1, LOW);
+  // send the device the register you want to read:
+  SPI.transfer(dataToSend);
+  // send a value of 0 to read the first byte returned:
+  result = SPI.transfer(0x00);
+  // decrement the number of bytes left to read:
+  bytesToRead--;
+  // if you still have another byte to read:
+  if (bytesToRead > 0) {
+    // shift the first byte left, then get the second byte:
+    result = result << 8;
+    inByte = SPI.transfer(0x00);
+    // combine the byte you just got with the previous one:
+    result = result | inByte;
+    // decrement the number of bytes left to read:
+    bytesToRead--;
+  }
+  // take the chip select high to de-select:
+  digitalWrite(CS1, HIGH);
+  // return the result:
+  return (result);
+}
+
+
