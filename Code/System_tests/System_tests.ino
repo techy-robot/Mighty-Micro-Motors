@@ -111,24 +111,19 @@ void loop() {
   Serial1.print("Clock freq is: ");//check system clock speed
   Serial1.println(F_CPU);
   Serial1.print("CSA Voltages: ");
-  Serial1.print(String(anToV(a)) + ", ");
-  Serial1.print(String(anToV(b)) + ", ");
-  Serial1.println(String(anToV(c)));
-  Serial1.println("Chip Select: " + String(cs));
+  Serial1.print(String(readVoltage(vref, CSA_A)) + ", ");
+  Serial1.print(String(readVoltage(vref, CSA_B)) + ", ");
+  Serial1.println(String(readVoltage(vref, CSA_C)));
+  Serial1.println("Chip Select Status: " + String(cs));
   Serial1.println("Vref(mV):" + String(vref));
-  Serial1.println("Vbat(mV):" + String(readVoltage(vref, AVBAT)));
+  Serial1.println("Vbat(V):" + String(readVoltage(vref, AVBAT)));
   Serial1.println("Temperature(°C):" + String(readTempSensor(vref)));
-  delay(500);
-}
-
-//Converts analog value to volts, taking the bit resolution into account.
-float anToV(int input) {
-  return input * (3.3 / ADC_RANGE);
+  delay(2000);
 }
 
 //alternative analog to voltage, but accounting for voltage reference
-static int32_t readVoltage(int32_t VRef, uint32_t pin) {
-  return (__LL_ADC_CALC_DATA_TO_VOLTAGE(VRef, analogRead(pin), LL_ADC_RESOLUTION_12B));
+static float readVoltage(int32_t VRef, uint32_t pin) {
+  return (__LL_ADC_CALC_DATA_TO_VOLTAGE(VRef, analogRead(pin), LL_ADC_RESOLUTION_12B))/1000.0;
 }
 
 
