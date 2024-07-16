@@ -161,3 +161,9 @@ I was finally able to program the basic Blink.ino! It works!
 Now I'm trying to setup the clock usage. For some reason my blink code is taking up 40k bytes! Over head with absolutely no code is around 4.6k. The clock settings appear to get the clock to around 32 mhz, not 64. I think I set the wrong clock divisor...
 
 I also tried to setup serial out to print hello world. I failed at wiring several times, but finally got it to print gibberish (Which means the baud rate is wrong). For some reason the serial baud rate on the computer has to be twice that what was configured in code. Clock issues?
+
+I eventually worked it out. I had to specify in `hal_conf_extra.h` this: `#define HSE_VALUE    (16000000UL)` This told the compiler what the external clock frequency I was using. After that I had no serial timing issues and got the full 64mhz.
+
+## July 16th, 2024
+
+Today I finished out the basic hardware testing (except the battery charging, I don't have a battery yet), and moved on to setting up SimpleFOC. I have verified that the digital pins work, and the SPI interface works.
