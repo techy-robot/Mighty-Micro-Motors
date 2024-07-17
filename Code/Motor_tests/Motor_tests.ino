@@ -86,9 +86,9 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
 LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, CSA_C);
 
 //instantiate commander
-Commander commander = Commander(Serial1, "\n");
+Commander command = Commander(Serial1, "\n");
 
-void onMotor(char* cmd){commander.motor(&motor, cmd);}
+void onMotor(char* cmd){command.motor(&motor, cmd);}
 void doTarget(char* cmd) { command.scalar(&motor.target, cmd); }
 void doLimitCurrent(char* cmd) { command.scalar(&motor.current_limit, cmd); }
 void readSensor(char* cmd) { 
@@ -167,13 +167,13 @@ void setup() {
   // Trapezoid_150; Same, except the angle offset is more
   motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 0.5 // Amps
+  motor.current_limit = 0.5; // Amps
   // initialize motor
   motor.init();
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
 
-  commander.add('M',onMotor,"my motor");//default motor call
+  command.add('M',onMotor,"my motor");//default motor call
   // add target command T
   command.add('T', doTarget, "target velocity");
   command.add('C', doLimitCurrent, "current limit");
@@ -199,7 +199,7 @@ void loop() {
   motor.monitor();//This slows things down BTW!
 
   // read user commands
-  commander.run();
+  command.run();
 
     // update the sensor (only needed if using the sensor without a motor)
   sensor.update();

@@ -176,10 +176,18 @@ I finished MA735 driver support, so now I can set resolution or update time. I c
 
 I also started work on motor setup.
 
-I had to measure resistance between two leads to calculate phase resistance
-![](Media/Build%20Log/IMG_20240717_123356.jpg)
+I had to measure resistance between two leads to calculate phase resistance, then divided by 2 since it is a Wye/star configuration. I pretty sure of the configuration since I see a little wire tail going nowhere.
 
-I think it is Wye/ Star configuration, since I see a little wire tail.
+![](Media/Build%20Log/IMG_20240717_123356.jpg)
 ![](Media/Build%20Log/IMG_20240717_123846.jpg)
 
-Phase resistance ended up being 0.2 ohms!
+Phase resistance ended up being 0.2 ohms! Really low, but that is to be expected.
+
+My temporary motor mount:
+
+![](Media/Build%20Log/IMG_20240717_140932.jpg)
+![](Media/Build%20Log/IMG_20240717_140954.jpg)
+
+It definitely unorthodox, but it works to hold the motor in place while running it. The prop guard shown here was for a motor twice the size. Soon, hopefully, I will have a gearbox setup 3D printed that will be long term.
+
+
