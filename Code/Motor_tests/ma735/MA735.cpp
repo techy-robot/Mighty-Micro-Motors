@@ -22,7 +22,7 @@ float MA735::getCurrentAngle() {
 uint16_t MA735::readRawAngle() {
     uint16_t angle = transfer16(0x0000);
     return angle;
-}; // 14bit angle value
+}; // 9-13bit angle value
 
 uint16_t MA735::getZero() {
     uint16_t result = readRegister(MA735_REG_ZERO_POSITION_MSB)<<8;
@@ -57,6 +57,12 @@ uint8_t MA735::getFieldStrengthLowThreshold() {
 };
 FieldStrength MA735::getFieldStrength() {
     return (FieldStrength)(readRegister(MA735_REG_MGH_MGL)>>6);
+};
+uint8_t MA735::getFilterWindow() {
+    return readRegister(MA735_REG_FW);
+};
+uint8_t MA735::getHysteresis() {
+    return readRegister(MA735_REG_HYS);
 };
 
 
@@ -96,6 +102,12 @@ void MA735::setRotationDirection(uint8_t value) {
 void MA735::setFieldStrengthThresholds(uint8_t high, uint8_t low) {
     uint8_t val = (low<<5) | (high<<2);
     writeRegister(MA735_REG_MGLT_MGHT, val);
+};
+void MA735::setFilterWindow(uint8_t value) {
+    writeRegister(MA735_REG_FW, value);
+};
+void MA735::setHysteresis(uint8_t value) {
+    writeRegister(MA735_REG_HYS, value);
 };
 
 

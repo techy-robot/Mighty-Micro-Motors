@@ -24,6 +24,8 @@ enum FieldStrength : uint8_t {
 #define MA735_REG_PPT_MSB 0x05
 #define MA735_REG_MGLT_MGHT 0x06
 #define MA735_REG_RD 0x09
+#define MA735_REG_FW 0x0E
+#define MA735_REG_HYS 0x10
 #define MA735_REG_MGH_MGL 0x1B
 
 #define MA735_BITORDER MSBFIRST
@@ -41,8 +43,8 @@ public:
 
 	float getCurrentAngle(); // angle in radians, return current value
 
-	uint16_t readRawAngle(); // 14bit angle value
-    uint16_t readRawAngleSSI(); // 14bit angle value
+	uint16_t readRawAngle(); // 9-13bit angle value
+    uint16_t readRawAngleSSI(); // 9-13bit angle value
 
     uint16_t getZero();
     uint8_t getBiasCurrentTrimming();
@@ -54,6 +56,8 @@ public:
     uint8_t getFieldStrengthHighThreshold();
     uint8_t getFieldStrengthLowThreshold();
     FieldStrength getFieldStrength();
+    uint8_t getFilterWindow();
+    uint8_t getHysteresis();
 
     void setZero(uint16_t);
     void setBiasCurrentTrimming(uint8_t);
@@ -62,6 +66,8 @@ public:
     void setIndexLength(uint8_t);
     void setRotationDirection(uint8_t);
     void setFieldStrengthThresholds(uint8_t high, uint8_t low);
+    uint8_t setFilterWindow();
+    uint8_t setHysteresis();
 
 private:
 	SPIClass* spi;
