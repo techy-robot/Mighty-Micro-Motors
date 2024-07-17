@@ -282,9 +282,16 @@ uint8_t MA735::readRegister(uint8_t reg) {
     return value>>8;
 };
 uint8_t MA735::writeRegister(uint8_t reg, uint8_t value) {
-    uint16_t cmd = 0x8000 | ((reg&0x1F)<<8) | value;
-    uint16_t result = transfer16(cmd);
-    delay(20); // 20ms delay required
-    result = transfer16(0x0000);
-    return result>>8;
+    uint8_t write_check = readRegister(reg);
+    //no need to rewrite, it is the exact same value
+    if (write_check == value) {
+        return write_check;
+    }
+    else {
+        uint16_t cmd = 0x8000 | ((reg&0x1F)<<8) | value;
+        uint16_t result = transfer16(cmd);
+        delay(20); // 20ms delay required
+        result = transfer16(0x0000);
+        return result>>8;
+    }
 };

@@ -102,8 +102,8 @@ void setup() {
   // // link the motor to the sensor
   // motor.linkSensor(&sensor);
 
-  //Note: DO NOT RUN THIS EVERY TIME PROGRAM RUNS! The chip has only 1000 flash write cycles!
-  //sensor.setBiasCurrentTrimming(0);
+  //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
+  sensor.setBiasCurrentTrimming(0);//fine, since it is my driver
 
   // //init driver
   // // pwm frequency to be used [Hz]
