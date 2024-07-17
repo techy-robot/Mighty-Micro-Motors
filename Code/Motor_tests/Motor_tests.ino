@@ -187,6 +187,14 @@ void loop() {
   Serial1.print("Field strength: ");
   Serial1.println(fs);
 
+  float res = sensor.getResolution();
+  Serial1.print("Resolution: ");
+  Serial1.println(res);
+
+  int Time = sensor.getUpdateTime();
+  Serial1.print("Update Time (microsecs): ");
+  Serial1.println(Time);
+
   delay(200);
   // set pulses per turn for encoder mode
   //sensor.setPulsesPerTurn(999); // set to 999 if we want 1000 PPR == 4000 CPR

@@ -66,8 +66,9 @@ uint8_t MA735::getHysteresis() {
 };
 float MA735::getResolution() {
     //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to res.
-    uint8_t result = readRegister(MA735_REG_FW)
-    switch (result) {
+    uint8_t reg = readRegister(MA735_REG_FW);
+    float result;
+    switch (reg) {
         case 51: 
             result = 9.0;
             break;
@@ -104,8 +105,9 @@ float MA735::getResolution() {
 int MA735::getUpdateTime() {
     //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to update time.
     //Returns result in microseconds
-    uint8_t result = readRegister(MA735_REG_FW)
-    switch (result) {
+    uint8_t reg = readRegister(MA735_REG_FW);
+    int result;
+    switch (reg) {
         case 51: 
             result = 64;
             break;
@@ -187,32 +189,33 @@ void MA735::setHysteresis(uint8_t value) {
 void MA735::setResolution(float res) {
     //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to res.
     uint8_t value;
-    switch (res) {
-        case 9.0: 
+    uint8_t res_int = res * 10;//It has to be a basic type for the switch case
+    switch (res_int) {
+        case 90: 
             value = 51;
             break;
-        case 9.5: 
+        case 95: 
             value = 68;
             break;
-        case 10.0: 
+        case 100: 
             value = 85;
             break;
-        case 10.5: 
+        case 105: 
             value = 102;
             break;
-        case 11.0: 
+        case 110: 
             value = 119;
             break;
-        case 11.5: 
+        case 115: 
             value = 136;
             break;
-        case 12.0: 
+        case 120: 
             value = 153;
             break;
-        case 12.5: 
+        case 125: 
             value = 170;
             break;
-        case 13.0: 
+        case 130: 
             value = 187;
             break;
         default:
