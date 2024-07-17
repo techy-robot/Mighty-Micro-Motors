@@ -105,49 +105,49 @@ void setup() {
   //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
   sensor.setBiasCurrentTrimming(0);//fine, since it is my driver
 
-  // //init driver
-  // // pwm frequency to be used [Hz]
-  // driver.pwm_frequency = 20000;
-  // // power supply voltage [V]
-  // driver.voltage_power_supply = 4.2;
-  // // Max DC voltage allowed - default voltage_power_supply
-  // driver.voltage_limit = 5;
-  // // driver init
-  // driver.init();
-  // // link the motor to the driver
-  // motor.linkDriver(&driver);
+  //init driver
+  // pwm frequency to be used [Hz]
+  driver.pwm_frequency = 20000;
+  // power supply voltage [V]
+  driver.voltage_power_supply = 4.2;
+  // Max DC voltage allowed - default voltage_power_supply
+  driver.voltage_limit = 5;
+  // driver init
+  driver.init();
+  // link the motor to the driver
+  motor.linkDriver(&driver);
 
-  // // link the driver with the current sense
-  // current_sense.linkDriver(&driver);
+  // link the driver with the current sense
+  current_sense.linkDriver(&driver);
 
-  // // Changing gain values to those in the drv8311 docs. I have to figure this out still. I may have to modifiy the library source to implement what the docs need
-  // //current_sense.gain_a = 1.0 / shunt_resistor / gain;
-  // //current_sense.gain_b = 1.0 / shunt_resistor / gain;
-  // //current_sense.gain_c = 1.0 / shunt_resistor / gain;
+  // Changing gain values to those in the drv8311 docs. I have to figure this out still. I may have to modifiy the library source to implement what the docs need
+  //current_sense.gain_a = 1.0 / shunt_resistor / gain;
+  //current_sense.gain_b = 1.0 / shunt_resistor / gain;
+  //current_sense.gain_c = 1.0 / shunt_resistor / gain;
 
 
-  // // init current sense
-  // current_sense.init();
-  //  // link the motor to current sense
-  // motor.linkCurrentSense(&current_sense);
+  // init current sense
+  current_sense.init();
+   // link the motor to current sense
+  motor.linkCurrentSense(&current_sense);
 
-  // // set control loop type to be used
-  // motor.controller = MotionControlType::velocity;
+  // set control loop type to be used
+  motor.controller = MotionControlType::velocity;
 
-  // // choose FOC modulation
-  // // SinePWM; (default)
-  // // SpaceVectorPWM; Similar to sine wave, not sure the diff
-  // // Trapezoid_120; Faster,but less efficient
-  // // Trapezoid_150; Same, except the angle offset is more
-  // motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
+  // choose FOC modulation
+  // SinePWM; (default)
+  // SpaceVectorPWM; Similar to sine wave, not sure the diff
+  // Trapezoid_120; Faster,but less efficient
+  // Trapezoid_150; Same, except the angle offset is more
+  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
 
-  // motor.voltage_limit = 1;//Should be really low for drone motors
+  motor.voltage_limit = 1;//Should be really low for drone motors
 
-  // // initialize motor
-  // motor.init();
+  // initialize motor
+  motor.init();
 
-  // // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
-  // motor.initFOC();
+  // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
+  motor.initFOC();
 
 
   // use monitoring with the BLDCMotor
@@ -161,17 +161,17 @@ void setup() {
 
 void loop() {
    // FOC algorithm function
-  //motor.loopFOC();
+  motor.loopFOC();
 
   // velocity control loop function
   // setting the target velocity to 2rad/s
-  //motor.move(2);
+  motor.move(2);
 
   // monitoring function outputting motor variables to the serial terminal 
-  //motor.monitor();//This slows things down BTW!
+  motor.monitor();//This slows things down BTW!
 
   // read user commands
-  //commander.run();
+  commander.run();
 
     // update the sensor (only needed if using the sensor without a motor)
   sensor.update();
