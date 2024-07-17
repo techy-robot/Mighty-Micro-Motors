@@ -86,17 +86,45 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
 LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, CSA_C);
 
 //instantiate commander
-Commander commander = Commander(Serial);
-void doMotor(char* cmd){commander.motor(&motor, cmd);}
+Commander commander = Commander(Serial1, "\n");
+
+void onMotor(char* cmd){commander.motor(&motor, cmd);}
+void doTarget(char* cmd) { command.scalar(&motor.target, cmd); }
+void doLimitCurrent(char* cmd) { command.scalar(&motor.current_limit, cmd); }
+void readSensor(char* cmd) { 
+  // get the angle, in radians, no full rotations
+  float angle = sensor.getCurrentAngle();
+  float degrees = angle * 360 / 6.28318530718;
+  Serial1.print("Angle (rad): ");
+  Serial1.println(angle,7);//7 specifies the decimal places
+  Serial1.print("Angle (deg): ");
+  Serial1.println(degrees,5);
+
+  // get the angle, in radians, including full rotations
+  float angle_sum = sensor.getAngle();
+
+  // get the velocity, in rad/s - note: you have to call getAngle() on a regular basis for it to work
+  float vel = sensor.getVelocity();
+
+  // get the field strength
+  FieldStrength fs = sensor.getFieldStrength();
+  Serial1.print("Field strength: ");
+  Serial1.println(fs);
+}
 
 void setup() {
 
   pinMode(LED, OUTPUT);
+
+  // use monitoring with the BLDCMotor
+  Serial1.begin(115200);
+  // monitoring port
+  motor.useMonitoring(Serial1);
+
+  SimpleFOCDebug::enable(&Serial);//enable debug code too
   
   // MA735 supports mode 0 and mode 3
-  //sensor.spi_mode = SPI_MODE0;
-  // speed of the SPI clock signal - default 1MHz
-  //sensor.clock_speed = 1000000;
+  //Might want to increase speed beyond 1mhz later
   // initialize magnetic sensor hardware
   sensor.init(&SPI_1);
   // // link the motor to the sensor
@@ -111,8 +139,6 @@ void setup() {
   driver.pwm_frequency = 20000;
   // power supply voltage [V]
   driver.voltage_power_supply = 4.2;
-  // Max DC voltage allowed - default voltage_power_supply
-  driver.voltage_limit = 5;
   // driver init
   driver.init();
   // link the motor to the driver
@@ -133,28 +159,29 @@ void setup() {
   motor.linkCurrentSense(&current_sense);
 
   // set control loop type to be used
-  motor.controller = MotionControlType::velocity;
-
+  motor.controller = MotionControlType::velocity_openloop;
   // choose FOC modulation
   // SinePWM; (default)
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
   motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
-
-  motor.voltage_limit = 1;//Should be really low for drone motors
-
+  //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
+  motor.current_limit = 0.5 // Amps
   // initialize motor
   motor.init();
-
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
 
+  commander.add('M',onMotor,"my motor");//default motor call
+  // add target command T
+  command.add('T', doTarget, "target velocity");
+  command.add('C', doLimitCurrent, "current limit");
 
-  // use monitoring with the BLDCMotor
-  Serial1.begin(115200);
-  // monitoring port
-  //motor.useMonitoring(Serial1);
+  command.add('S', readSensor, "Read magnetic encoder");
+
+
+  //Finished setup so flash led
   digitalWrite(LED, HIGH);
   delay(200);
   digitalWrite(LED, LOW);
@@ -166,7 +193,7 @@ void loop() {
 
   // velocity control loop function
   // setting the target velocity to 2rad/s
-  motor.move(2);
+  //motor.move(2);
 
   // monitoring function outputting motor variables to the serial terminal 
   motor.monitor();//This slows things down BTW!
@@ -176,48 +203,5 @@ void loop() {
 
     // update the sensor (only needed if using the sensor without a motor)
   sensor.update();
-
-  // get the angle, in radians, including full rotations
-  float angle_sum = sensor.getAngle();
-
-  // get the velocity, in rad/s - note: you have to call getAngle() on a regular basis for it to work
-  float vel = sensor.getVelocity();
-
-  // get the angle, in radians, no full rotations
-  float angle = sensor.getCurrentAngle();
-  float degrees = angle * 360 / 6.28318530718;
-  Serial1.print("Angle (rad): ");
-  Serial1.println(angle,7);//7 specifies the decimal places
-  Serial1.print("Angle (deg): ");
-  Serial1.println(degrees,5);
-
-  // get the field strength
-  FieldStrength fs = sensor.getFieldStrength();
-  Serial1.print("Field strength: ");
-  Serial1.println(fs);
-
-  float res = sensor.getResolution();
-  Serial1.print("Resolution: ");
-  Serial1.println(res);
-
-  int Time = sensor.getUpdateTime();
-  Serial1.print("Update Time (microsecs): ");
-  Serial1.println(Time);
-
-  uint16_t home = sensor.getZero();
-  Serial1.print("Zero position: ");
-  Serial1.println(home);
-
-  uint8_t bias = sensor.getBiasCurrentTrimming();
-  Serial1.print("Bias Current Trimming: ");
-  Serial1.println(bias);
-
-  uint8_t dir = sensor.getRotationDirection();
-  Serial1.print("Rotation Direction: ");
-  Serial1.println(dir);
-
-  delay(400);
-  // set pulses per turn for encoder mode
-  //sensor.setPulsesPerTurn(999); // set to 999 if we want 1000 PPR == 4000 CPR
 }
 
