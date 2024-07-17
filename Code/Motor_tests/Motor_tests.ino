@@ -1,8 +1,10 @@
 #include "SPI.h"
 #include "SimpleFOC.h"
-//#include "SimpleFOCDrivers.h"
-#include "encoders.h"
-#include <ma735/MagneticSensorMA735.h>
+#include "SimpleFOCDrivers.h"
+//#include "encoders.h"
+//#include "ma730/MA730.h"
+//#include "ma730/MagneticSensorMA730SSI.h"
+#include "encoders/ma735/MagneticSensorMA735.h"
 #include <hal_conf_extra.h> 
 
 // Clock settings, the only thing changed from default was the clock source for external
