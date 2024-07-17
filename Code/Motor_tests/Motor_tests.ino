@@ -5,11 +5,10 @@
 //#include "ma730/MA730.h"
 //#include "ma730/MagneticSensorMA730SSI.h"
 #include "encoders/ma735/MagneticSensorMA735.h"
-#include <hal_conf_extra.h> 
+#include <hal_conf_extra.h>
 
 // Clock settings, the only thing changed from default was the clock source for external
-extern "C" void SystemClock_Config(void)
-{
+extern "C" void SystemClock_Config(void) {
   RCC_OscInitTypeDef RCC_OscInitStruct = {};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {};
 
@@ -47,15 +46,19 @@ extern "C" void SystemClock_Config(void)
 
 #define LED PB12
 
-#define CSA_A PA0 //PA0 - 2
-#define CSA_B PA3 //PA3 - 5
-#define CSA_C PA6 //PA6,PA7,PB0
+#define CSA_A PA0  //PA0 - 2
+#define CSA_B PA3  //PA3 - 5
+#define CSA_C PA6  //PA6,PA7,PB0
 
-#define OUT_A PB1 //PB1, PB14, PB14
-#define OUT_B PA8 //PA8, PA9, PC6
-#define OUT_C PA6 //PC7, PA10, PA11
+//I need the pins to be on the same timer,
+// because Simple foc couldn't find a master timer replacement for any connected to TIM1. 
+// I guess TIM1 should be reserved for master clock, it is the advanced timer.
 
-#define CS1 PD2 //for the first SPI bus
+#define OUT_A PB1  //PB1, PB14, PB14
+#define OUT_B PC6  //PA8, PA9, PC6
+#define OUT_C PC7  //PC7, PA10, PA11
+
+#define CS1 PD2  //for the first SPI bus
 
 //Found in the datasheet. This is in mV
 #define VREFINT 1212
@@ -71,7 +74,7 @@ SPIClass SPI_1(PB5, PB4, PB3);
 //-------------------Motor Driver--------------------
 
 //  BLDCMotor( pole_pairs , ( phase_resistance, KV_rating  optional) )
-BLDCMotor motor = BLDCMotor(6, 0.2, 28500);//KV on my motor is 19000, docs suggest going 50% higher than that
+BLDCMotor motor = BLDCMotor(6, 0.2, 28500);  //KV on my motor is 19000, docs suggest going 50% higher than that
 //Pole pairs is the number of poles / 2. Phase resistance is 0.2 ohms, since I got 0.4 ohm between two leads and I saw a little wire tail indicating Wye configuration
 
 // Update to the MA735 code after this
@@ -88,17 +91,23 @@ LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, 
 //instantiate commander
 Commander command = Commander(Serial1, '\r', false);
 
-void onMotor(char* cmd){command.motor(&motor, cmd);}
-void doTarget(char* cmd) { command.scalar(&motor.target, cmd); }
-void doLimitCurrent(char* cmd) { command.scalar(&motor.current_limit, cmd); }
-void readSensor(char* cmd) { 
+void onMotor(char* cmd) {
+  command.motor(&motor, cmd);
+}
+void doTarget(char* cmd) {
+  command.scalar(&motor.target, cmd);
+}
+void doLimitCurrent(char* cmd) {
+  command.scalar(&motor.current_limit, cmd);
+}
+void readSensor(char* cmd) {
   // get the angle, in radians, no full rotations
   float angle = sensor.getCurrentAngle();
   float degrees = angle * 360 / 6.28318530718;
   Serial1.print("Angle (rad): ");
-  Serial1.println(angle,7);//7 specifies the decimal places
+  Serial1.println(angle, 7);  //7 specifies the decimal places
   Serial1.print("Angle (deg): ");
-  Serial1.println(degrees,5);
+  Serial1.println(degrees, 5);
 
   // get the angle, in radians, including full rotations
   float angle_sum = sensor.getAngle();
@@ -112,7 +121,7 @@ void readSensor(char* cmd) {
   Serial1.println(fs);
 }
 
-void flashLED(char* cmd) { 
+void flashLED(char* cmd) {
   digitalWrite(LED, HIGH);
   delay(200);
   digitalWrite(LED, LOW);
@@ -127,8 +136,8 @@ void setup() {
   // monitoring port
   motor.useMonitoring(Serial1);
 
-  SimpleFOCDebug::enable(&Serial1);//enable debug code too
-  
+  SimpleFOCDebug::enable(&Serial1);  //enable debug code too
+
   // MA735 supports mode 0 and mode 3
   //Might want to increase speed beyond 1mhz later
   // initialize magnetic sensor hardware
@@ -137,7 +146,7 @@ void setup() {
   // motor.linkSensor(&sensor);
 
   //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
-  sensor.setBiasCurrentTrimming(0);//fine, since it is my driver
+  sensor.setBiasCurrentTrimming(0);  //fine, since it is my driver
   sensor.setResolution(10.0);
 
   //init driver
@@ -147,6 +156,7 @@ void setup() {
   driver.voltage_power_supply = 4.2;
   // driver init
   driver.init();
+  driver.enable();
   // link the motor to the driver
   motor.linkDriver(&driver);
 
@@ -161,7 +171,7 @@ void setup() {
 
   // init current sense
   current_sense.init();
-   // link the motor to current sense
+  // link the motor to current sense
   motor.linkCurrentSense(&current_sense);
 
   // set control loop type to be used
@@ -171,15 +181,16 @@ void setup() {
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
-  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
+  //motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 0.5; // Amps
+  motor.current_limit = 0.5;  // Amps
   // initialize motor
   motor.init();
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
+  motor.enable();
 
-  command.add('M',onMotor,"my motor");//default motor call
+  command.add('M', onMotor, "my motor");  //default motor call
   // add target command T
   command.add('T', doTarget, "target velocity");
   command.add('C', doLimitCurrent, "current limit");
@@ -195,20 +206,20 @@ void setup() {
 }
 
 void loop() {
-   // FOC algorithm function
+  // FOC algorithm function
   motor.loopFOC();
+  //driver.setPwm(1.1,2.5,4);
 
   // velocity control loop function
   // setting the target velocity to 2rad/s
-  //motor.move(2);
+  motor.move();
 
-  // monitoring function outputting motor variables to the serial terminal 
+  // monitoring function outputting motor variables to the serial terminal
   //motor.monitor();//This slows things down BTW!
 
   // read user commands
   command.run();
 
-    // update the sensor (only needed if using the sensor without a motor)
+  // update the sensor (only needed if using the sensor without a motor)
   sensor.update();
 }
-
