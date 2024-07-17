@@ -86,7 +86,7 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
 LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, CSA_C);
 
 //instantiate commander
-Commander command = Commander(Serial1, "\n");
+Commander command = Commander(Serial1, '\r', false);
 
 void onMotor(char* cmd){command.motor(&motor, cmd);}
 void doTarget(char* cmd) { command.scalar(&motor.target, cmd); }
@@ -112,6 +112,12 @@ void readSensor(char* cmd) {
   Serial1.println(fs);
 }
 
+void flashLED(char* cmd) { 
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
+}
+
 void setup() {
 
   pinMode(LED, OUTPUT);
@@ -121,7 +127,7 @@ void setup() {
   // monitoring port
   motor.useMonitoring(Serial1);
 
-  SimpleFOCDebug::enable(&Serial);//enable debug code too
+  SimpleFOCDebug::enable(&Serial1);//enable debug code too
   
   // MA735 supports mode 0 and mode 3
   //Might want to increase speed beyond 1mhz later
@@ -180,6 +186,7 @@ void setup() {
 
   command.add('S', readSensor, "Read magnetic encoder");
 
+  command.add('F', flashLED, "flashLED");
 
   //Finished setup so flash led
   digitalWrite(LED, HIGH);
@@ -196,7 +203,7 @@ void loop() {
   //motor.move(2);
 
   // monitoring function outputting motor variables to the serial terminal 
-  motor.monitor();//This slows things down BTW!
+  //motor.monitor();//This slows things down BTW!
 
   // read user commands
   command.run();
