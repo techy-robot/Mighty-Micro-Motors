@@ -90,6 +90,8 @@ Commander commander = Commander(Serial);
 void doMotor(char* cmd){commander.motor(&motor, cmd);}
 
 void setup() {
+
+  pinMode(LED, OUTPUT);
   
   // MA735 supports mode 0 and mode 3
   //sensor.spi_mode = SPI_MODE0;
@@ -99,6 +101,7 @@ void setup() {
   sensor.init(&SPI_1);
   // // link the motor to the sensor
   // motor.linkSensor(&sensor);
+  sensor.setBiasCurrentTrimming(1);//Hopefully it works!
 
   // //init driver
   // // pwm frequency to be used [Hz]
@@ -149,6 +152,9 @@ void setup() {
   Serial1.begin(115200);
   // monitoring port
   //motor.useMonitoring(Serial1);
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
 }
 
 void loop() {
@@ -179,9 +185,6 @@ void loop() {
   Serial1.print("Angle (rad): ");
   Serial1.println(angle);
 
-  // get the raw 14 bit value
-  uint16_t raw = sensor.readRawAngle();
-
   // get the field strength
   FieldStrength fs = sensor.getFieldStrength();
   Serial1.print("Field strength: ");
@@ -195,7 +198,19 @@ void loop() {
   Serial1.print("Update Time (microsecs): ");
   Serial1.println(Time);
 
-  delay(200);
+  uint16_t home = sensor.getZero();
+  Serial1.print("Zero position: ");
+  Serial1.println(home);
+
+  uint8_t bias = sensor.getBiasCurrentTrimming();
+  Serial1.print("Bias Current Trimming: ");
+  Serial1.println(bias);
+
+  uint8_t dir = sensor.getRotationDirection();
+  Serial1.print("Rotation Direction: ");
+  Serial1.println(dir);
+
+  delay(400);
   // set pulses per turn for encoder mode
   //sensor.setPulsesPerTurn(999); // set to 999 if we want 1000 PPR == 4000 CPR
 }
