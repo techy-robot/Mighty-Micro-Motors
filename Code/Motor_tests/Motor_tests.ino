@@ -1,7 +1,8 @@
 #include "SPI.h"
 #include "SimpleFOC.h"
-#include "SimpleFOCDrivers.h"
-#include "encoders/ma730/MagneticSensorMA730.h"
+//#include "SimpleFOCDrivers.h"
+#include "encoders.h"
+#include <ma735/MagneticSensorMA735.h>
 #include <hal_conf_extra.h> 
 
 // Clock settings, the only thing changed from default was the clock source for external
@@ -74,7 +75,7 @@ BLDCMotor motor = BLDCMotor(6, 0.2, 19000);
 // Update to the MA735 code after this
 // MagneticSensorSPI(int cs, float bit_resolution, int angle_register)
 //MagneticSensorSPI sensor = MagneticSensorSPI(CS1, 13, 0x3FFF);
-MagneticSensorMA730 sensor(CS1);
+MagneticSensorMA735 sensor(CS1);
 
 //  BLDCDriver3PWM( pin_pwmA, pin_pwmB, pin_pwmC, enable (optional))
 BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
