@@ -167,3 +167,19 @@ I eventually worked it out. I had to specify in `hal_conf_extra.h` this: `#defin
 ## July 16th, 2024
 
 Today I finished out the basic hardware testing (except the battery charging, I don't have a battery yet), and moved on to setting up SimpleFOC. I have verified that the digital pins work, and the SPI interface works.
+
+I also started work on a custom MA735 library, to work with the specific registers
+
+## July 17th, 2024
+
+I finished MA735 driver support, so now I can set resolution or update time. I can of course read the position of the magnet.
+
+I also started work on motor setup.
+
+I had to measure resistance between two leads to calculate phase resistance
+![](Media/Build%20Log/IMG_20240717_123356.jpg)
+
+I think it is Wye/ Star configuration, since I see a little wire tail.
+![](Media/Build%20Log/IMG_20240717_123846.jpg)
+
+Phase resistance ended up being 0.2 ohms!

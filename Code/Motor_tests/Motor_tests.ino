@@ -71,8 +71,8 @@ SPIClass SPI_1(PB5, PB4, PB3);
 //-------------------Motor Driver--------------------
 
 //  BLDCMotor( pole_pairs , ( phase_resistance, KV_rating  optional) )
-BLDCMotor motor = BLDCMotor(6, 0.2, 19000);
-//Pole pairs is the number of poles / 2. BTW I DON'T know the phase resistance yet
+BLDCMotor motor = BLDCMotor(6, 0.2, 28500);//KV on my motor is 19000, docs suggest going 50% higher than that
+//Pole pairs is the number of poles / 2. Phase resistance is 0.2 ohms, since I got 0.4 ohm between two leads and I saw a little wire tail indicating Wye configuration
 
 // Update to the MA735 code after this
 // MagneticSensorSPI(int cs, float bit_resolution, int angle_register)
@@ -104,6 +104,7 @@ void setup() {
 
   //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
   sensor.setBiasCurrentTrimming(0);//fine, since it is my driver
+  sensor.setResolution(10.0);
 
   //init driver
   // pwm frequency to be used [Hz]
