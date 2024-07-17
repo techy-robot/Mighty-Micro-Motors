@@ -101,7 +101,9 @@ void setup() {
   sensor.init(&SPI_1);
   // // link the motor to the sensor
   // motor.linkSensor(&sensor);
-  sensor.setBiasCurrentTrimming(1);//Hopefully it works!
+
+  //Note: DO NOT RUN THIS EVERY TIME PROGRAM RUNS! The chip has only 1000 flash write cycles!
+  //sensor.setBiasCurrentTrimming(0);
 
   // //init driver
   // // pwm frequency to be used [Hz]
@@ -182,8 +184,11 @@ void loop() {
 
   // get the angle, in radians, no full rotations
   float angle = sensor.getCurrentAngle();
+  float degrees = angle * 360 / 6.28318530718;
   Serial1.print("Angle (rad): ");
-  Serial1.println(angle);
+  Serial1.println(angle,7);//7 specifies the decimal places
+  Serial1.print("Angle (deg): ");
+  Serial1.println(degrees,5);
 
   // get the field strength
   FieldStrength fs = sensor.getFieldStrength();
