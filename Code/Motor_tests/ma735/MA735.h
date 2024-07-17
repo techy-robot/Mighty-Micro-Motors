@@ -14,7 +14,7 @@ enum FieldStrength : uint8_t {
 
 
 #define _2PI 6.28318530718f
-#define MA735_CPR 65536.0f
+#define MA735_16BIT 65536.0f
 
 #define MA735_REG_ZERO_POSITION_LSB 0x00
 #define MA735_REG_ZERO_POSITION_MSB 0x01
@@ -58,6 +58,8 @@ public:
     FieldStrength getFieldStrength();
     uint8_t getFilterWindow();
     uint8_t getHysteresis();
+    float getResolution();
+    int getUpdateTime();
 
     void setZero(uint16_t);
     void setBiasCurrentTrimming(uint8_t);
@@ -66,13 +68,16 @@ public:
     void setIndexLength(uint8_t);
     void setRotationDirection(uint8_t);
     void setFieldStrengthThresholds(uint8_t high, uint8_t low);
-    uint8_t setFilterWindow();
-    uint8_t setHysteresis();
+    void setFilterWindow(uint8_t);
+    void setHysteresis(uint8_t);
+    void setResolution(float resolution);
+    void setUpdateTime(int microsec);
 
 private:
 	SPIClass* spi;
 	SPISettings settings;
 	int nCS = -1;
+    //float MA735_CPR = 65536.0f;
 
     uint16_t transfer16(uint16_t outValue);
     uint8_t readRegister(uint8_t reg);

@@ -16,7 +16,7 @@ void MA735::init(SPIClass* _spi) {
 };
 
 float MA735::getCurrentAngle() {
-    return (readRawAngle() * _2PI)/MA735_CPR;
+    return (readRawAngle() * _2PI)/MA735_16BIT;//It doesn't matter that it is divided by 65536, because the raw angle fills empty data bits with empty zeros so sensor resolution doesn't affect angle calculation
 }; // angle in radians, return current value
 
 uint16_t MA735::readRawAngle() {
@@ -64,6 +64,81 @@ uint8_t MA735::getFilterWindow() {
 uint8_t MA735::getHysteresis() {
     return readRegister(MA735_REG_HYS);
 };
+float MA735::getResolution() {
+    //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to res.
+    uint8_t result = readRegister(MA735_REG_FW)
+    switch (result) {
+        case 51: 
+            result = 9.0;
+            break;
+        case 68: 
+            result = 9.5;
+            break;
+        case 85: 
+            result = 10.0;
+            break;
+        case 102: 
+            result = 10.5;
+            break;
+        case 119: 
+            result = 11.0;
+            break;
+        case 136: 
+            result = 11.5;
+            break;
+        case 153: 
+            result = 12.0;
+            break;
+        case 170: 
+            result = 12.5;
+            break;
+        case 187: 
+            result = 13.0;
+            break;
+        default:
+            result = 11.0;
+            break;
+    }
+    return result;
+};
+int MA735::getUpdateTime() {
+    //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to update time.
+    //Returns result in microseconds
+    uint8_t result = readRegister(MA735_REG_FW)
+    switch (result) {
+        case 51: 
+            result = 64;
+            break;
+        case 68: 
+            result = 128;
+            break;
+        case 85: 
+            result = 256;
+            break;
+        case 102: 
+            result = 512;
+            break;
+        case 119: 
+            result = 1024;
+            break;
+        case 136: 
+            result = 2048;
+            break;
+        case 153: 
+            result = 4096;
+            break;
+        case 170: 
+            result = 8192;
+            break;
+        case 187: 
+            result = 16384;
+            break;
+        default:
+            result = 1024;
+            break;
+    }
+    return result;
+};
 
 
 
@@ -108,6 +183,81 @@ void MA735::setFilterWindow(uint8_t value) {
 };
 void MA735::setHysteresis(uint8_t value) {
     writeRegister(MA735_REG_HYS, value);
+};
+void MA735::setResolution(float res) {
+    //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to res.
+    uint8_t value;
+    switch (res) {
+        case 9.0: 
+            value = 51;
+            break;
+        case 9.5: 
+            value = 68;
+            break;
+        case 10.0: 
+            value = 85;
+            break;
+        case 10.5: 
+            value = 102;
+            break;
+        case 11.0: 
+            value = 119;
+            break;
+        case 11.5: 
+            value = 136;
+            break;
+        case 12.0: 
+            value = 153;
+            break;
+        case 12.5: 
+            value = 170;
+            break;
+        case 13.0: 
+            value = 187;
+            break;
+        default:
+            value = 119;
+            break;
+    }
+    writeRegister(MA735_REG_FW, value);
+};
+void MA735::setUpdateTime(int microsec) {
+    //All I could find in the datasheet was a table with the correlation, no function to convert Filter window to update time.
+    //time in microseconds
+    uint8_t value;
+    switch (microsec) {
+        case 64: 
+            value = 51;
+            break;
+        case 128: 
+            value = 68;
+            break;
+        case 256: 
+            value = 85;
+            break;
+        case 512: 
+            value = 102;
+            break;
+        case 1024: 
+            value = 119;
+            break;
+        case 2048: 
+            value = 136;
+            break;
+        case 4096: 
+            value = 153;
+            break;
+        case 8192: 
+            value = 170;
+            break;
+        case 16384: 
+            value = 187;
+            break;
+        default:
+            value = 119;
+            break;
+    }
+    writeRegister(MA735_REG_FW, value);
 };
 
 

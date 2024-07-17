@@ -20,7 +20,7 @@ void MagneticSensorMA735::init(SPIClass* _spi) {
 
 float MagneticSensorMA735::getSensorAngle() {
     float angle_data = readRawAngle();
-    angle_data = ( angle_data / (float)MA735_CPR) * _2PI;
+    angle_data = ( angle_data / (float)MA735_16BIT) * _2PI;//It doesn't matter that it is divided by 65536, because the raw angle fills empty data bits with empty zeros so sensor resolution doesn't affect angle calculation
     // return the shaft angle
     return angle_data;
 }
