@@ -74,7 +74,7 @@ SPIClass SPI_1(PB5, PB4, PB3);
 //-------------------Motor Driver--------------------
 
 //  BLDCMotor( pole_pairs , ( phase_resistance, KV_rating  optional) )
-BLDCMotor motor = BLDCMotor(6, 0.2, 28500);  //KV on my motor is 19000, docs suggest going 50% higher than that
+BLDCMotor motor = BLDCMotor(6, 0.2, 22000);  //KV on my motor is 19000, docs suggest going 50% higher than that
 //Pole pairs is the number of poles / 2. Phase resistance is 0.2 ohms, since I got 0.4 ohm between two leads and I saw a little wire tail indicating Wye configuration
 
 // Update to the MA735 code after this
@@ -127,6 +127,7 @@ void flashLED(char* cmd) {
   digitalWrite(LED, LOW);
 }
 
+
 void setup() {
 
   pinMode(LED, OUTPUT);
@@ -146,8 +147,8 @@ void setup() {
   // motor.linkSensor(&sensor);
 
   //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
-  sensor.setBiasCurrentTrimming(0);  //fine, since it is my driver
-  sensor.setResolution(10.0);
+  //sensor.setBiasCurrentTrimming(0);  //fine, since it is my driver
+  //sensor.setResolution(10.0);
 
   //init driver
   // pwm frequency to be used [Hz]
@@ -156,7 +157,6 @@ void setup() {
   driver.voltage_power_supply = 4.2;
   // driver init
   driver.init();
-  driver.enable();
   // link the motor to the driver
   motor.linkDriver(&driver);
 
@@ -168,9 +168,16 @@ void setup() {
   //current_sense.gain_b = 1.0 / shunt_resistor / gain;
   //current_sense.gain_c = 1.0 / shunt_resistor / gain;
 
+  // initialize motor
+  motor.init();
 
   // init current sense
-  current_sense.init();
+  if (current_sense.init())  Serial.println("Current sense init success!");
+  else{
+    Serial.println("Current sense init failed!");
+    return;
+  }
+
   // link the motor to current sense
   motor.linkCurrentSense(&current_sense);
 
@@ -183,12 +190,10 @@ void setup() {
   // Trapezoid_150; Same, except the angle offset is more
   //motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 0.5;  // Amps
-  // initialize motor
-  motor.init();
+  motor.current_limit = 2;  // Amps
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
-  motor.enable();
+  current_sense.driverAlign(1);
 
   command.add('M', onMotor, "my motor");  //default motor call
   // add target command T
@@ -198,6 +203,8 @@ void setup() {
   command.add('S', readSensor, "Read magnetic encoder");
 
   command.add('F', flashLED, "flashLED");
+
+  motor.monitor();
 
   //Finished setup so flash led
   digitalWrite(LED, HIGH);
@@ -213,6 +220,11 @@ void loop() {
   // velocity control loop function
   // setting the target velocity to 2rad/s
   motor.move();
+
+  if (motor.target == 0.0f && motor.enabled==1)
+    motor.disable();
+  if (motor.target != 0.0f && motor.enabled==0)
+    motor.enable();
 
   // monitoring function outputting motor variables to the serial terminal
   //motor.monitor();//This slows things down BTW!
