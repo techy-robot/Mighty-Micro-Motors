@@ -86,10 +86,10 @@ MagneticSensorMA735 sensor(CS1);
 BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
 
 //  LowsideCurrentSense(shunt_resistance, gain, adc_a, adc_b, adc_c)
-LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, CSA_C);
+LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25.0, CSA_A, CSA_B, CSA_C);
 
 //instantiate commander
-Commander command = Commander(Serial1, '\r', false);
+Commander command = Commander(Serial1, '\n', false);
 
 void onMotor(char* cmd) {
   command.motor(&motor, cmd);
@@ -188,12 +188,12 @@ void setup() {
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
-  //motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
+  motor.foc_modulation = FOCModulationType::Trapezoid_120;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 2;  // Amps
+  motor.current_limit = 1.4;  // Amps
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
-  current_sense.driverAlign(1);
+  //current_sense.driverAlign(1);
 
   command.add('M', onMotor, "my motor");  //default motor call
   // add target command T
@@ -227,7 +227,18 @@ void loop() {
     motor.enable();
 
   // monitoring function outputting motor variables to the serial terminal
-  //motor.monitor();//This slows things down BTW!
+  motor.monitor();//This slows things down BTW!
+
+  //PhaseCurrent_s currents = current_sense.getPhaseCurrents();
+  //float current_magnitude = current_sense.getDCCurrent();
+
+  // Serial1.print(currents.a*1000); // milli Amps
+  // Serial1.print("\t");
+  // Serial1.print(currents.b*1000); // milli Amps
+  // Serial1.print("\t");
+  // Serial1.print(currents.c*1000); // milli Amps
+  // Serial1.print("\t");
+  // Serial1.println(current_magnitude*1000); // milli Amps
 
   // read user commands
   command.run();
