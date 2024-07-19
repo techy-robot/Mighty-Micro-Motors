@@ -171,11 +171,15 @@ void setup() {
 
   // init current sense
   current_sense.init();
+  current_sense.skip_align = true;//I am sure in my configuration
   // link the motor to current sense
   motor.linkCurrentSense(&current_sense);
 
   // set control loop type to be used
-  motor.controller = MotionControlType::velocity_openloop;
+  motor.controller = MotionControlType::velocity;
+  // voltage torque control mode
+  motor.torque_controller = TorqueControlType::voltage;//voltage, dc_current, or foc_current
+
   // choose FOC modulation
   // SinePWM; (default)
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
@@ -226,7 +230,7 @@ void loop() {
     motor.enable();
 
   // monitoring function outputting motor variables to the serial terminal
-  //motor.monitor();//This slows things down BTW!
+  motor.monitor();//This slows things down BTW!
 
   //PhaseCurrent_s currents = current_sense.getPhaseCurrents();
   //float current_magnitude = current_sense.getDCCurrent();
