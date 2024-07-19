@@ -86,7 +86,8 @@ MagneticSensorMA735 sensor(CS1);
 BLDCDriver3PWM driver = BLDCDriver3PWM(OUT_A, OUT_B, OUT_C);
 
 //  LowsideCurrentSense(shunt_resistance, gain, adc_a, adc_b, adc_c)
-LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 0.25, CSA_A, CSA_B, CSA_C);
+LowsideCurrentSense current_sense = LowsideCurrentSense(0.01, 25, CSA_A, CSA_B, CSA_C);
+//DRV8311 I set to have a gain of 0.25V/A. Translating this to resistance it should be 0.01ohms and 25 gain. V = IR, V = 1a*0.01. V is 0.01, x 25 = 0.25 volts an amp.
 
 //instantiate commander
 Commander command = Commander(Serial1, '\n', false);
@@ -143,8 +144,8 @@ void setup() {
   //Might want to increase speed beyond 1mhz later
   // initialize magnetic sensor hardware
   sensor.init(&SPI_1);
-  // // link the motor to the sensor
-  // motor.linkSensor(&sensor);
+  // link the motor to the sensor
+  motor.linkSensor(&sensor);
 
   //Note: Do not run register writes every time the program runs. The chip has only 1000 flash write cycles! My driver has a check for this, others do not!
   //sensor.setBiasCurrentTrimming(0);  //fine, since it is my driver
@@ -168,16 +169,8 @@ void setup() {
   //current_sense.gain_b = 1.0 / shunt_resistor / gain;
   //current_sense.gain_c = 1.0 / shunt_resistor / gain;
 
-  // initialize motor
-  motor.init();
-
   // init current sense
-  if (current_sense.init())  Serial.println("Current sense init success!");
-  else{
-    Serial.println("Current sense init failed!");
-    return;
-  }
-
+  current_sense.init();
   // link the motor to current sense
   motor.linkCurrentSense(&current_sense);
 
@@ -190,7 +183,13 @@ void setup() {
   // Trapezoid_150; Same, except the angle offset is more
   motor.foc_modulation = FOCModulationType::SinePWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 1.4;  // Amps
+  motor.current_limit = 2.5;  // Amps
+
+  motor.voltage_sensor_align = 4.2;//Higher voltage for alignment, helps with drone motors
+
+  // initialize motor
+  motor.init();
+
   // align encoder and start FOC. This can be skipped once you have tuned your motor and got the absolute zero offset of the encoder. See docs
   motor.initFOC();
   //current_sense.driverAlign(1);

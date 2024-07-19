@@ -191,3 +191,19 @@ My temporary motor mount:
 It definitely unorthodox, but it works to hold the motor in place while running it. The prop guard shown here was for a motor twice the size. Soon, hopefully, I will have a gearbox setup 3D printed that will be long term.
 
 
+## July 18th, 2024
+
+I spent most of the day debugging the motor. Nothing was working. I did get an encoder mount though.
+![](Media/Build%20Log/20240718_224407.jpg)
+
+## July 19th, 2024
+
+I finally found the fix! I tested the output pins and pin C was misbehaving, outputting double the frequency! This meant that my bodge fix was not connected to the lowside pin c. I spent two hours today trying to fix that.
+
+![](Media/Build%20Log/20240719_111950.jpg)
+![](Media/Build%20Log/20240719_112709.jpg)
+
+It worked!
+
+Another thing I discovered today was a bug in my code that cause sensor alignment to fail! I needed to call motor.init() AFTER all the config stuff, not inbetween!
+
