@@ -115,6 +115,8 @@ void readSensor(char* cmd) {
 
   // get the velocity, in rad/s - note: you have to call getAngle() on a regular basis for it to work
   float vel = sensor.getVelocity();
+  Serial1.print("Velocity: ");
+  Serial1.println(vel);
 
   // get the field strength
   FieldStrength fs = sensor.getFieldStrength();
@@ -144,6 +146,7 @@ void setup() {
   //Might want to increase speed beyond 1mhz later
   // initialize magnetic sensor hardware
   sensor.init(&SPI_1);
+  sensor.setResolution(9);
   // link the motor to the sensor
   motor.linkSensor(&sensor);
 
@@ -187,9 +190,18 @@ void setup() {
   // Trapezoid_150; Same, except the angle offset is more
   motor.foc_modulation = FOCModulationType::SinePWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 2.5;  // Amps
+  motor.current_limit = 2.0;  // Amps
 
   motor.voltage_sensor_align = 0.5;//I=V/R. This should get me 2.5 current during alignment. I COMPLETELY spaced on this earlier when I set it to 5v and nothing happened (waveforms capped)
+
+  // PID velocity
+  motor.PID_velocity.P = 0.1;
+  motor.PID_velocity.I = 4.0;
+  motor.PID_velocity.D = 0.001;
+  motor.PID_velocity.output_ramp = 1000;
+  motor.LPF_velocity.Tf = 0.02;//seconds
+
+  motor.motion_downsample = 1;
 
   // initialize motor
   motor.init();
@@ -247,5 +259,6 @@ void loop() {
   command.run();
 
   // update the sensor (only needed if using the sensor without a motor)
-  sensor.update();
+  //sensor.update();
+  //sensor.getAngle();
 }
