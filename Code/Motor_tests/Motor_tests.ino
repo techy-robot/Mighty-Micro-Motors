@@ -189,7 +189,7 @@ void setup() {
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
   motor.current_limit = 2.5;  // Amps
 
-  motor.voltage_sensor_align = 4.2;//Higher voltage for alignment, helps with drone motors
+  motor.voltage_sensor_align = 0.5;//I=V/R. This should get me 2.5 current during alignment. I COMPLETELY spaced on this earlier when I set it to 5v and nothing happened (waveforms capped)
 
   // initialize motor
   motor.init();
