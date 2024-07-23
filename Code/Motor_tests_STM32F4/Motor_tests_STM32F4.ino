@@ -23,6 +23,7 @@
 
 unsigned long t0;
 unsigned long t2;
+int diff; //continuously calculated
 
 //-------------------Interfaces-------------------------
 
@@ -55,12 +56,6 @@ Commander command = Commander(Serial, '\n', false);
 void onMotor(char* cmd) {
   command.motor(&motor, cmd);
 }
-void doTarget(char* cmd) {
-  command.scalar(&motor.target, cmd);
-}
-void doLimitCurrent(char* cmd) {
-  command.scalar(&motor.current_limit, cmd);
-}
 void readSensor(char* cmd) {
   // get the angle, in radians, no full rotations
   float angle = sensor.getCurrentAngle();
@@ -90,6 +85,11 @@ void flashLED(char* cmd) {
   digitalWrite(LED, LOW);
 }
 
+void readUpdateTime(char* cmd) {
+  Serial.print("Update time");
+  Serial.println(diff);
+}
+
 
 void setup() {
 
@@ -97,6 +97,13 @@ void setup() {
 
   // use monitoring with the BLDCMotor
   Serial.begin(115200);
+  while(!Serial && millis()<10000) {
+    //wait for serial to connect, for up to 10 seconds
+  }
+  //Flash that serial is connected
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
   // monitoring port
   motor.useMonitoring(Serial);
 
@@ -147,7 +154,7 @@ void setup() {
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
-  motor.foc_modulation = FOCModulationType::Trapezoid_120;//Trapezoid_120 acheives 650 radians a second closed loop, 150 more than sine of sv
+  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;//Trapezoid_120 acheives 650 radians a second closed loop, 150 more than sine of sv
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
   motor.current_limit = 2.5;  // Amps
 
@@ -172,14 +179,12 @@ void setup() {
   motor.initFOC();
   //current_sense.driverAlign(1);
 
-  command.add('M', onMotor, "my motor");  //default motor call
-  // add target command T
-  command.add('T', doTarget, "target velocity");
-  command.add('C', doLimitCurrent, "current limit");
+  command.add('M', onMotor, "my motor");  //default motor call;
 
   command.add('S', readSensor, "Read magnetic encoder");
 
   command.add('F', flashLED, "flashLED");
+  command.add('T', readUpdateTime, "Read the update time");
 
   motor.monitor();
 
@@ -222,6 +227,6 @@ void loop() {
   command.run();
 
   t2=_micros();
-  //Serial.println(t2-t0);
+  diff = t2-t0;
 
 }
