@@ -64,6 +64,9 @@ extern "C" void SystemClock_Config(void) {
 #define VREFINT 1212
 #define ADC_RANGE 4096
 
+unsigned long t0;
+unsigned long t2;
+
 //-------------------Interfaces-------------------------
 //                      RX    TX
 HardwareSerial Serial1(PB7, PB6);
@@ -188,11 +191,14 @@ void setup() {
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
-  motor.foc_modulation = FOCModulationType::SinePWM;
+  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
-  motor.current_limit = 2.0;  // Amps
+  motor.current_limit = 2.5;  // Amps
 
   motor.voltage_sensor_align = 0.5;//I=V/R. This should get me 2.5 current during alignment. I COMPLETELY spaced on this earlier when I set it to 5v and nothing happened (waveforms capped)
+  motor.zero_electric_angle = 1.65;//Skip alignment since I know the position. The auto align always gets alignment wrong and cause one direction to be faster than other.
+  motor.sensor_direction = Direction::CCW;
+
 
   // PID velocity
   motor.PID_velocity.P = 0.1;
@@ -201,7 +207,7 @@ void setup() {
   motor.PID_velocity.output_ramp = 1000;
   motor.LPF_velocity.Tf = 0.02;//seconds
 
-  motor.motion_downsample = 1;
+  motor.motion_downsample = 2;
 
   // initialize motor
   motor.init();
@@ -228,6 +234,7 @@ void setup() {
 }
 
 void loop() {
+  t0=_micros();
   // FOC algorithm function
   motor.loopFOC();
   //driver.setPwm(1.1,2.5,4);
@@ -258,7 +265,7 @@ void loop() {
   // read user commands
   command.run();
 
-  // update the sensor (only needed if using the sensor without a motor)
-  //sensor.update();
-  //sensor.getAngle();
+  t2=_micros();
+  //Serial1.println(t2-t0);
+
 }
