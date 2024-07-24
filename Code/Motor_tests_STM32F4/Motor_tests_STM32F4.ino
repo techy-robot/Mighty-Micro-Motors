@@ -9,9 +9,9 @@
 
 #define LED PC1
 
-#define CSA_A PA4  //A0
+#define CSA_A PA6  //A2
 #define CSA_B PA5  //A1
-#define CSA_C PA6  //A2
+#define CSA_C PA4  //A0
 
 //The pins don't need to be on the same timer on this board, it has A LOT of timers
 
@@ -140,27 +140,27 @@ void setup() {
 
   // init current sense
   current_sense.init();
-  //current_sense.skip_align = true;//I am sure in my configuration
+  current_sense.skip_align = true;//I am sure in my configuration
   // link the motor to current sense
   motor.linkCurrentSense(&current_sense);
 
   // set control loop type to be used
   motor.controller = MotionControlType::velocity;
   // voltage torque control mode
-  motor.torque_controller = TorqueControlType::voltage;//voltage, dc_current, or foc_current
+  motor.torque_controller = TorqueControlType::foc_current;//voltage, dc_current, or foc_current
 
   // choose FOC modulation
   // SinePWM; (default)
   // SpaceVectorPWM; Similar to sine wave, not sure the diff
   // Trapezoid_120; Faster,but less efficient
   // Trapezoid_150; Same, except the angle offset is more
-  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;//Trapezoid_120 acheives 650 radians a second closed loop, 150 more than sine of sv
+  motor.foc_modulation = FOCModulationType::SpaceVectorPWM;//Trapezoid_120 is faster, but SVPWM is more efficient
   //motor.voltage_limit = 1;//Should be really low for drone motors. Ignored since I provided phase resistance
   motor.current_limit = 2.5;  // Amps
 
   motor.voltage_sensor_align = 0.5;//I=V/R. This should get me 2.5 current during alignment. I COMPLETELY spaced on this earlier when I set it to 5v and nothing happened (waveforms capped)
   motor.zero_electric_angle = 1.65;//Skip alignment since I know the position. The auto align always gets alignment wrong and cause one direction to be faster than other.
-  //motor.sensor_direction = Direction::CCW;
+  motor.sensor_direction = Direction::CCW;
 
 
   // PID velocity
@@ -169,6 +169,12 @@ void setup() {
   motor.PID_velocity.D = 0.001;
   motor.PID_velocity.output_ramp = 1000;
   motor.LPF_velocity.Tf = 0.02;//seconds
+
+  motor.PID_current_d.P = 0.2;
+  motor.PID_current_d.I = 20.0;
+
+  motor.PID_current_q.P = 0.2;
+  motor.PID_current_q.I = 20.0;
 
   motor.motion_downsample = 2;
 
