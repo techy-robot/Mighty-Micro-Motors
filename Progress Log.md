@@ -207,3 +207,35 @@ It worked!
 
 Another thing I discovered today was a bug in my code that cause sensor alignment to fail! I needed to call motor.init() AFTER all the config stuff, not inbetween!
 
+## July 20-21, 2024
+
+I tuned the velocity PID loop on the motor, reaching around 800 rad/s, or 7600 rpm. Its fast and loud, but nowhere near the rated motor speed. When its in openloop I can get to 1140 rad/s in little increments before the motor phases out. I'm wondering honestly if the MCU is the bottleneck, its only clocked at 64mhz and it doesn't have an FPU.
+
+
+## July 22-24, 2024
+
+I spent a few hours adding wires to my board to test out other MCUS to see if I could reach higher speeds. This is an adafruit feather with a stm32f405 processor, at 168mhz.
+![](Media/Build%20Log/IMG_20240723_142727.jpg)
+
+After tuning the FOC current control loop (something I couldn't do on the built in either) I was able to push the motor way higher than my previous limit! 2100rad/s, or 20k RPM!!!. I now have reached the manufacture limit value of 19kv, since I am running a 2.5 amp current limit at 1 volt, and have reached 20krpm. I tested again with the onbaord mcu, and it could only reach around 600rad/s.
+
+I did some testing of instantanious motor speeds, and have concluded that 1,700 is the max speed it can go from a stand still.
+
+
+## July 25-31, 2024
+
+I designed a 16 to 1 cycloidal gearbox to go on my motor. Its rather complex.
+
+
+![](Media/cycloidal%20gearbox%20inside.png)
+![](Media/cycloidal%20gearbox%20inside%20top.png)
+![](Media/cycloidal%20gearbox%20outside.png)
+
+
+## Aug 1-4, 2024
+I have printed several revisions of the gearbox in resin, tweeking some tolerances and such. The parts are very fragile with the resin I have. I can't print engineering resin due to the more toxic fumes in my house, so I will have to outsource it when the time comes.
+
+![](Media/Build%20Log/IMG_20240802_202443.jpg)
+![](Media/Build%20Log/IMG_20240804_110446.jpg)
+
+One thing to note is that I really did not plan very well in advance with the magnetic encoder board. I soldered all the wires before assemble, and didn't realize that I would have to feed the wires through the cycloidal disc. The base part has slots to insert the wires in after soldering, but the cycloidal disc is continous. I had to cut the disc to get the wires in. My next board revision will have a flex circuit with a built in FPC cable that can be fed through easily.

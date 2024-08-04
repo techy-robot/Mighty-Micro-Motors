@@ -1,17 +1,29 @@
 # Mighty Micro Motors
-My goal with this project is to recreate the expensive and highly advanced motors typically found in big robots, such as in Boston Dynamics or MIT's robots, but at a **much** smaller scale. These are essentially tiny drone motors with a high reduction gearbox, a magnetic encoder, and a FOC controller.
+My goal with this project is to recreate the expensive and highly advanced motors typically found in big robots, such as in Boston Dynamics or MIT's robots, but at a **much** smaller scale. These are essentially tiny drone motors with a high reduction gearbox, a magnetic encoder, and a FOC controller board.
 
 You can check out my project log [here](Progress%20Log.md).
 
 ## Gearbox
 This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The drone motors are 10mm in diameter, so the gearbox should be a similar size.
 
-I'm currently thinking about having a cycloidal or split-ring planetary gearbox. 
+I'm currently thinking about having a cycloidal or split-ring planetary gearbox, due to the compact size and high reduction rations
 
 Preliminary CAD designs are on onshape, you can watch my progress here: [Mighty Micro Motors - Onshape](https://cad.onshape.com/documents/c861ec30af8169cf9c14bd7f/w/e538486c85e6a5fe77cd1d33/e/19bd07544dbaacbeb2fafd06). Step files and STL files will also be uploaded to this repo.
 
+Cycloidal 16-to-1 reduction:
+
+Currently the design is twice as big as my ideal, with a 19mm diameter. I can not reduce the diameter without removing the bearings, possible reducing the lifespan. This *really* needs to be smaller, so I may do some testing and just remove some bearings. I'm not actually sure how well the 1x3x1mm bearings roll compared to just a smooth shaft. I could also cut the hole count down if the screws were also the shafts.
+
+<img src="Media/cycloidal gearbox inside.png" width="400">
+<img src="Media/cycloidal gearbox inside top.png" width="400">
+<img src="Media/cycloidal gearbox outside.png" width="400">
+
+In real life:
+![](Media/Build%20Log/IMG_20240804_110446.jpg)
+
 
 ## Control board
+### Version 1
 My first version of the control board is designed to test all functions that may exist on a robot. I have the motor driver, a MCU for the algorithms, connectors for sensors (I2c and SPI), and a power management system.
 
 A lot of care has been taken to design for EMI, which is why I have separate ground planes and have plotted current return paths for *most* traces. When I design a controller that supports 3+ motors I'm going to deal with length matching too on the low speed signals (Currently I'm testing all possible pin combinations, which doesn't lend itself to length matching). I'm still learning about good EMI design practices though, so there may be a big flaw in the design I don't see.
@@ -24,7 +36,7 @@ At it's current state the control PCB has been assembled and power tested. Nothi
 - TI BQ25060 single-cell battery charger along with a BQ298012 battery protection chip. 
 - 4 mosfets on board to control system power, 60+ amps of current
 - TI DRV8311 motor driver, which can drive a brushless motor at 5 amps current (I fully expect heat problems due to the small size of the chip!)
-- STM32G070CB, clocked at the max 64mhz (16mhz crystal scaled internally). 128kb mem, 64kb ram. The stm32 I chose is relatively inexpensive and powerful, and can handle up 3 motors.
+- STM32G070CB, clocked at the max 64mhz (16mhz crystal scaled internally). 128kb mem, 64kb ram. The stm32 I chose is relatively inexpensive and *should be able to handle 3 motors*. (this was proven false later after testing other MCUs)
 
 The motor driver section is 16x11mm, which hopefully is small enough and easily tileable for a small robot controller with lots of motors. The biggest part of the board is the power management, followed by the stm32.
 
@@ -34,7 +46,7 @@ I ordered my pcbs from JLCPCB, because they are inexpensive and can do advanced 
 
 The pcb is a 4 layer board, with 1 oz copper. The power trace is exposed for solder if extra conductivity is needed. Also, it is **strongly recommended** to order a stencil for both PCBs and to do a good job pasting the board. I fortunately ordered a stencil for the controller, but I put too much solder paste on and had to fix a lot of bridges after the fact. For the encoder board I manually pasted it, and that was a real pain to do a tiny QFN chip.
 
-### Tested functionality:
+#### Tested functionality:
 - Can be powered on without exploding
 - 3.3v regulator on the motor chip works (though with a flaw that requires a kickstart to get it going)
 - Can be programmed and flash an LED
@@ -42,11 +54,11 @@ The pcb is a 4 layer board, with 1 oz copper. The power trace is exposed for sol
 - Power mosfet switching works on the charger
 - Can communicate over SPI, UART and the debug interface
 
-### Photos
-![top](Media/top.png)
-![In1](Media/In1.png)
-![In2](Media/In2.png)
-![bottom](Media/bottom.png)
+#### Photos
+<img src="Media/top.png" width="200">
+<img src="Media/In1.png" width="200">
+<img src="Media/In2.png" width="200">
+<img src="Media/bottom.png" width="200">
 
 Assembled:
 ![finished pcb](Media/finished_pcb.jpg)
@@ -54,7 +66,8 @@ Assembled:
 (Note that I messed up on the mosfets I ordered which were too tiny. I have the correct mosfet specified now)
 
 ## Encoder board
-![magnetic encoder board](Media/magnetic%20encoder%20board.jpg)
+<img src="Media/magnetic encoder board.jpg" width="200">
+
 This is a little magnetic board I designed to be attached to the end of the motor. It has a MA735 chip, which is low cost and seemed perfect for my needs. The resolution is inversely proportional to rotational reading speeds, so I will be fine no matter which end of the gearbox I stick it on. Low resolution on the high-speed end will mean I still have high resolution positioning on the output, and high resolution on the output side is fine because the output is slower.
 
 The board is barely bigger than the jst sh connector on top for SPI communication!
