@@ -1,6 +1,15 @@
 {
   "nodes": [
     {
+      "id": "af615b1a9d5b328f",
+      "x": -1440,
+      "y": 760,
+      "width": 360,
+      "height": 680,
+      "type": "group",
+      "label": "ADC notes"
+    },
+    {
       "id": "80f1037b81b53566",
       "type": "group",
       "styleAttributes": {},
@@ -162,16 +171,6 @@
       "width": 280,
       "height": 50,
       "color": "1"
-    },
-    {
-      "id": "348527b3b4032dcf",
-      "type": "text",
-      "text": "I have to use the jtag lines for something. I believe they will be completely disabled",
-      "styleAttributes": {},
-      "x": 281,
-      "y": -600,
-      "width": 299,
-      "height": 120
     },
     {
       "id": "262f00c7a154a77b",
@@ -551,35 +550,13 @@
     {
       "id": "c4b1f46c22d7ca31",
       "type": "text",
-      "text": "Use hardware spi is a bit better, because it can reach 80mhz clock speed compared to 40. My chips cannot support that though, capping at 25mhz clock.",
+      "text": "Use hardware spi is a bit better, because it can reach 80mhz clock speed compared to 40. My sensor chips cannot support that though, capping at 25mhz clock.",
       "styleAttributes": {},
       "x": -860,
       "y": 1070,
       "width": 260,
       "height": 170,
       "color": "6"
-    },
-    {
-      "id": "a74cdec1339007b5",
-      "type": "text",
-      "text": "Make sure to have all the pins for each motor on the same ADC!",
-      "styleAttributes": {},
-      "x": -739,
-      "y": 1520,
-      "width": 310,
-      "height": 80,
-      "color": "5"
-    },
-    {
-      "id": "f9bcf0a000299dc4",
-      "type": "text",
-      "text": "ADC2 cannot be used with wifi. Luckily I am not ",
-      "styleAttributes": {},
-      "x": -739,
-      "y": 1440,
-      "width": 225,
-      "height": 80,
-      "color": "5"
     },
     {
       "id": "9e7d3112b1299df3",
@@ -697,17 +674,6 @@
       "color": "3"
     },
     {
-      "id": "69a368c9ac63f55f",
-      "type": "text",
-      "text": "~~I will use USB for interdevice communication on the main board. It is fast, and very well understood. It also saves me pins on the chip, and I can auto update the boards if I connect to a master computer~~ Bad idea for rpi zero, since that will make usb otg inaccessable and I need a hub chip",
-      "styleAttributes": {},
-      "x": -4,
-      "y": 1280,
-      "width": 294,
-      "height": 280,
-      "color": "6"
-    },
-    {
       "id": "7958a60e0effca72",
       "type": "text",
       "text": "---\ncssclass: rotate270\n---\nPower",
@@ -810,17 +776,6 @@
       "width": 50,
       "height": 180,
       "color": "5"
-    },
-    {
-      "id": "c51626bf24c437b6",
-      "type": "text",
-      "text": "I don't need to connect gpio45, it should have a default that will work with the chip",
-      "styleAttributes": {},
-      "x": -304,
-      "y": -775,
-      "width": 234,
-      "height": 110,
-      "color": "1"
     },
     {
       "id": "514e1d35a21c4acb",
@@ -1066,6 +1021,26 @@
       "height": 50
     },
     {
+      "id": "348527b3b4032dcf",
+      "type": "text",
+      "text": "I have to use the jtag lines for something. They will be completely disabled, and safe to use",
+      "styleAttributes": {},
+      "x": 242,
+      "y": -560,
+      "width": 299,
+      "height": 120
+    },
+    {
+      "id": "fc5e9a1587e64254",
+      "type": "text",
+      "text": "If the UART pins are active it will send gibberish on the SPI bus, but since the clock isn't going yet, it will be completely fine",
+      "styleAttributes": {},
+      "x": 34,
+      "y": -765,
+      "width": 275,
+      "height": 125
+    },
+    {
       "id": "40ee1dbc25e69a18",
       "type": "text",
       "text": "---\ncssclass: rotate270\n---\nMotor 3 B",
@@ -1073,20 +1048,9 @@
         "shape": null
       },
       "x": 71,
-      "y": 1215,
+      "y": 1160,
       "width": 50,
       "height": 180
-    },
-    {
-      "id": "26020e1316b5fddb",
-      "type": "text",
-      "text": "These 5 ADC pins( 2_CH4 thru 2_CH7) I'm thinking about using as pwm out instead. The count works out for the other pins as current sense. I could also use these pins for sensors like Touch or battery monitor",
-      "styleAttributes": {},
-      "x": -329,
-      "y": 1305,
-      "width": 260,
-      "height": 230,
-      "color": "5"
     },
     {
       "id": "a33fcf44b576c28e",
@@ -1096,7 +1060,7 @@
         "shape": null
       },
       "x": -129,
-      "y": 1215,
+      "y": 1160,
       "width": 50,
       "height": 180
     },
@@ -1108,7 +1072,7 @@
         "shape": null
       },
       "x": -179,
-      "y": 1215,
+      "y": 1160,
       "width": 50,
       "height": 180
     },
@@ -1120,7 +1084,7 @@
         "shape": null
       },
       "x": -229,
-      "y": 1215,
+      "y": 1160,
       "width": 50,
       "height": 180
     },
@@ -1132,20 +1096,238 @@
         "shape": null
       },
       "x": -329,
-      "y": 1215,
+      "y": 1160,
       "width": 50,
       "height": 180
+    },
+    {
+      "id": "92c477ca7f8cb6b9",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain SCK",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -429,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "e2fa819ff29766e6",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain MISO",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -379,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "26f4c9e9f90d2f2c",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nChain MOSI",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -479,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "1faf6832c34db87f",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nCS0",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -529,
+      "y": 1340,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "b2e4282eed146713",
+      "type": "text",
+      "text": "CSA2 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 380,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "429f2ff38af35332",
+      "type": "text",
+      "text": "CSA3 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 430,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "da045c1da03682a2",
+      "type": "text",
+      "text": "CSA3 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 480,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "1a412fe28cbd0679",
+      "type": "text",
+      "text": "CSA4 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 530,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "60744377835279ee",
+      "type": "text",
+      "text": "CSA4 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 580,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "39d8dde553f87df6",
+      "type": "text",
+      "text": "CSA1 A",
+      "styleAttributes": {},
+      "x": -1480,
+      "y": 180,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "528cb8fdcfe34eb0",
+      "type": "text",
+      "text": "CSA2 A",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 330,
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": "d731a2fa44f54051",
+      "type": "text",
+      "text": "CSA1 B",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": 230,
+      "width": 220,
+      "height": 50
     },
     {
       "id": "36fa4627d7537ec1",
       "type": "text",
       "text": "All ADC capable pins have a low level startup glitch for 60uS",
       "styleAttributes": {},
-      "x": -1050,
-      "y": 800,
+      "x": -1420,
+      "y": 780,
       "width": 260,
       "height": 100,
       "color": "5"
+    },
+    {
+      "id": "f9bcf0a000299dc4",
+      "type": "text",
+      "text": "ADC2 cannot be used with wifi. Luckily I am not ",
+      "styleAttributes": {},
+      "x": -1420,
+      "y": 880,
+      "width": 225,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "a74cdec1339007b5",
+      "type": "text",
+      "text": "Make sure to have all the pins for each motor on the same ADC! Not a problem for my current setup",
+      "styleAttributes": {},
+      "x": -1420,
+      "y": 960,
+      "width": 310,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "2f3c2b055bbee6f3",
+      "type": "text",
+      "text": "Note I am using 2 line current sense instead of 3, due to my limited pins. Should be fine maybe a tad slower",
+      "styleAttributes": {},
+      "x": -1420,
+      "y": 1040,
+      "width": 290,
+      "height": 135,
+      "color": "5"
+    },
+    {
+      "id": "26020e1316b5fddb",
+      "type": "text",
+      "text": "I could use spare ADC pins for sensors like Touch or battery monitor.",
+      "styleAttributes": {},
+      "x": -1420,
+      "y": 1175,
+      "width": 260,
+      "height": 230,
+      "color": "5"
+    },
+    {
+      "id": "c51626bf24c437b6",
+      "type": "text",
+      "text": "I don't need to connect gpio45, it should have a default that will work with the chip. Pulldown",
+      "styleAttributes": {},
+      "x": -338,
+      "y": -950,
+      "width": 234,
+      "height": 110,
+      "color": "1"
+    },
+    {
+      "id": "43e6e8d24be8fcfe",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nStatus LED",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -279,
+      "y": -530,
+      "width": 50,
+      "height": 180
+    },
+    {
+      "id": "69a368c9ac63f55f",
+      "type": "text",
+      "text": "~~I will use USB for interdevice communication on the main board. It is fast, and very well understood. It also saves me pins on the chip, and I can auto update the boards if I connect to a master computer~~ Bad idea for rpi zero, since that will make usb otg inaccessable, plus I need a hub chip",
+      "styleAttributes": {},
+      "x": 46,
+      "y": 1340,
+      "width": 294,
+      "height": 280,
+      "color": "6"
+    },
+    {
+      "id": "66f8682217c97443",
+      "type": "text",
+      "text": "---\ncssclass: rotate270\n---\nBattery monitor or other simple sensor",
+      "styleAttributes": {
+        "shape": null
+      },
+      "x": -79,
+      "y": 1410,
+      "width": 50,
+      "height": 210
     }
   ],
   "edges": [
