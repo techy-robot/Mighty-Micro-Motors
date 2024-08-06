@@ -80,10 +80,11 @@ void readSensor(char* cmd) {
 }
 
 void flashLED(char* cmd) {
-  pixel.setPixelColor(1, pixel.Color(0, 150, 0));
+  pixel.setPixelColor(0, pixel.Color(100, 0, 0));
   pixel.show();
   delay(200);
   pixel.clear();
+  pixel.show();
 }
 
 void readUpdateTime(char* cmd) {
@@ -101,10 +102,11 @@ void setup() {
     //wait for serial to connect, for up to 10 seconds
   }
   //Flash that serial is connected
-  pixel.setPixelColor(1, pixel.Color(0, 150, 0));
+  pixel.setPixelColor(0, pixel.Color(100, 0, 0));
   pixel.show();
   delay(200);
   pixel.clear();
+  pixel.show();
   // monitoring port
   motor.useMonitoring(Serial);
 
@@ -162,8 +164,8 @@ void setup() {
   motor.current_limit = 2.5;  // Amps
 
   motor.voltage_sensor_align = 0.5;//I=V/R. This should get me 2.5 current during alignment. I COMPLETELY spaced on this earlier when I set it to 5v and nothing happened (waveforms capped)
-  motor.zero_electric_angle = 1.65;//Skip alignment since I know the position. The auto align always gets alignment wrong and cause one direction to be faster than other.
-  motor.sensor_direction = Direction::CCW;
+  //motor.zero_electric_angle = 1.65;//Skip alignment since I know the position. The auto align always gets alignment wrong and cause one direction to be faster than other.
+  //motor.sensor_direction = Direction::CCW;
 
 
   // PID velocity
@@ -198,10 +200,11 @@ void setup() {
   motor.monitor();
 
   //Finished setup so flash led
-  pixel.setPixelColor(1, pixel.Color(0, 150, 0));
+  pixel.setPixelColor(0, pixel.Color(100, 0, 0));
   pixel.show();
   delay(200);
   pixel.clear();
+  pixel.show();
 }
 
 void loop() {

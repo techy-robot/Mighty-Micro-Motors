@@ -239,3 +239,13 @@ I have printed several revisions of the gearbox in resin, tweeking some toleranc
 ![](Media/Build%20Log/IMG_20240804_110446.jpg)
 
 One thing to note is that I really did not plan very well in advance with the magnetic encoder board. I soldered all the wires before assemble, and didn't realize that I would have to feed the wires through the cycloidal disc. The base part has slots to insert the wires in after soldering, but the cycloidal disc is continous. I had to cut the disc to get the wires in. My next board revision will have a flex circuit with a built in FPC cable that can be fed through easily.
+
+## Aug 5th, 2024
+
+I finished my wiring diagram for the esp32, which I will eventually use in a 4 motor control board. It is really cramped, having almost no free pins except the strapped boot pins. 2 spi interfaces (sensor and command interface), four 3xpwm interfaces, four 2 pin current sense amplifier lines, and the rest of the reserved pins (4 strapped pins, 2 usb, 6 internal SPI). The supposed 48 gpio pins got eaten up pretty fast with unusable pins, and 4 motors.
+
+![](ESP32-S3%20Pinout.png)
+
+ I also wired a dev board in realy life to my motor driver and tested.
+
+The gearbox did not function at all, and I discovered the culprit. The whole base was too tight around the motor, causing friction. I could rotate it by hand without a ton of effort, but it was different, and clearly enough for the motor to not spin at all. I need to reprint and/or increase tolerance.
