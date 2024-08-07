@@ -1411,7 +1411,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "custom_testpoints:3pin_fpc"
 			(at 167.64 113.03 0)
 			(effects
 				(font
@@ -1990,7 +1990,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "custom_testpoints:3pin_fpc"
 			(at 180.34 113.03 0)
 			(effects
 				(font

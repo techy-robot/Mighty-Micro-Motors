@@ -1,11 +1,11 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 41,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -78,31 +78,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "MA735 encoder board.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 384,
-          "pos_y": 0,
-          "size_x": 768,
-          "size_y": 920
-        }
-      },
-      {
-        "name": "MA735 encoder board.kicad_pcb",
-        "open": true,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": 355,
-          "pos_y": 189,
-          "size_x": 826,
-          "size_y": 542
-        }
-      }
-    ]
+    "files": []
   }
 }
