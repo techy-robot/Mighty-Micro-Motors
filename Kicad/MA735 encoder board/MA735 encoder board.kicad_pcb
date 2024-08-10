@@ -1132,13 +1132,13 @@
 	)
 	(footprint "custom_testpoints:7pin_fpc_contact_0.3mmptich"
 		(layer "F.Cu")
-		(uuid "e21ca838-a16d-41af-9197-3bd2eee1300e")
-		(at 152.8 55.3)
-		(property "Reference" "REF**"
-			(at -0.9 -3.15 0)
+		(uuid "bfa641c5-af42-40d6-a5ae-c12e2e1d9a2a")
+		(at 152.8 55.2)
+		(property "Reference" "J1"
+			(at 0.18 -1.86 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "b908dc16-153a-4c49-bfe7-e4bdf9c22837")
+			(uuid "c0cb2d48-0273-4882-893a-8572ae859e9f")
 			(effects
 				(font
 					(size 1 1)
@@ -1146,11 +1146,11 @@
 				)
 			)
 		)
-		(property "Value" "7pin_fpc_contact_0.3mmptich"
-			(at 4.74 -0.37 0)
+		(property "Value" "FPC contacts 0.3mm"
+			(at 1 0.8 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "fed6ada7-f880-42ee-a49f-533f2103a999")
+			(uuid "f0d34865-c1b2-4917-bb6d-e7770cb6fe5e")
 			(effects
 				(font
 					(size 1 1)
@@ -1159,11 +1159,11 @@
 			)
 		)
 		(property "Footprint" "custom_testpoints:7pin_fpc_contact_0.3mmptich"
-			(at 0 0 0)
+			(at -0.1 0.12 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "24f9fc82-8e13-4f39-b63c-8b7250976e5b")
+			(uuid "a527a6f3-09ec-4309-aebc-138c8dba3673")
 			(effects
 				(font
 					(size 1 1)
@@ -1172,11 +1172,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at -0.1 0.12 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b2ba0265-1cbe-4581-b44b-3ff9a3f58716")
+			(uuid "5559c5a2-642d-4c1a-a007-88bb7abb962c")
 			(effects
 				(font
 					(size 1 1)
@@ -1184,12 +1184,12 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Generic connector, single row, 01x07, script generated"
+			(at -0.1 0.12 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f032e41-2f81-45ab-969e-151473973fa1")
+			(uuid "7e397c7f-ed1e-4ba0-8f75-41b199e3ba04")
 			(effects
 				(font
 					(size 1 1)
@@ -1197,12 +1197,41 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/de372727-16fb-42d5-a321-9899ba27037e")
+		(sheetname "Root")
+		(sheetfile "MA735 encoder board.kicad_sch")
 		(attr smd)
+		(fp_rect
+			(start -1.2 -1.1)
+			(end 1.2 1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "Dwgs.User")
+			(uuid "3a8a2317-5fc7-498f-ad9b-8d8906591a8f")
+		)
+		(fp_text user "Stiffener box"
+			(at -2.65 2.54 0)
+			(unlocked yes)
+			(layer "Dwgs.User" knockout)
+			(uuid "c2df2fe9-075c-45ee-a619-b1bb76e7cde6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
 		(fp_text user "${REFERENCE}"
-			(at 6.41 -2.22 0)
+			(at 0.33 -0.35 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "863c892f-708c-4b44-ab27-2311ec8f564d")
+			(uuid "8259e35c-286b-4da6-9bed-ecd345b4af45")
 			(effects
 				(font
 					(size 1 1)
@@ -1211,49 +1240,17 @@
 			)
 		)
 		(pad "1" connect custom
-			(at -0.8 -0.22)
+			(at -0.9 -0.1)
 			(size 0.1 2)
 			(layers "F.Cu" "F.Mask")
+			(net 3 "/MOSI")
+			(pinfunction "Pin_1")
+			(pintype "passive")
 			(options
 				(clearance outline)
 				(anchor rect)
 			)
 			(primitives
-				(gr_poly
-					(pts
-						(xy -0.1 0.45) (xy 0.1 0.45) (xy 0.1 1) (xy -0.1 1)
-					)
-					(width 0)
-					(fill yes)
-				)
-				(gr_poly
-					(pts
-						(xy -0.15 -0.25) (xy -0.05 -0.35) (xy 0.05 -0.35) (xy 0.15 -0.25) (xy 0.15 0.45) (xy 0.05 0.55)
-						(xy -0.05 0.55) (xy -0.15 0.45)
-					)
-					(width 0)
-					(fill yes)
-				)
-			)
-			(uuid "c31fc2c4-d2bb-4077-a550-73cb351ad448")
-		)
-		(pad "2" connect custom
-			(at -0.41 -0.22)
-			(size 0.1 2)
-			(layers "F.Cu" "F.Mask")
-			(options
-				(clearance outline)
-				(anchor rect)
-			)
-			(primitives
-				(gr_poly
-					(pts
-						(xy -0.15 -0.9) (xy -0.05 -1) (xy 0.05 -1) (xy 0.15 -0.9) (xy 0.15 -0.35) (xy 0.05 -0.25) (xy -0.05 -0.25)
-						(xy -0.15 -0.35)
-					)
-					(width 0)
-					(fill yes)
-				)
 				(gr_poly
 					(pts
 						(xy -0.1 0.55) (xy -0.05 0.5) (xy 0.05 0.5) (xy 0.1 0.55) (xy 0.1 1) (xy -0.1 1)
@@ -1261,8 +1258,200 @@
 					(width 0)
 					(fill yes)
 				)
+				(gr_poly
+					(pts
+						(xy -0.15 -0.88) (xy -0.12 -0.89) (xy -0.08 -0.91) (xy -0.06 -0.94) (xy -0.05 -0.97) (xy -0.05 -1)
+						(xy 0.05 -1) (xy 0.05 -0.97) (xy 0.06 -0.94) (xy 0.08 -0.91) (xy 0.12 -0.89) (xy 0.15 -0.88) (xy 0.15 -0.35)
+						(xy 0.05 -0.25) (xy -0.05 -0.25) (xy -0.15 -0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
 			)
-			(uuid "3d0a72ba-daee-4686-85e1-904f5c4cad96")
+			(uuid "ab1341eb-2880-4925-9c23-73b41620f57e")
+		)
+		(pad "2" connect custom
+			(at -0.6 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 1 "GND")
+			(pinfunction "Pin_2")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.15 -0.25) (xy -0.05 -0.35) (xy 0.05 -0.35) (xy 0.15 -0.25) (xy 0.15 0.35) (xy 0.1 0.45)
+						(xy -0.1 0.45) (xy -0.15 0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.1 0.45) (xy 0.1 0.45) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "00ea72d0-c611-4394-86c1-6fbe15faa006")
+		)
+		(pad "3" connect custom
+			(at -0.3 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 4 "/MISO")
+			(pinfunction "Pin_3")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.1 0.55) (xy -0.05 0.5) (xy 0.05 0.5) (xy 0.1 0.55) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.15 -0.88) (xy -0.12 -0.89) (xy -0.08 -0.91) (xy -0.06 -0.94) (xy -0.05 -0.97) (xy -0.05 -1)
+						(xy 0.05 -1) (xy 0.05 -0.97) (xy 0.06 -0.94) (xy 0.08 -0.91) (xy 0.12 -0.89) (xy 0.15 -0.88) (xy 0.15 -0.35)
+						(xy 0.05 -0.25) (xy -0.05 -0.25) (xy -0.15 -0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "5ed3147b-9bd7-4dd6-8ea0-e9b035d67cf6")
+		)
+		(pad "4" connect custom
+			(at 0 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 1 "GND")
+			(pinfunction "Pin_4")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.15 -0.25) (xy -0.05 -0.35) (xy 0.05 -0.35) (xy 0.15 -0.25) (xy 0.15 0.35) (xy 0.1 0.45)
+						(xy -0.1 0.45) (xy -0.15 0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.1 0.45) (xy 0.1 0.45) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "0953128d-59b5-4d3c-9b38-bffb30edfbc2")
+		)
+		(pad "5" connect custom
+			(at 0.3 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 6 "/SCK")
+			(pinfunction "Pin_5")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.1 0.55) (xy -0.05 0.5) (xy 0.05 0.5) (xy 0.1 0.55) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.15 -0.88) (xy -0.12 -0.89) (xy -0.08 -0.91) (xy -0.06 -0.94) (xy -0.05 -0.97) (xy -0.05 -1)
+						(xy 0.05 -1) (xy 0.05 -0.97) (xy 0.06 -0.94) (xy 0.08 -0.91) (xy 0.12 -0.89) (xy 0.15 -0.88) (xy 0.15 -0.35)
+						(xy 0.05 -0.25) (xy -0.05 -0.25) (xy -0.15 -0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "11190cef-5e4e-4434-9eb3-36d01a760e6d")
+		)
+		(pad "6" connect custom
+			(at 0.6 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 2 "+3V3")
+			(pinfunction "Pin_6")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.15 -0.25) (xy -0.05 -0.35) (xy 0.05 -0.35) (xy 0.15 -0.25) (xy 0.15 0.35) (xy 0.1 0.45)
+						(xy -0.1 0.45) (xy -0.15 0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.1 0.45) (xy 0.1 0.45) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "7ec5f4d1-45dc-49c3-a917-8fc2a5d51d4d")
+		)
+		(pad "7" connect custom
+			(at 0.9 -0.1)
+			(size 0.1 2)
+			(layers "F.Cu" "F.Mask")
+			(net 5 "/CS")
+			(pinfunction "Pin_7")
+			(pintype "passive")
+			(options
+				(clearance outline)
+				(anchor rect)
+			)
+			(primitives
+				(gr_poly
+					(pts
+						(xy -0.1 0.55) (xy -0.05 0.5) (xy 0.05 0.5) (xy 0.1 0.55) (xy 0.1 1) (xy -0.1 1)
+					)
+					(width 0)
+					(fill yes)
+				)
+				(gr_poly
+					(pts
+						(xy -0.15 -0.88) (xy -0.12 -0.89) (xy -0.08 -0.91) (xy -0.06 -0.94) (xy -0.05 -0.97) (xy -0.05 -1)
+						(xy 0.05 -1) (xy 0.05 -0.97) (xy 0.06 -0.94) (xy 0.08 -0.91) (xy 0.12 -0.89) (xy 0.15 -0.88) (xy 0.15 -0.35)
+						(xy 0.05 -0.25) (xy -0.05 -0.25) (xy -0.15 -0.35)
+					)
+					(width 0)
+					(fill yes)
+				)
+			)
+			(uuid "559356f6-7bab-4cce-af9f-3c356b985c00")
 		)
 	)
 	(gr_arc
@@ -1305,6 +1494,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "e2283af3-28d5-4c9d-8871-9bac95793e8b")
+	)
+	(gr_text "Fits connector: AYF330735 from panasonic"
+		(at 144.8 48.3 0)
+		(layer "Cmts.User")
+		(uuid "88b306ab-7e25-43a9-92bf-b88fbe98a349")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(gr_text "Minimum solder mask is 0.5mm. I have to remove more around the edge connector and the encode"
 		(at 144 139.6 0)
@@ -1356,11 +1557,11 @@
 		(layer "Cmts.User")
 		(uuid "e440affe-e6c9-4d91-94e5-26e76392a3bf")
 		(pts
-			(xy 151.8 54.1) (xy 153.81 54.1)
+			(xy 151.6 54.1) (xy 154 54.1)
 		)
 		(height -1.9)
-		(gr_text "2.0100 mm"
-			(at 152.805 51.575 0)
+		(gr_text "2.4000 mm"
+			(at 152.8 51.575 0)
 			(layer "Cmts.User")
 			(uuid "e440affe-e6c9-4d91-94e5-26e76392a3bf")
 			(effects
