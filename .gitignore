@@ -1,2 +1,4 @@
 
 STM32CubeMX/STM32G070CB_Motor_Driver/Drivers/
+*-backups/
+*.pdf
