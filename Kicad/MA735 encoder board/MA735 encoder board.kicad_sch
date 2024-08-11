@@ -1155,23 +1155,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 175.26 120.65)
+			(xy 180.34 120.65) (xy 175.26 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "13fb5679-becc-431d-8515-dbfc6b3c1683")
-	)
-	(wire
-		(pts
-			(xy 179.07 111.76) (xy 179.07 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "275b203d-460c-4879-af90-3c72736f2e21")
 	)
 	(wire
 		(pts
@@ -1182,16 +1172,6 @@
 			(type default)
 		)
 		(uuid "2b4c94fc-2dd6-426b-bcde-3760ca74863e")
-	)
-	(wire
-		(pts
-			(xy 180.34 106.68) (xy 179.07 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41a5b576-4cba-4f0b-93bd-d1eadf6ba72a")
 	)
 	(wire
 		(pts
@@ -1235,7 +1215,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 113.03) (xy 175.26 113.03)
+			(xy 175.26 113.03) (xy 180.34 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1255,7 +1235,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 107.95) (xy 175.26 107.95)
+			(xy 175.26 107.95) (xy 180.34 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1282,16 +1262,6 @@
 			(type default)
 		)
 		(uuid "9dcadd1f-46f2-4ce3-a77f-71a039a87511")
-	)
-	(wire
-		(pts
-			(xy 179.07 106.68) (xy 179.07 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6f270f6-2cee-4774-8aaf-d9db200ccb87")
 	)
 	(wire
 		(pts
@@ -1353,15 +1323,24 @@
 		)
 		(uuid "ef3d2da6-542a-46e7-b986-d74aa2c36e3c")
 	)
-	(wire
-		(pts
-			(xy 180.34 111.76) (xy 179.07 111.76)
-		)
+	(text_box "Ideally each signal line is next to a ground line. However, this is an extremely space limited part so the most natural wiring from the chip out takes priority. CS kinda acts like ground when it is selected"
+		(exclude_from_sim no)
+		(at 195.58 102.87 0)
+		(size 27.94 19.05)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fb3a3ba9-2757-4125-94b8-8a27b94b4b62")
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d1ee43a9-5a41-4b84-9c78-927738811872")
 	)
 	(text_box "Internal pulldowns on all SPI lines"
 		(exclude_from_sim no)
@@ -1414,7 +1393,7 @@
 		(uuid "2341622f-746e-4722-85a7-5acca1c95614")
 	)
 	(label "MOSI"
-		(at 180.34 105.41 0)
+		(at 180.34 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1425,7 +1404,7 @@
 		(uuid "297d07a5-93f9-4309-a29e-3d0f56343d35")
 	)
 	(label "MISO"
-		(at 180.34 110.49 0)
+		(at 180.34 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1458,7 +1437,7 @@
 		(uuid "9561fc10-06c1-4d68-a5ac-e2a7866163ad")
 	)
 	(label "CS"
-		(at 182.88 120.65 0)
+		(at 180.34 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1469,7 +1448,7 @@
 		(uuid "b194f5a8-7231-4a70-95a5-cac4e8f17b87")
 	)
 	(label "SCK"
-		(at 180.34 115.57 0)
+		(at 180.34 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1698,7 +1677,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 111.76 90)
+		(at 180.34 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1707,7 +1686,7 @@
 		(fields_autoplaced yes)
 		(uuid "495b9a10-f684-4c77-bf5b-83f1ddaf9767")
 		(property "Reference" "#PWR04"
-			(at 186.69 111.76 0)
+			(at 186.69 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1716,7 +1695,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.404 111.7601 90)
+			(at 184.404 115.5701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1725,7 +1704,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 111.76 0)
+			(at 180.34 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1734,7 +1713,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 111.76 0)
+			(at 180.34 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1743,7 +1722,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 111.76 0)
+			(at 180.34 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +1744,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 180.34 118.11 270)
+		(at 180.34 120.65 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1774,7 +1753,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fa013eb-90cf-4ea8-aafc-d66b14aaccd9")
 		(property "Reference" "#PWR07"
-			(at 176.53 118.11 0)
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1783,7 +1762,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 184.15 118.1101 90)
+			(at 184.15 120.6501 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 118.11 0)
+			(at 180.34 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,7 +1780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 118.11 0)
+			(at 180.34 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1810,7 +1789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 180.34 118.11 0)
+			(at 180.34 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +1983,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 106.68 90)
+		(at 180.34 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2013,7 +1992,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8290e87-1c94-426c-b88b-8a241fe18361")
 		(property "Reference" "#PWR05"
-			(at 186.69 106.68 0)
+			(at 186.69 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,7 +2001,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.404 106.6801 90)
+			(at 184.404 105.4101 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,7 +2010,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 106.68 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 106.68 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2049,7 +2028,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 106.68 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
