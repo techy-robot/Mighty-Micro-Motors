@@ -4,3 +4,7 @@ STM32CubeMX/STM32G070CB_Motor_Driver/Drivers/
 *.pdf
 
 *.lck
+
+Kicad/esp32-s3 and DRV8311 single motor board/#auto_saved_files#
+
+Kicad/esp32-s3 and DRV8311 single motor board/fp-info-cache
