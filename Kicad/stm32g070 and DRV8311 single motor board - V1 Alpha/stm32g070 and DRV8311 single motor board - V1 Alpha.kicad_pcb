@@ -12619,7 +12619,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R9"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "B.SilkS")
 			(uuid "295378cd-b894-4093-a29d-ca13e97a034a")
 			(effects
@@ -12631,7 +12631,7 @@
 			)
 		)
 		(property "Value" "150k"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "8df94535-2d6a-4dde-b24f-44de3bb3d816")
 			(effects
@@ -12790,7 +12790,7 @@
 			(uuid "8ff416f8-9061-4b42-84cf-e503085c115c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "65113a6e-a7a1-49e1-80e3-ece7dca44cc3")
 			(effects
@@ -14451,7 +14451,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "B.SilkS")
 			(uuid "a73928b3-73c5-446e-bd78-a01d21dd339c")
 			(effects
@@ -14463,7 +14463,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "99178ce5-b225-4bbd-b4f9-ad858804d32a")
 			(effects
@@ -14622,7 +14622,7 @@
 			(uuid "adbcdb6e-4a78-443a-9960-381583c43d66")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "f5d654ee-a3f2-4451-bdeb-defa37961949")
 			(effects
@@ -18278,7 +18278,7 @@
 		(uuid "7e670728-d576-40fc-8b77-b3014ee48b63")
 	)
 	(gr_text "MOSI"
-		(at 137.4 88.4 90)
+		(at 135.7 88.4 90)
 		(layer "B.SilkS")
 		(uuid "010fac75-3441-4349-97f4-d1cc95bb42ab")
 		(effects
@@ -18530,7 +18530,7 @@
 		)
 	)
 	(gr_text "MISO"
-		(at 135.8 88.4 90)
+		(at 137.4 88.4 90)
 		(layer "B.SilkS")
 		(uuid "d72f0bdb-45ac-4956-8a88-a9f57655f013")
 		(effects
