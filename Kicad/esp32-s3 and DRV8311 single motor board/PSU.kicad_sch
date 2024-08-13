@@ -696,6 +696,182 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:AP2112K-3.3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AP2112K-3.3"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AP2112K-3.3_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2112K-3.3_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Simulation_SPICE:NMOS"
 			(pin_numbers hide)
 			(pin_names
@@ -2302,6 +2478,12 @@
 		(uuid "01a824f9-0ea2-4d42-84d0-47959c3b8feb")
 	)
 	(junction
+		(at 245.11 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04343abc-a1fe-4493-8cb6-d648b702ded0")
+	)
+	(junction
 		(at 85.09 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2350,6 +2532,12 @@
 		(uuid "2b4e8048-61e6-4d34-b347-0d19b33ee105")
 	)
 	(junction
+		(at 233.68 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43f7357b-894d-411f-a43a-dd94f9e3f246")
+	)
+	(junction
 		(at 116.84 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2368,10 +2556,22 @@
 		(uuid "5c43a684-0bfa-4f47-973e-4328674f8fed")
 	)
 	(junction
+		(at 220.98 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "666931c4-592a-4518-906d-23ca279c87ea")
+	)
+	(junction
 		(at 99.06 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "698f2f90-1154-4112-9644-1953bb3fe0d1")
+	)
+	(junction
+		(at 224.79 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c8d1a2b-158e-4df3-aa58-31df6a8bc5a0")
 	)
 	(junction
 		(at 101.6 30.48)
@@ -2533,6 +2733,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 87.63) (xy 233.68 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca93199-6e7b-4049-8595-7fa32e636f1a")
+	)
+	(wire
+		(pts
 			(xy 161.29 29.21) (xy 161.29 38.1)
 		)
 		(stroke
@@ -2550,6 +2760,16 @@
 			(type default)
 		)
 		(uuid "126f7580-d0ec-417a-9d1a-35a8534c3b7c")
+	)
+	(wire
+		(pts
+			(xy 220.98 81.28) (xy 220.98 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16be41d8-7102-40dc-9316-4da2428aabac")
 	)
 	(wire
 		(pts
@@ -2593,6 +2813,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 81.28) (xy 245.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1afbf970-3664-4725-af66-e61628b6f28f")
+	)
+	(wire
+		(pts
 			(xy 87.63 39.37) (xy 87.63 30.48)
 		)
 		(stroke
@@ -2633,6 +2863,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 76.2) (xy 220.98 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264b618a-6b37-484d-8e23-9da48d43518b")
+	)
+	(wire
+		(pts
 			(xy 124.46 120.65) (xy 138.43 120.65)
 		)
 		(stroke
@@ -2650,6 +2890,16 @@
 			(type default)
 		)
 		(uuid "28e235e1-5642-45ab-9793-1a4d83a9d708")
+	)
+	(wire
+		(pts
+			(xy 226.06 78.74) (xy 224.79 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab510d5-657b-455a-b410-eafbfaebe1ce")
 	)
 	(wire
 		(pts
@@ -2770,6 +3020,16 @@
 			(type default)
 		)
 		(uuid "4e08c983-201c-4955-b04e-ca5e8cf60234")
+	)
+	(wire
+		(pts
+			(xy 224.79 78.74) (xy 224.79 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f86403b-a47e-4d93-a642-b14393268725")
 	)
 	(wire
 		(pts
@@ -3013,6 +3273,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 76.2) (xy 226.06 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec0ce67-092c-44ba-8a17-ca48ec51a533")
+	)
+	(wire
+		(pts
 			(xy 212.09 128.27) (xy 214.63 128.27)
 		)
 		(stroke
@@ -3020,6 +3290,16 @@
 			(type default)
 		)
 		(uuid "91db1fa6-7a6b-4b05-8389-404c15f7034d")
+	)
+	(wire
+		(pts
+			(xy 245.11 76.2) (xy 248.92 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93e50d07-1752-4116-b357-1f82251a7848")
 	)
 	(wire
 		(pts
@@ -3050,6 +3330,16 @@
 			(type default)
 		)
 		(uuid "9ad5b4c3-2b53-49e3-a054-87af64fe3e1a")
+	)
+	(wire
+		(pts
+			(xy 241.3 76.2) (xy 245.11 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c9187e7-e08a-467e-a050-bf5ec7212cc5")
 	)
 	(wire
 		(pts
@@ -3113,6 +3403,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 76.2) (xy 224.79 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b48dda0f-fa6c-472a-9814-cf9e6d2ace7c")
+	)
+	(wire
+		(pts
 			(xy 143.51 125.73) (xy 151.13 125.73)
 		)
 		(stroke
@@ -3120,6 +3420,16 @@
 			(type default)
 		)
 		(uuid "b7a2142c-74dd-411e-b843-68e459e7f5df")
+	)
+	(wire
+		(pts
+			(xy 245.11 87.63) (xy 233.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7b76023-4d1e-439c-a2fc-e85aaf601098")
 	)
 	(wire
 		(pts
@@ -3140,6 +3450,16 @@
 			(type default)
 		)
 		(uuid "bea67629-c479-4278-90ff-8ddd476bb29c")
+	)
+	(wire
+		(pts
+			(xy 233.68 88.9) (xy 233.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1399fd2-315d-4c2a-a9a0-96618fdc0501")
 	)
 	(wire
 		(pts
@@ -3280,6 +3600,16 @@
 			(type default)
 		)
 		(uuid "fa9534b5-8f42-4892-bc25-c796c8f5e6c6")
+	)
+	(wire
+		(pts
+			(xy 220.98 87.63) (xy 233.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2b26c1-5700-41ae-8f72-eb5e550af1ac")
 	)
 	(wire
 		(pts
@@ -3578,6 +3908,18 @@
 		)
 		(uuid "e5a585a8-d89b-4827-b3a3-9e72fe2dbe9e")
 	)
+	(hierarchical_label "MOTORPWR"
+		(shape output)
+		(at 214.63 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "386f72c1-b7e2-437b-b33e-dcdcc7d6a0c1")
+	)
 	(hierarchical_label "GND"
 		(shape bidirectional)
 		(at 115.57 147.32 270)
@@ -3589,6 +3931,18 @@
 			(justify right)
 		)
 		(uuid "96fab045-9056-42cd-aefb-36ea4749d758")
+	)
+	(hierarchical_label "3.3v"
+		(shape output)
+		(at 248.92 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "97f108dc-4bdf-460b-98ae-af0e334295a2")
 	)
 	(hierarchical_label "MOTORPWR"
 		(shape output)
@@ -3625,6 +3979,71 @@
 			(justify right)
 		)
 		(uuid "e2761d04-7c4b-410d-a0f7-1b48c4a1232a")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18f45480-2a7c-46db-bbf5-03dcf11fcf40")
+		(property "Reference" "#PWR05"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.426 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73464fb8-3981-428a-b6f3-057dc348b907")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -5025,6 +5444,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AP2112K-3.3")
+		(at 233.68 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "847ee624-f669-4a2e-af50-d37bb9cb49c6")
+		(property "Reference" "U1"
+			(at 233.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2112K-3.3"
+			(at 233.68 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 233.68 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+			(at 233.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(at 233.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "890db039-7c90-4d0f-9287-1554a52a14d9")
+		)
+		(pin "2"
+			(uuid "423e65eb-6309-4739-a250-8e395f4de452")
+		)
+		(pin "5"
+			(uuid "0f7b99b6-9009-458a-a86d-a0204012d190")
+		)
+		(pin "1"
+			(uuid "69b069e7-d1e4-4b3c-8f43-801e22f5dc29")
+		)
+		(pin "3"
+			(uuid "ae82ea89-8fa4-4344-a17e-1c447ceff59a")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "bq298xyz:BQ298000RUGT")
 		(at 101.6 44.45 0)
 		(unit 1)
@@ -5521,6 +6017,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 220.98 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afc0cc41-c63c-4934-b456-437dbc4f02a0")
+		(property "Reference" "C28"
+			(at 216.916 77.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uf"
+			(at 213.868 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df0bda85-32aa-4d5b-bfc2-b79c21c6586b")
+		)
+		(pin "2"
+			(uuid "2b71df1c-5efe-4829-9c41-7d874ecdd928")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 222.25 114.3 270)
 		(unit 1)
@@ -5959,6 +6524,75 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 245.11 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbe68890-e365-4c57-9fcc-d568acfec8aa")
+		(property "Reference" "C27"
+			(at 243.586 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uf"
+			(at 247.65 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76ee3444-d195-43c2-a9cb-f2bfaf27e1db")
+		)
+		(pin "2"
+			(uuid "dbb15e7d-9ca3-4742-900f-b2045cfbabb2")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C27")
 					(unit 1)
 				)
 			)
