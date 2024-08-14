@@ -1997,198 +1997,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_2_Bridged"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Bridged*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_0_1"
-				(rectangle
-					(start -0.508 0.508)
-					(end 0.508 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "MCU_Espressif:ESP32-S3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3707,6 +3515,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VDD"
 			(power)
 			(pin_numbers hide)
@@ -3899,6 +3803,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "595b9809-2c17-4530-92f5-9b0faf2673d6")
+	)
+	(junction
+		(at 87.63 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ea9608f-9b97-4d5f-b8bc-5bc95b2160a2")
 	)
 	(junction
 		(at 240.03 87.63)
@@ -4193,6 +4103,16 @@
 			(type default)
 		)
 		(uuid "1220a62e-c152-411f-9a3a-47e10bd15290")
+	)
+	(wire
+		(pts
+			(xy 54.61 91.44) (xy 58.42 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128c227d-8794-4234-9593-2f9f4e24a774")
 	)
 	(wire
 		(pts
@@ -4636,6 +4556,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 43.18) (xy 87.63 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ec3b823-b998-4517-89ea-c30a46d7a64b")
+	)
+	(wire
+		(pts
 			(xy 85.09 53.34) (xy 85.09 52.07)
 		)
 		(stroke
@@ -4643,16 +4573,6 @@
 			(type default)
 		)
 		(uuid "4f30fe7c-e608-4057-bc92-1bffeed9d916")
-	)
-	(wire
-		(pts
-			(xy 133.35 191.77) (xy 137.16 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fe2825a-cf6d-4f00-9389-1177eea4573b")
 	)
 	(wire
 		(pts
@@ -5096,6 +5016,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 99.06) (xy 121.92 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97e11609-d4d3-4f8f-8869-75767255a150")
+	)
+	(wire
+		(pts
 			(xy 116.84 93.98) (xy 113.03 93.98)
 		)
 		(stroke
@@ -5276,7 +5206,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 87.63) (xy 247.65 87.63)
+			(xy 240.03 87.63) (xy 255.27 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5326,7 +5256,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 39.37) (xy 87.63 53.34)
+			(xy 87.63 39.37) (xy 87.63 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5436,6 +5366,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 101.6) (xy 125.73 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c735deb5-4202-4d3d-8e52-62efd233bd71")
+	)
+	(wire
+		(pts
 			(xy 97.79 52.07) (xy 95.25 52.07)
 		)
 		(stroke
@@ -5466,7 +5406,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 81.28) (xy 116.84 81.28)
+			(xy 113.03 81.28) (xy 115.57 81.28)
 		)
 		(stroke
 			(width 0)
@@ -5493,6 +5433,16 @@
 			(type default)
 		)
 		(uuid "cd2ce2ff-5c8d-4b0d-972d-7682b4831222")
+	)
+	(wire
+		(pts
+			(xy 121.92 104.14) (xy 125.73 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea8cf44-c4c2-4aeb-aaad-08168a3da9fe")
 	)
 	(wire
 		(pts
@@ -5951,7 +5901,7 @@
 		)
 		(uuid "df72c552-8b57-4f3a-8fe1-6fb4a92a996c")
 	)
-	(label "ADC10{slash}VBATT"
+	(label "VBATT"
 		(at 81.28 177.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5973,18 +5923,7 @@
 		)
 		(uuid "0fa1c3ac-8e6d-4ff2-8cc3-75ffc19ea973")
 	)
-	(label "ADC11"
-		(at 133.35 191.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "153cbbc5-7eaa-4e03-8415-c03e598b611a")
-	)
-	(label "ADC10{slash}VBATT"
+	(label "VBATT"
 		(at 62.23 101.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6051,7 +5990,7 @@
 		(uuid "362f0fd3-6c03-4199-ac95-ed485fc385eb")
 	)
 	(label "CS1"
-		(at 63.5 91.44 180)
+		(at 54.61 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6083,7 +6022,7 @@
 		)
 		(uuid "3f13362b-bafb-4aeb-bbbb-3026be932ab9")
 	)
-	(label "USART1_RX"
+	(label "UART0_RX"
 		(at 195.58 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6192,17 +6131,6 @@
 			(justify left bottom)
 		)
 		(uuid "5b360326-3713-4874-8860-b24bd63e514c")
-	)
-	(label "ADC11"
-		(at 116.84 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f8c9fd8-2554-4f2c-8046-4a4a165e7388")
 	)
 	(label "1B"
 		(at 146.05 40.64 180)
@@ -6336,7 +6264,7 @@
 		)
 		(uuid "92b2d716-1ec6-4e80-b042-98205583339d")
 	)
-	(label "NRST"
+	(label "CS0"
 		(at 196.85 114.3 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6358,7 +6286,7 @@
 		)
 		(uuid "9a25f5be-7474-467e-b7d1-4e77028dc4b6")
 	)
-	(label "USART1_TX"
+	(label "UART0_TX"
 		(at 195.58 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6414,7 +6342,7 @@
 		(uuid "aa1cb291-b848-4a9c-ae78-4c2983d84e63")
 	)
 	(label "MISO1"
-		(at 116.84 104.14 0)
+		(at 125.73 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6447,7 +6375,7 @@
 		(uuid "beb13cb8-a2d7-4a99-b937-a4276a03fc8f")
 	)
 	(label "MOSI1"
-		(at 116.84 101.6 0)
+		(at 125.73 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6458,7 +6386,7 @@
 		(uuid "c22f3aa6-a69f-49f7-925b-3a6efd80a18b")
 	)
 	(label "SCK1"
-		(at 116.84 99.06 0)
+		(at 125.73 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7622,6 +7550,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 115.57 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a314fdd-e75a-418b-a449-56e570b625e9")
+		(property "Reference" "TP6"
+			(at 122.682 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 124.46 81.534 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 115.57 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "811baba0-87a5-428d-acbc-ada3acbdb1c1")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 80.01 44.45 0)
 		(unit 1)
@@ -8605,74 +8597,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 251.46 87.63 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f2bec13-2d54-4346-87d0-78a49a80ef4e")
-		(property "Reference" "JP2"
-			(at 251.46 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 251.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
-			(at 251.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 251.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 251.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59440157-8ebc-4412-9fba-a81b33c43395")
-		)
-		(pin "2"
-			(uuid "5a2e644f-bd7e-4126-b136-e11b79a24780")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -9820,7 +9744,7 @@
 				)
 			)
 		)
-		(property "Value" "40mhz"
+		(property "Value" "40mhz, 10ppm"
 			(at 58.674 118.364 90)
 			(effects
 				(font
@@ -10136,6 +10060,73 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 119.38 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b11880f-2c33-4f17-81c7-5eb7442ae1c9")
+		(property "Reference" "R4"
+			(at 114.808 102.362 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 118.872 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6073543a-1e7c-4e2d-8876-3d73b5da9bf4")
+		)
+		(pin "1"
+			(uuid "aaea5fbc-4778-40b8-98be-4330405b2e6f")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -10878,6 +10869,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 60.96 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4341bd6-7bd0-4910-b617-c49bf4872375")
+		(property "Reference" "R6"
+			(at 56.388 92.202 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 60.452 90.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c72ad8f6-28d0-440f-93a6-544036a8b0f2")
+		)
+		(pin "1"
+			(uuid "0a11cf54-fe2e-4dd9-b53c-e01fc57abd62")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Espressif:ESP32-S3")
 		(at 90.17 91.44 0)
 		(unit 1)
@@ -11113,6 +11171,71 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
+		(at 132.08 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5ec9e66-7545-4cad-b343-684b6fcaaf7a")
+		(property "Reference" "#PWR018"
+			(at 132.08 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 134.366 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 132.08 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e20d4680-8580-48ee-9b1c-b280ed8ffe91")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
 		(at 196.85 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11236,6 +11359,71 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "badb13c9-cf20-4638-9ddc-519a35546766")
+		(property "Reference" "#FLG01"
+			(at 87.63 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 87.63 41.402 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b62439e-9b82-444b-bf20-da5743c6a727")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -11431,70 +11619,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "TP27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 137.16 191.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cac2b5d5-cb65-493f-9456-bf8118813581")
-		(property "Reference" "TP6"
-			(at 139.7 189.738 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 146.05 192.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 137.16 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 137.16 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4e6cb75-1cc7-4cf8-a322-fb0ad985a52b")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -12597,6 +12721,140 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 119.38 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6815ad0-155a-4a93-a1cb-ecf2e2bb0fef")
+		(property "Reference" "R5"
+			(at 114.808 99.822 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 118.872 98.552 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4001991b-ba20-41dd-9766-d7500f5e6933")
+		)
+		(pin "1"
+			(uuid "ef6c6c6e-c462-448a-b98e-4558024154d6")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 119.38 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6bb7ff1-dd29-4a51-a987-fe0e4144cd98")
+		(property "Reference" "R3"
+			(at 114.808 104.902 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33ohm"
+			(at 118.872 103.632 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "13854fa3-ddbd-4345-a6a4-765ef832f09c")
+		)
+		(pin "1"
+			(uuid "77f03bd6-79bc-4c13-9540-848deff23b9c")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "R3")
 					(unit 1)
 				)
 			)
