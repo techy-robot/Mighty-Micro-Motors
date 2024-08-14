@@ -6298,7 +6298,7 @@
 		(uuid "9cc7f1eb-3703-49a0-a27f-8534444e0863")
 	)
 	(label "1A"
-		(at 116.84 96.52 0)
+		(at 116.84 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6353,7 +6353,7 @@
 		(uuid "b26dce4f-6d64-4b69-bbc4-4986ffb33219")
 	)
 	(label "1C"
-		(at 116.84 91.44 0)
+		(at 116.84 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6652,7 +6652,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 86.36 0)
 			(effects
 				(font
@@ -6716,7 +6716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 78.74 0)
 			(effects
 				(font
@@ -7179,7 +7179,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 125.73 0)
 			(effects
 				(font
@@ -7574,7 +7574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 115.57 86.36 0)
 			(effects
 				(font
@@ -7703,7 +7703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 71.12 0)
 			(effects
 				(font
@@ -8232,7 +8232,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 88.9 0)
 			(effects
 				(font
@@ -8362,7 +8362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 101.6 0)
 			(effects
 				(font
@@ -8697,7 +8697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 109.22 0)
 			(effects
 				(font
@@ -8761,7 +8761,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 120.65 0)
 			(effects
 				(font
@@ -8958,7 +8958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 68.58 0)
 			(effects
 				(font
@@ -9233,7 +9233,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 123.19 0)
 			(effects
 				(font
@@ -9362,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 104.14 0)
 			(effects
 				(font
@@ -9426,7 +9426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 99.06 0)
 			(effects
 				(font
@@ -9624,7 +9624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 116.84 0)
 			(effects
 				(font
@@ -9688,7 +9688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 101.6 0)
 			(effects
 				(font
@@ -9825,7 +9825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 113.03 121.92 0)
 			(effects
 				(font
@@ -10222,7 +10222,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 128.27 0)
 			(effects
 				(font
@@ -10286,7 +10286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 115.57 0)
 			(effects
 				(font
@@ -10415,7 +10415,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 73.66 0)
 			(effects
 				(font
@@ -10479,7 +10479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 99.06 0)
 			(effects
 				(font
@@ -11325,7 +11325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 121.92 0)
 			(effects
 				(font
@@ -11454,7 +11454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 83.82 0)
 			(effects
 				(font
@@ -11585,7 +11585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 93.98 0)
 			(effects
 				(font
@@ -11716,7 +11716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 96.52 0)
 			(effects
 				(font
@@ -11916,7 +11916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 114.3 0)
 			(effects
 				(font
@@ -11980,7 +11980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 67.31 76.2 0)
 			(effects
 				(font
@@ -12245,7 +12245,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 91.44 0)
 			(effects
 				(font
@@ -12309,7 +12309,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 165.1 118.11 0)
 			(effects
 				(font
@@ -12618,7 +12618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 111.76 0)
 			(effects
 				(font
@@ -12951,7 +12951,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 191.77 119.38 0)
 			(effects
 				(font
