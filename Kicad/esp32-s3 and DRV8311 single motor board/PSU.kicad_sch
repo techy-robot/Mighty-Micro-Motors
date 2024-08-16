@@ -1884,16 +1884,16 @@
 		(uuid "1becd039-30a6-46ed-a916-a7742170aaa1")
 	)
 	(junction
-		(at 233.68 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43f7357b-894d-411f-a43a-dd94f9e3f246")
-	)
-	(junction
 		(at 116.84 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "565c8d8b-5733-436f-bb57-76245ddd84a2")
+	)
+	(junction
+		(at 220.98 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58814af8-55fb-4a13-98b4-0727a82ff355")
 	)
 	(junction
 		(at 128.27 130.81)
@@ -2003,13 +2003,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 87.63) (xy 233.68 86.36)
+			(xy 233.68 86.36) (xy 220.98 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0ca93199-6e7b-4049-8595-7fa32e636f1a")
+		(uuid "0334663c-71be-4536-9861-9ae3fe8673cf")
 	)
 	(wire
 		(pts
@@ -2023,7 +2023,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 81.28) (xy 220.98 87.63)
+			(xy 220.98 81.28) (xy 220.98 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2263,6 +2263,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 86.36) (xy 220.98 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fafffcc-f16d-4bf2-ae5d-3bda9645b745")
+	)
+	(wire
+		(pts
 			(xy 217.17 128.27) (xy 219.71 128.27)
 		)
 		(stroke
@@ -2393,16 +2403,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 87.63) (xy 233.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b76023-4d1e-439c-a2fc-e85aaf601098")
-	)
-	(wire
-		(pts
 			(xy 93.98 147.32) (xy 93.98 135.89)
 		)
 		(stroke
@@ -2420,16 +2420,6 @@
 			(type default)
 		)
 		(uuid "bea67629-c479-4278-90ff-8ddd476bb29c")
-	)
-	(wire
-		(pts
-			(xy 233.68 88.9) (xy 233.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1399fd2-315d-4c2a-a9a0-96618fdc0501")
 	)
 	(wire
 		(pts
@@ -2520,16 +2510,6 @@
 			(type default)
 		)
 		(uuid "fa9534b5-8f42-4892-bc25-c796c8f5e6c6")
-	)
-	(wire
-		(pts
-			(xy 220.98 87.63) (xy 233.68 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2b26c1-5700-41ae-8f72-eb5e550af1ac")
 	)
 	(text_box "Charge status indicator. During charging pin is low, otherwize it is pulled high. Current should be 2.5mah"
 		(exclude_from_sim no)
@@ -2791,7 +2771,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 88.9 0)
+		(at 245.11 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2799,7 +2779,7 @@
 		(dnp no)
 		(uuid "18f45480-2a7c-46db-bbf5-03dcf11fcf40")
 		(property "Reference" "#PWR05"
-			(at 233.68 95.25 0)
+			(at 245.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2808,7 +2788,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.426 93.218 0)
+			(at 244.856 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2816,7 +2796,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 88.9 0)
+			(at 245.11 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2825,7 +2805,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 88.9 0)
+			(at 245.11 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2834,7 +2814,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 88.9 0)
+			(at 245.11 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,6 +3174,71 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 220.98 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "353a170b-c00a-4c63-a006-5d9f615c892b")
+		(property "Reference" "#PWR038"
+			(at 220.98 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 222.504 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f201be7a-0b82-4176-ad2d-1606ae18cef4")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)

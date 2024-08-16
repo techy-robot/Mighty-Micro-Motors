@@ -3961,6 +3961,10 @@
 		(uuid "3520cf42-ab48-43da-be12-e686059423bb")
 	)
 	(no_connect
+		(at 67.31 73.66)
+		(uuid "495f1fb6-2a67-4a2a-8222-e6d04f04965a")
+	)
+	(no_connect
 		(at 113.03 68.58)
 		(uuid "4fffc696-154e-49bc-8a6a-09451fdc22c9")
 	)
@@ -3975,6 +3979,10 @@
 	(no_connect
 		(at 113.03 63.5)
 		(uuid "81e8c724-6d02-4cac-8882-36a8970bd51d")
+	)
+	(no_connect
+		(at 67.31 76.2)
+		(uuid "a0332a17-483f-4375-9f9d-25be0dfbf407")
 	)
 	(no_connect
 		(at 113.03 76.2)
@@ -4003,6 +4011,14 @@
 	(no_connect
 		(at 132.08 86.36)
 		(uuid "dc1ab92d-8a1d-4b53-8c81-387d8e9420bd")
+	)
+	(no_connect
+		(at 67.31 81.28)
+		(uuid "ebbea4b7-998e-42af-a9d8-82137307cad7")
+	)
+	(no_connect
+		(at 67.31 78.74)
+		(uuid "fc2e4e19-3d1f-408f-a446-2a4e136719f4")
 	)
 	(wire
 		(pts
@@ -7699,70 +7715,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 67.31 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c053063-721f-44fd-aa5a-88eeb86a28fd")
-		(property "Reference" "TP15"
-			(at 60.198 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 58.42 75.946 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 67.31 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37e90366-7db5-4e89-aa02-8001a38d3cee")
-		)
-		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "TP15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 74.93 181.61 180)
 		(unit 1)
@@ -8948,70 +8900,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 67.31 73.66 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d6b1a40-e816-41d3-9a1f-305e51fd89d7")
-		(property "Reference" "TP14"
-			(at 60.198 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 58.42 73.406 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 67.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 67.31 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e2f529c-67be-4a80-85a2-9e1bd14e55e1")
-		)
-		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -10405,70 +10293,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 67.31 78.74 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2601a1b-a025-4b81-8711-cd1dfe78e662")
-		(property "Reference" "TP16"
-			(at 60.198 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 58.42 78.486 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 67.31 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 67.31 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb73f43e-2be7-4b37-a6f0-097c8f1d8b8d")
-		)
-		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -11970,70 +11794,6 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 67.31 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d24a7e75-3e42-440e-baf5-36d55f5f3899")
-		(property "Reference" "TP17"
-			(at 60.198 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 58.42 81.026 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 67.31 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "091fad08-8642-4558-8844-446d5b19865f")
-		)
-		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "TP17")
 					(unit 1)
 				)
 			)
