@@ -1180,10 +1180,10 @@
 		(uuid "4a864e82-f96b-49a7-99bf-b929bd11e9b6")
 	)
 	(junction
-		(at 69.85 59.69)
+		(at 64.77 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4e919d68-3175-43b5-a325-eaf5ebe60cba")
+		(uuid "536b361f-9b58-40fe-be82-37808c8acdbb")
 	)
 	(junction
 		(at 107.95 92.71)
@@ -1196,6 +1196,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64ee98dd-7a05-44cf-b533-d34966851d02")
+	)
+	(junction
+		(at 69.85 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a4bb6ae-0990-4890-9d43-0e033ea4c5a7")
 	)
 	(junction
 		(at 78.74 59.69)
@@ -1214,6 +1220,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8d12904-c64c-44a8-9942-8bbf140b35aa")
+	)
+	(junction
+		(at 69.85 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f364faea-41d3-4a31-9e88-fe1343afed5a")
 	)
 	(no_connect
 		(at 107.95 71.12)
@@ -1311,6 +1323,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 64.77) (xy 69.85 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c194cf0-dee6-4661-a483-3462d5a492f8")
+	)
+	(wire
+		(pts
 			(xy 102.87 54.61) (xy 102.87 52.07)
 		)
 		(stroke
@@ -1358,16 +1380,6 @@
 			(type default)
 		)
 		(uuid "509086a4-b7fe-4749-8d91-80f5919838b9")
-	)
-	(wire
-		(pts
-			(xy 62.23 59.69) (xy 69.85 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "590a1b16-9941-472b-b7d7-7950fe8a9c49")
 	)
 	(wire
 		(pts
@@ -1541,6 +1553,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 59.69) (xy 69.85 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6349f1-4e31-4a44-8978-b340eb07ab3b")
+	)
+	(wire
+		(pts
 			(xy 106.68 57.15) (xy 107.95 57.15)
 		)
 		(stroke
@@ -1548,6 +1570,16 @@
 			(type default)
 		)
 		(uuid "bf0ee66f-9658-4925-80b2-b3d53d0f3ad4")
+	)
+	(wire
+		(pts
+			(xy 69.85 59.69) (xy 78.74 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfc7eb2b-95f7-4454-8253-0e6673b8fe0e")
 	)
 	(wire
 		(pts
@@ -1621,7 +1653,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 59.69) (xy 78.74 59.69)
+			(xy 62.23 59.69) (xy 64.77 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2410,10 +2442,10 @@
 		(at 69.85 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(uuid "531c1fa6-56dd-4ab8-9867-ac0192db7fb8")
+		(dnp no)
+		(uuid "5421a132-a2d0-4472-819d-dea296a6e26c")
 		(property "Reference" "C8"
 			(at 66.04 61.468 0)
 			(effects
@@ -2423,8 +2455,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF, 16 v"
-			(at 61.722 62.992 0)
+		(property "Value" "22uF"
+			(at 63.754 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,7 +2464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 69.85 62.23 0)
 			(effects
 				(font
@@ -2460,13 +2492,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "df7cb038-b97e-4a93-9a8e-dc013ab6fd8a")
+			(uuid "85d29418-30bd-498e-9de9-f5ad766dbe87")
 		)
 		(pin "2"
-			(uuid "504d18b7-3f4b-4f6f-9ed8-0aee72df4ddf")
+			(uuid "c9e16500-d6bb-468e-9150-b10011d4b9db")
 		)
 		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
+			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/5c02fed6-da20-4eef-a2eb-99e8043b232c"
 					(reference "C8")
 					(unit 1)
@@ -2535,6 +2567,75 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/5c02fed6-da20-4eef-a2eb-99e8043b232c"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 64.77 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89cf2ae3-e5ee-4d73-8f79-2f6b852dc8c1")
+		(property "Reference" "C11"
+			(at 60.96 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 58.674 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 64.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 64.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4f5c808-23f6-4a35-8f23-18e17962ada3")
+		)
+		(pin "2"
+			(uuid "a742ddcc-3ee8-439e-ad51-25ab989ec621")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/5c02fed6-da20-4eef-a2eb-99e8043b232c"
+					(reference "C11")
 					(unit 1)
 				)
 			)
