@@ -872,6 +872,174 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
 			(pin_names
 				(offset 1.016) hide)
@@ -3044,6 +3212,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -3917,10 +4187,6 @@
 		(uuid "5f47d351-fd7d-47f2-ae9a-4451948883ce")
 	)
 	(no_connect
-		(at 168.91 31.75)
-		(uuid "7db77a21-c8c7-4284-9517-cd4ebedf1d1e")
-	)
-	(no_connect
 		(at 113.03 63.5)
 		(uuid "81e8c724-6d02-4cac-8882-36a8970bd51d")
 	)
@@ -3949,10 +4215,6 @@
 		(uuid "ced5eb86-830e-4577-ac0d-96939864ea20")
 	)
 	(no_connect
-		(at 160.02 31.75)
-		(uuid "cf290ba4-0447-4b20-addb-c31fee360593")
-	)
-	(no_connect
 		(at 113.03 73.66)
 		(uuid "d4a067f2-51df-43cb-adc6-7e971d69f894")
 	)
@@ -3971,16 +4233,6 @@
 	(no_connect
 		(at 67.31 78.74)
 		(uuid "fc2e4e19-3d1f-408f-a446-2a4e136719f4")
-	)
-	(wire
-		(pts
-			(xy 158.75 60.96) (xy 160.02 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00091e56-27a4-4ea0-828b-607ed934d280")
 	)
 	(wire
 		(pts
@@ -4481,16 +4733,6 @@
 			(type default)
 		)
 		(uuid "403221db-70da-4495-a324-5f83a93001fd")
-	)
-	(wire
-		(pts
-			(xy 160.02 60.96) (xy 160.02 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "433f8091-1e09-415b-b5ca-2b652bd64093")
 	)
 	(wire
 		(pts
@@ -5264,26 +5506,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 59.69) (xy 165.1 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c461f1f0-97b3-42c9-9bd5-9a994fd5134e")
-	)
-	(wire
-		(pts
-			(xy 162.56 55.88) (xy 162.56 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c59ab967-6d2c-4c3b-80db-088662dac0de")
-	)
-	(wire
-		(pts
 			(xy 228.6 147.32) (xy 228.6 148.59)
 		)
 		(stroke
@@ -5681,16 +5903,6 @@
 			(type default)
 		)
 		(uuid "fa3d1576-20bc-4ddd-b1ca-348af359ce32")
-	)
-	(wire
-		(pts
-			(xy 158.75 60.96) (xy 158.75 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feb67ca3-aeb6-4782-ba68-44d067f4d149")
 	)
 	(text_box "CS pullup helps during device startup and decreases randomness"
 		(exclude_from_sim no)
@@ -6463,71 +6675,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 158.75 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01dc4e65-d46d-4b6b-b186-18f7c95ee300")
-		(property "Reference" "#PWR09"
-			(at 158.75 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.496 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3a594e25-d162-428b-9111-a75c903f2cfd")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 20.32 110.49 90)
 		(unit 1)
@@ -6988,6 +7135,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 165.1 59.69 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1562dc92-fb0f-4b68-8ffa-de8894f8cf89")
+		(property "Reference" "H5"
+			(at 167.64 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9be18f33-b287-43e5-863c-31422daf2e21")
+		)
+		(instances
+			(project ""
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 165.1 120.65 270)
 		(unit 1)
@@ -7180,6 +7394,79 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22099fe3-e37f-4bff-9bf0-749ba26510b1")
+		(property "Reference" "J4"
+			(at 157.48 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 157.48 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfb3b499-cf20-431b-b68e-fcd4c4b03af5")
+		)
+		(pin "3"
+			(uuid "9c0c2aa4-7c80-416d-9d5c-f368023cb9d4")
+		)
+		(pin "2"
+			(uuid "7b0abc23-5569-4a39-adc7-08cd8409cf95")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -7509,6 +7796,79 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 154.94 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2db79a27-0bca-409c-9f00-a5b864f97334")
+		(property "Reference" "J3"
+			(at 157.48 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 157.48 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 154.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2b83b27-1855-4570-bfc7-30a8af37065e")
+		)
+		(pin "3"
+			(uuid "dc1ab289-532f-4700-9d92-601a92069e7c")
+		)
+		(pin "2"
+			(uuid "596ebd31-363e-44d9-9d29-ca254586164b")
+		)
+		(instances
+			(project ""
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9693,6 +10053,73 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "TP22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 168.91 31.75 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9243b981-f333-471f-9469-b47d498e8d4a")
+		(property "Reference" "H6"
+			(at 172.72 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Power"
+			(at 172.72 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 168.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9b3fcd5-e625-45e2-868c-e0429f0b7022")
+		)
+		(instances
+			(project "esp32-s3 and DRV8311 single motor board"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -12300,154 +12727,6 @@
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR027")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 149.86 31.75)
-		(size 27.94 24.13)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "5c02fed6-da20-4eef-a2eb-99e8043b232c")
-		(property "Sheetname" "DRV8311"
-			(at 149.86 31.0384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "DRV8311.kicad_sch"
-			(at 149.86 56.4646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "INC" input
-			(at 149.86 43.18 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "092b572e-f824-4605-ae0e-92e879006989")
-		)
-		(pin "INA" input
-			(at 149.86 38.1 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "219cba4d-77fe-4ee7-bc92-86e8a10b2d4d")
-		)
-		(pin "INB" input
-			(at 149.86 40.64 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "daa89c4e-7cf6-43dc-81ba-eeeae56e390a")
-		)
-		(pin "MOTORGND" bidirectional
-			(at 162.56 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "082a2c81-1e4c-43c5-af35-5ec84a6d97d5")
-		)
-		(pin "MOTORPWR" input
-			(at 166.37 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "71f77fdd-0dd8-4164-bf56-e91373ddf4c8")
-		)
-		(pin "GND" bidirectional
-			(at 160.02 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c187724b-19b9-40c0-8992-bb257ab06076")
-		)
-		(pin "CSA-B" output
-			(at 149.86 48.26 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8c665278-27c3-4d3b-b645-0cb22852ca2a")
-		)
-		(pin "CSA-A" output
-			(at 149.86 45.72 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "88bf3013-bf1b-4251-8cac-fbd72df14fd0")
-		)
-		(pin "CSA-C" output
-			(at 149.86 50.8 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1fdffbce-b0e8-4015-a462-5a553660c9a9")
-		)
-		(pin "RegulatorOut" output
-			(at 160.02 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f01756e6-1726-4702-9f3e-201837fc100d")
-		)
-		(pin "FAULT" output
-			(at 168.91 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "b3ff5fdc-6f86-47bf-8074-319a648f130c")
-		)
-		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(page "2")
 				)
 			)
 		)
