@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 36,
     "active_layer_preset": "All Layers",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -78,6 +78,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "DRV8311 on motor driver.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 384,
+          "pos_y": 0,
+          "size_x": 768,
+          "size_y": 920
+        }
+      },
+      {
+        "name": "DRV8311 on motor driver.kicad_pcb",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": 32,
+          "pos_y": 32,
+          "size_x": 1280,
+          "size_y": 666
+        }
+      }
+    ]
   }
 }
