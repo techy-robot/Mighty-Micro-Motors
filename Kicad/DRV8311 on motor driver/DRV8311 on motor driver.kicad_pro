@@ -179,15 +179,12 @@
       ],
       "track_widths": [
         0.0,
-        0.127,
         0.15,
         0.2,
         0.28,
         0.6,
         1.0,
-        2.814,
-        7.0,
-        11.1
+        2.814
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -219,10 +216,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.3
         },
         {
           "diameter": 0.6,
@@ -492,9 +485,7 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "VDD": "MOTORPWR"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
