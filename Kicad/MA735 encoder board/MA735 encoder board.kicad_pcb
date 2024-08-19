@@ -167,7 +167,7 @@
 			)
 		)
 		(property "Footprint" "MA730:UTQFN-14_MA735_MNP"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9bf13a24-1cf7-46e2-9de8-2324865e3ca5")
@@ -179,7 +179,7 @@
 			)
 		)
 		(property "Datasheet" "MA735GGU-Z"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "615c6b1e-981e-4f4d-adfb-89df37aa074a")
@@ -191,7 +191,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c02a951f-bf4f-4007-8f98-531773904f37")
@@ -498,7 +498,7 @@
 			(uuid "1b9fa24d-3896-4f37-a705-a6ca4ec7a7d8")
 		)
 		(fp_text user "*"
-			(at -1.985 -0.400001 360)
+			(at -1.985 -0.400001 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9b3474e5-bea1-41c3-9064-39643255e10e")
@@ -544,7 +544,7 @@
 			)
 		)
 		(fp_text user "*"
-			(at -0.015 -0.4 360)
+			(at -0.015 -0.4 0)
 			(layer "F.Fab")
 			(uuid "93c22c66-8f13-4ecb-a9ac-bf9e560bd344")
 			(effects
@@ -712,7 +712,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -0.1 360)
+			(at 0 -0.1 0)
 			(layer "B.SilkS")
 			(uuid "a4f28ab1-9b9b-4f65-8a37-11653f18d818")
 			(effects
@@ -724,7 +724,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "a5138c50-d130-4c6a-84e9-fc7f981e2392")
 			(effects
@@ -879,7 +879,7 @@
 			(uuid "6beb6efb-99d5-46b9-8a3e-dceee9a39040")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "04224dbe-9bb5-4b32-95e5-0b490b6bdab3")
 			(effects
@@ -1141,6 +1141,7 @@
 			(at 0.18 -1.86 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "2c43ab25-d1b9-4d75-9517-dc393e18b897")
 			(effects
 				(font
@@ -1527,6 +1528,42 @@
 		(fill solid)
 		(layer "User.2")
 		(uuid "7942c8c3-c859-4f8d-9a6b-bff5187239aa")
+	)
+	(gr_text "MA735 Magnetic encoder 9-13bit, 0~60k RPM, SPI"
+		(at 153.4 88.05 90)
+		(layer "B.SilkS")
+		(uuid "f28cba3e-90a2-4dd9-89fa-795dc86ba4e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Contacts facing PCB"
+		(at 152.4 58.55 270)
+		(layer "F.SilkS")
+		(uuid "b2406eec-90cd-4a3d-90d2-65c2ce391b87")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "© 2024 Asher Edwards"
+		(at 152.3 99.85 -90)
+		(layer "F.SilkS")
+		(uuid "f76f8df3-3ab5-4aa2-a6f4-767f9254fb83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(gr_text "Fits connector: AYF330735 from panasonic"
 		(at 144.8 48.3 0)

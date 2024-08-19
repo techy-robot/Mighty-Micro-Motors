@@ -7162,7 +7162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 165.1 59.69 0)
 			(effects
 				(font
@@ -7427,7 +7427,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 154.94 48.26 0)
 			(effects
 				(font
@@ -7829,7 +7829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 154.94 40.64 0)
 			(effects
 				(font
@@ -10086,7 +10086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 168.91 31.75 0)
 			(effects
 				(font
@@ -12802,7 +12802,7 @@
 			(uuid "563d499a-ef23-4557-a7a1-7ec5d2abfd05")
 		)
 		(instances
-			(project "esp32-s3 and DRV8311 single motor board"
+			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(page "3")
 				)
