@@ -7297,7 +7297,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SDR0604"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 283.21 62.23 0)
 			(effects
 				(font
@@ -7357,7 +7357,7 @@
 				)
 			)
 		)
-		(property "Value" "10mOhm"
+		(property "Value" "10mOhm, CS"
 			(at 160.528 162.052 90)
 			(effects
 				(font
@@ -7365,7 +7365,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_2816_7142Metric"
 			(at 160.02 158.75 0)
 			(effects
 				(font
