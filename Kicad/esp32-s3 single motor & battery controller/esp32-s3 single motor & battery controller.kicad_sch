@@ -13,25 +13,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U6"
-				(at 2.1941 17.78 0)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "74HC595"
-				(at 2.1941 15.24 0)
+				(at -7.62 -16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -376,24 +374,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54) hide
-					(name "Pad"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -3989,6 +3969,12 @@
 		(uuid "3dfe1e71-39bd-4a2b-bbde-9bf5e83907fd")
 	)
 	(junction
+		(at 92.71 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e54bb88-5ec5-4b3b-837e-470cad6b3211")
+	)
+	(junction
 		(at 53.34 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4165,6 +4151,10 @@
 	(no_connect
 		(at 113.03 121.92)
 		(uuid "3520cf42-ab48-43da-be12-e686059423bb")
+	)
+	(no_connect
+		(at 113.03 81.28)
+		(uuid "4421ee15-8a8e-4dc0-a99d-dcc1f1be5ee8")
 	)
 	(no_connect
 		(at 67.31 73.66)
@@ -4836,7 +4826,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 39.37) (xy 92.71 40.64)
+			(xy 92.71 35.56) (xy 92.71 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5023,6 +5013,16 @@
 			(type default)
 		)
 		(uuid "72296a49-75e1-44c7-b0b5-afc17ab45cbd")
+	)
+	(wire
+		(pts
+			(xy 92.71 36.83) (xy 92.71 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7375c968-0453-4e4c-9aa8-0fc1d495b7bf")
 	)
 	(wire
 		(pts
@@ -7358,7 +7358,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 92.71 39.37 0)
+		(at 92.71 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7366,7 +7366,7 @@
 		(dnp no)
 		(uuid "21688434-d7bf-4745-9709-cde49e9a39fb")
 		(property "Reference" "#PWR04"
-			(at 92.71 43.18 0)
+			(at 92.71 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7375,7 +7375,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 94.996 37.338 0)
+			(at 94.996 33.528 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7383,7 +7383,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 39.37 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7392,7 +7392,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 39.37 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7401,7 +7401,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 92.71 39.37 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10882,6 +10882,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 92.71 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a98dd005-9eb6-4207-a06b-866389776846")
+		(property "Reference" "#FLG03"
+			(at 94.615 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 96.52 36.8299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 92.71 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2555c419-c86d-4571-b32b-b05078b1fe0c")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 68.58 0)
 		(unit 1)
@@ -12338,9 +12405,6 @@
 		)
 		(pin "10"
 			(uuid "5b6b55af-b807-4f9b-a21b-dc2bf9129db7")
-		)
-		(pin "17"
-			(uuid "7469a282-3925-4195-bb8a-4ad7dda8c7a8")
 		)
 		(instances
 			(project ""
