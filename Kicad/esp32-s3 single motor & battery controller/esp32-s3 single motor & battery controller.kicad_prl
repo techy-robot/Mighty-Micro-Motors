@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 32,
+    "active_layer": 0,
     "active_layer_preset": "All Layers",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -80,15 +80,15 @@
   "project": {
     "files": [
       {
-        "name": "esp32-s3 single motor & battery controller.kicad_pcb",
-        "open": false,
+        "name": "esp32-s3 single motor & battery controller.kicad_sch",
+        "open": true,
         "window": {
           "display": 0,
           "maximized": true,
-          "pos_x": 32,
-          "pos_y": 32,
-          "size_x": 1280,
-          "size_y": 450
+          "pos_x": 384,
+          "pos_y": 0,
+          "size_x": 768,
+          "size_y": 920
         }
       }
     ]
