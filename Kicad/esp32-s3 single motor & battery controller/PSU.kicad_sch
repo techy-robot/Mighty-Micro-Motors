@@ -3205,6 +3205,12 @@
 		(uuid "04343abc-a1fe-4493-8cb6-d648b702ded0")
 	)
 	(junction
+		(at 161.29 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b8f05d2-f7ba-482a-aa91-7ede6199b6ac")
+	)
+	(junction
 		(at 101.6 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3221,6 +3227,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22227850-37fe-45d4-bdbc-a275ae49caae")
+	)
+	(junction
+		(at 238.76 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37787a38-427b-4b1c-91d7-c2263f2de775")
 	)
 	(junction
 		(at 24.13 64.77)
@@ -3241,6 +3253,12 @@
 		(uuid "488a0092-703c-4984-9ab8-0c59ff60ac85")
 	)
 	(junction
+		(at 233.68 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49bee84c-2284-49ad-87e6-a8fa75504743")
+	)
+	(junction
 		(at 137.16 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3251,6 +3269,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c2cc8d8-0255-4536-9fc0-7a13a94cd6c9")
+	)
+	(junction
+		(at 238.76 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55577f9b-a519-43cf-b042-dd2261ea7925")
 	)
 	(junction
 		(at 250.19 72.39)
@@ -3307,10 +3331,10 @@
 		(uuid "707a36ca-27eb-425a-9e78-95c946ff0e2d")
 	)
 	(junction
-		(at 39.37 130.81)
+		(at 21.59 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "743bba25-5039-4960-9486-67a084df9df7")
+		(uuid "7438d2cb-4b11-4bf4-87c3-b0201f5356bc")
 	)
 	(junction
 		(at 73.66 73.66)
@@ -3367,13 +3391,19 @@
 		(uuid "a26eab0e-31be-4d27-a3c8-ff6b22178898")
 	)
 	(junction
+		(at 167.64 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a370fb46-6d93-477e-9550-5fdbac81cfc4")
+	)
+	(junction
 		(at 95.25 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8774d09-6157-42c8-97c4-6c691b676a13")
 	)
 	(junction
-		(at 246.38 119.38)
+		(at 261.62 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abfaf6f5-b277-4c90-8bf1-a8e944a52d67")
@@ -3391,7 +3421,7 @@
 		(uuid "bbf624ae-54bc-462c-be1c-82add2d0566e")
 	)
 	(junction
-		(at 243.84 114.3)
+		(at 259.08 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdb64c85-07d4-4069-aa60-08871d24dff6")
@@ -3403,13 +3433,19 @@
 		(uuid "cbb4d02a-b096-4f79-9e75-6ede1a23b0e5")
 	)
 	(junction
+		(at 167.64 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3dc07e3-9f5d-4bd7-9708-7cdd5bf7b676")
+	)
+	(junction
 		(at 67.31 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db44250c-a6be-4fe2-9814-3b8ff50e804b")
 	)
 	(junction
-		(at 246.38 114.3)
+		(at 261.62 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2c7f81d-de93-4c52-b153-9d85d1e60c9a")
@@ -3419,6 +3455,40 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f95dbe11-8213-47c3-ac92-7d71ccb05ddd")
+	)
+	(junction
+		(at 161.29 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb1603ee-b2c7-4a79-a388-da48fbfef4f3")
+	)
+	(no_connect
+		(at 53.34 133.35)
+		(uuid "1792bae0-5778-4b24-a647-ff63f9d0667b")
+	)
+	(no_connect
+		(at 53.34 163.83)
+		(uuid "3d28dace-97ba-4c32-827f-becb155f9dc1")
+	)
+	(no_connect
+		(at 229.87 138.43)
+		(uuid "425edb2d-8908-4680-95a5-49a4d56a627d")
+	)
+	(no_connect
+		(at 53.34 148.59)
+		(uuid "4a30efd2-5959-4f49-b74b-66398dac7a6c")
+	)
+	(no_connect
+		(at 184.15 138.43)
+		(uuid "5368433c-74f9-4fc4-8f94-226ab4376875")
+	)
+	(no_connect
+		(at 53.34 138.43)
+		(uuid "b837c580-28dd-439e-9335-d94c2237744d")
+	)
+	(no_connect
+		(at 53.34 143.51)
+		(uuid "e1d464e9-227e-4368-9eb4-d46fdf75b276")
 	)
 	(wire
 		(pts
@@ -3432,7 +3502,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 114.3) (xy 246.38 114.3)
+			(xy 259.08 115.57) (xy 261.62 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3469,6 +3539,16 @@
 			(type default)
 		)
 		(uuid "0334663c-71be-4536-9861-9ae3fe8673cf")
+	)
+	(wire
+		(pts
+			(xy 166.37 118.11) (xy 167.64 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04b816f9-adcd-4fbb-91e1-808449e1dd2a")
 	)
 	(wire
 		(pts
@@ -3519,6 +3599,26 @@
 			(type default)
 		)
 		(uuid "0cf40383-a200-47d9-bf99-454b5b6c43d0")
+	)
+	(wire
+		(pts
+			(xy 229.87 130.81) (xy 233.68 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb6dc44-5672-4790-a3a9-04a801d7a18e")
+	)
+	(polyline
+		(pts
+			(xy 7.62 99.06) (xy 19.05 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1060600a-788d-48cf-9115-85233e9705e0")
 	)
 	(wire
 		(pts
@@ -3582,16 +3682,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 130.81) (xy 39.37 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19f05b83-8a73-443a-ac80-b63c376a4192")
-	)
-	(wire
-		(pts
 			(xy 274.32 67.31) (xy 274.32 73.66)
 		)
 		(stroke
@@ -3612,13 +3702,23 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 118.11) (xy 144.78 118.11)
+			(xy 137.16 118.11) (xy 161.29 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "23b7d34b-8d98-4553-929d-36b675c853f0")
+	)
+	(wire
+		(pts
+			(xy 173.99 133.35) (xy 161.29 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24880bad-2bd1-42b0-9ff9-433fe42fdfa4")
 	)
 	(wire
 		(pts
@@ -3660,6 +3760,16 @@
 		)
 		(uuid "28bed429-9a35-4b53-9a67-cde9ba44adfa")
 	)
+	(polyline
+		(pts
+			(xy 7.62 95.25) (xy 7.62 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29982965-78e7-40b6-bb44-c22ab8341dea")
+	)
 	(wire
 		(pts
 			(xy 255.27 64.77) (xy 254 64.77)
@@ -3679,6 +3789,26 @@
 			(type default)
 		)
 		(uuid "2c3432d3-6ca5-4c77-922a-9bcab6c36f54")
+	)
+	(wire
+		(pts
+			(xy 238.76 138.43) (xy 233.68 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30658509-9747-4236-8006-bfb5150fdb8c")
+	)
+	(wire
+		(pts
+			(xy 233.68 138.43) (xy 233.68 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30ad9e73-505e-40ca-9824-4611e852a006")
 	)
 	(wire
 		(pts
@@ -3712,6 +3842,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 137.16) (xy 184.15 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b18612-006d-44a3-8f60-ad72eccaa3f4")
+	)
+	(wire
+		(pts
 			(xy 39.37 64.77) (xy 39.37 80.01)
 		)
 		(stroke
@@ -3732,6 +3872,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 118.11) (xy 161.29 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d44646a-8ab1-46fc-adc7-9ab130df2d5c")
+	)
+	(wire
+		(pts
 			(xy 39.37 64.77) (xy 41.91 64.77)
 		)
 		(stroke
@@ -3739,6 +3889,16 @@
 			(type default)
 		)
 		(uuid "3eb01dc6-512e-4617-9a56-114349b1b2a5")
+	)
+	(wire
+		(pts
+			(xy 184.15 128.27) (xy 184.15 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46793d22-25d4-4d1b-99a3-fbbda1b23f97")
 	)
 	(wire
 		(pts
@@ -3759,6 +3919,16 @@
 			(type default)
 		)
 		(uuid "47d36725-886b-4856-b652-02ea5499745e")
+	)
+	(wire
+		(pts
+			(xy 229.87 125.73) (xy 229.87 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48a6d277-1ce6-403a-9331-510f3fc6ca43")
 	)
 	(wire
 		(pts
@@ -3812,16 +3982,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 135.89) (xy 39.37 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57848030-f48f-4ac6-a25f-20a117048ea6")
-	)
-	(wire
-		(pts
 			(xy 106.68 110.49) (xy 106.68 118.11)
 		)
 		(stroke
@@ -3832,7 +3992,17 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 119.38) (xy 246.38 119.38)
+			(xy 172.72 137.16) (xy 167.64 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59187ead-ace8-4f08-949e-67b28a963aa8")
+	)
+	(wire
+		(pts
+			(xy 256.54 120.65) (xy 261.62 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3869,6 +4039,16 @@
 			(type default)
 		)
 		(uuid "5ddaeab9-8099-41ca-b70b-89240e619139")
+	)
+	(wire
+		(pts
+			(xy 162.56 127) (xy 161.29 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65771235-e4fb-40cc-959b-668591772792")
 	)
 	(wire
 		(pts
@@ -3922,6 +4102,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 133.35) (xy 161.29 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b02742-8838-4f57-ad48-761835705343")
+	)
+	(wire
+		(pts
 			(xy 93.98 118.11) (xy 101.6 118.11)
 		)
 		(stroke
@@ -3959,6 +4149,16 @@
 			(type default)
 		)
 		(uuid "7405cc19-0205-45d6-82c5-f5c72e361d4b")
+	)
+	(wire
+		(pts
+			(xy 21.59 93.98) (xy 22.86 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7510b1ba-a5e0-47f4-9358-4b41211bc332")
 	)
 	(wire
 		(pts
@@ -4002,7 +4202,17 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 114.3) (xy 248.92 114.3)
+			(xy 229.87 120.65) (xy 232.41 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8183344d-8bd7-490d-bf39-19f6ef6ad855")
+	)
+	(wire
+		(pts
+			(xy 261.62 115.57) (xy 264.16 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4092,7 +4302,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 114.3) (xy 243.84 114.3)
+			(xy 256.54 115.57) (xy 259.08 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4109,16 +4319,6 @@
 			(type default)
 		)
 		(uuid "9225f7c9-4168-4ab5-94ce-411d696570b1")
-	)
-	(wire
-		(pts
-			(xy 29.21 102.87) (xy 33.02 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9364b792-2b5e-48e6-b5d3-42c1a17363c6")
 	)
 	(wire
 		(pts
@@ -4152,6 +4352,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 133.35) (xy 254 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9760e5e1-404e-4e0b-b0f9-2c25ab56b6b7")
+	)
+	(wire
+		(pts
 			(xy 72.39 64.77) (xy 73.66 64.77)
 		)
 		(stroke
@@ -4169,6 +4379,16 @@
 			(type default)
 		)
 		(uuid "9a26bde2-1263-4248-b231-1161a007c0a4")
+	)
+	(polyline
+		(pts
+			(xy -12.7 95.25) (xy 7.62 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3175c1-f860-47c4-b37a-c7fc62ce4bca")
 	)
 	(wire
 		(pts
@@ -4189,6 +4409,16 @@
 			(type default)
 		)
 		(uuid "9e9ed47e-76cf-414f-ba4e-cd55e8c2d4d8")
+	)
+	(wire
+		(pts
+			(xy 167.64 137.16) (xy 167.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b6fa9e-c09a-4a08-a2fd-24a1db390dc3")
 	)
 	(wire
 		(pts
@@ -4222,13 +4452,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 128.27) (xy 53.34 130.81)
+			(xy 229.87 133.35) (xy 238.76 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8c7c784-f149-447d-b4e4-d68bdd3e8cdd")
+		(uuid "a64ee69d-db5d-4180-808f-3a4ee22e09a5")
+	)
+	(wire
+		(pts
+			(xy 184.15 123.19) (xy 184.15 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9969993-dbbc-406b-86af-3e6e2a17af35")
 	)
 	(wire
 		(pts
@@ -4269,6 +4509,16 @@
 			(type default)
 		)
 		(uuid "aefe3d31-e9aa-4ee1-a2f5-0cdeb8178d66")
+	)
+	(wire
+		(pts
+			(xy 179.07 133.35) (xy 184.15 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af3ff0f1-bbe3-46fe-ab7a-7c3fa9a9d0f5")
 	)
 	(wire
 		(pts
@@ -4382,6 +4632,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 133.35) (xy 241.3 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c33ea09f-addb-4746-a11b-08bb72e2b9c2")
+	)
+	(wire
+		(pts
 			(xy 24.13 69.85) (xy 24.13 72.39)
 		)
 		(stroke
@@ -4412,6 +4672,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 118.11) (xy 172.72 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf0628ad-2b55-48bd-ac04-fbb1929ffd50")
+	)
+	(wire
+		(pts
 			(xy 50.8 30.48) (xy 55.88 30.48)
 		)
 		(stroke
@@ -4429,6 +4699,26 @@
 			(type default)
 		)
 		(uuid "d356af70-8891-4a96-b0de-bb403d9a87de")
+	)
+	(wire
+		(pts
+			(xy 256.54 130.81) (xy 256.54 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4db381d-2e8b-4cf7-9b5e-6efcc8ffe74b")
+	)
+	(wire
+		(pts
+			(xy 167.64 118.11) (xy 167.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d553966f-9b9a-4c44-8ce7-4a28f4dac9b5")
 	)
 	(wire
 		(pts
@@ -4459,16 +4749,6 @@
 			(type default)
 		)
 		(uuid "de6b445d-8796-4b51-81ad-0488bc362db9")
-	)
-	(wire
-		(pts
-			(xy 49.53 57.15) (xy 49.53 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df7f8c7c-0ca3-4d12-8126-e08f283eaafa")
 	)
 	(wire
 		(pts
@@ -4512,7 +4792,17 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 93.98) (xy 33.02 93.98)
+			(xy 44.45 128.27) (xy 53.34 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e93003ca-436c-445d-a854-44b9680d2b43")
+	)
+	(wire
+		(pts
+			(xy 30.48 93.98) (xy 33.02 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4522,13 +4812,23 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 119.38) (xy 248.92 119.38)
+			(xy 261.62 120.65) (xy 264.16 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ee41fe12-2f2f-49cd-8f13-0a2d5239c4e2")
+	)
+	(wire
+		(pts
+			(xy 177.8 137.16) (xy 184.15 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee8c7c5b-b1cd-4e8f-ab68-3f1c16fc1c8d")
 	)
 	(wire
 		(pts
@@ -4552,6 +4852,26 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 127) (xy 168.91 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f151f513-425a-4fe1-8ff3-aa5709b53542")
+	)
+	(wire
+		(pts
+			(xy 36.83 128.27) (xy 39.37 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19048b7-55e0-42fc-8550-b73361306821")
+	)
+	(wire
+		(pts
 			(xy 130.81 118.11) (xy 130.81 127)
 		)
 		(stroke
@@ -4572,6 +4892,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 130.81) (xy 236.22 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4561567-546c-4c67-b1c4-87d90f990386")
+	)
+	(wire
+		(pts
 			(xy 52.07 68.58) (xy 52.07 102.87)
 		)
 		(stroke
@@ -4579,6 +4909,16 @@
 			(type default)
 		)
 		(uuid "f5268b55-edf1-4b5c-9bba-096999688b92")
+	)
+	(wire
+		(pts
+			(xy 248.92 130.81) (xy 256.54 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6820f02-b8f8-4ca9-8ed2-a3bc5c91c2d6")
 	)
 	(wire
 		(pts
@@ -4592,7 +4932,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 100.33) (xy 248.92 100.33)
+			(xy 236.22 106.68) (xy 238.76 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4639,6 +4979,25 @@
 		)
 		(uuid "1709d1bc-e467-4ed0-93bf-84a192c07673")
 	)
+	(text_box "In-rush current limiter. Need a big resistor size like a 1206."
+		(exclude_from_sim no)
+		(at -34.29 90.17 0)
+		(size 21.59 10.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "97959b01-5706-4cc7-9ec0-5407a42d83c4")
+	)
 	(text_box "Requires a low-power i2c device to function, configures charging"
 		(exclude_from_sim no)
 		(at 81.28 175.26 0)
@@ -4657,6 +5016,25 @@
 			(justify left top)
 		)
 		(uuid "9b8c58a4-d404-4a81-9168-40b6e02d33e4")
+	)
+	(text_box "Have to short sense lines together for fewer cells"
+		(exclude_from_sim no)
+		(at 194.31 157.48 0)
+		(size 20.32 8.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a907f078-8231-464e-9c3e-bf55f2d72b67")
 	)
 	(text_box "Acok is adaptor present indicator\nIDAP and IDCHG indicates adaptor and discharge current\nPMON is total system power scaled down\nTB_Stat indicated hybrid boost mode\nProcHot indicates a hotplug"
 		(exclude_from_sim no)
@@ -4677,24 +5055,26 @@
 		)
 		(uuid "d3534e55-457f-4981-863a-5a6828673af7")
 	)
-	(text_box "ILIM is current limit, 20 × (VSRP - VSRN) for charge, 5 × (VSRP - VSRN) for discharge. You can set with voltage divider the current(reference to 3.3v). I need to do calculation later"
+	(text "Disable HW limit, set in software"
 		(exclude_from_sim no)
-		(at 46.99 172.72 0)
-		(size 27.94 16.51)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
+		(at 35.814 135.636 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
 		)
-		(uuid "dc7bbb00-9121-441d-94ec-a570da381767")
+		(uuid "61713af2-8f7d-42b1-8ad3-e80a678a6972")
+	)
+	(label "Up"
+		(at 229.87 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b826770-f2c8-4dc6-b62e-e43b6b554b72")
 	)
 	(label "IN"
 		(at 6.35 64.77 180)
@@ -4707,6 +5087,17 @@
 		)
 		(uuid "2f600273-da9a-4b60-8813-88ccbf97c86a")
 	)
+	(label "Low"
+		(at 184.15 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "366391f0-2dc2-40ca-aa8a-bf963519f75a")
+	)
 	(label "BATT+"
 		(at 247.65 95.25 180)
 		(fields_autoplaced yes)
@@ -4718,8 +5109,30 @@
 		)
 		(uuid "38dd7972-cb2e-44a6-ba9f-22beda2a17ec")
 	)
+	(label "mid"
+		(at 184.15 120.65 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b8b2f1a-1c1f-498e-85ab-c363389d9a4b")
+	)
 	(label "REGN"
-		(at 39.37 125.73 0)
+		(at 36.83 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4a8bc6ec-88a8-4505-be72-083a259220e3")
+	)
+	(label "BATT+"
+		(at 256.54 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4727,7 +5140,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4a8bc6ec-88a8-4505-be72-083a259220e3")
+		(uuid "5f5f2a81-2906-4767-b3d7-9acf6c902bab")
 	)
 	(label "REGN"
 		(at 100.33 153.67 0)
@@ -4740,6 +5153,17 @@
 		)
 		(uuid "8dde8a0e-a39f-4a16-bee2-1b7a01abd367")
 	)
+	(label "mid"
+		(at 229.87 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99919d12-e41a-4bab-b52d-71d5206a58b6")
+	)
 	(label "~{CHG}"
 		(at 55.88 30.48 0)
 		(fields_autoplaced yes)
@@ -4751,8 +5175,41 @@
 		)
 		(uuid "9f789935-8755-4553-b460-23b7b6aedba5")
 	)
+	(label "Low"
+		(at 179.07 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f89861a-64dd-4df3-9481-185cfbcd1549")
+	)
+	(label "mid"
+		(at 179.07 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7cd4623-7ee4-4779-b8a7-adc38180991f")
+	)
+	(label "Up"
+		(at 179.07 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9d1726a-ef3b-4911-ac9d-15ac0ddda5a0")
+	)
 	(label "BATT+"
-		(at 21.59 102.87 180)
+		(at 33.02 110.49 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4774,7 +5231,7 @@
 		(uuid "d9a81d05-563e-4e10-b80e-027364d3e288")
 	)
 	(label "IN"
-		(at 241.3 114.3 180)
+		(at 256.54 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4785,7 +5242,7 @@
 		(uuid "e5a585a8-d89b-4827-b3a3-9e72fe2dbe9e")
 	)
 	(label "BATT+"
-		(at 144.78 118.11 0)
+		(at 172.72 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4794,6 +5251,42 @@
 			(justify left bottom)
 		)
 		(uuid "fcdf000b-46c2-49da-9add-51108874f90a")
+	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 53.34 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0539cca6-7d71-4c0f-b300-3c161d80f628")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 53.34 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06a881dc-9641-4af6-8f7a-6b7a41f40cfe")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 229.87 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e45eb76-1035-44b3-8b63-3385b5525596")
 	)
 	(hierarchical_label "MOTORPWR"
 		(shape output)
@@ -4821,7 +5314,7 @@
 	)
 	(hierarchical_label "GNDPWR"
 		(shape bidirectional)
-		(at 275.59 147.32 90)
+		(at 265.43 153.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4830,6 +5323,18 @@
 			(justify left)
 		)
 		(uuid "bccf99fd-5a84-4604-bbb5-d0adc58159d2")
+	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 229.87 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cdac851c-d339-49d6-a738-a74756a33c3b")
 	)
 	(hierarchical_label "MOTORPWR"
 		(shape output)
@@ -5041,32 +5546,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 39.37 133.35 180)
+		(lib_id "Device:D")
+		(at 245.11 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "131f2c46-30d4-47f7-bf09-77538087da1e")
-		(property "Reference" "R27"
-			(at 37.084 132.08 0)
+		(uuid "13f0fc68-c5a6-48c5-8dad-d1d84689dfc5")
+		(property "Reference" "D5"
+			(at 246.38 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "150k"
-			(at 43.18 132.588 0)
+		(property "Value" "D"
+			(at 244.348 132.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 39.37 133.35 0)
+		(property "Footprint" ""
+			(at 245.11 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5075,7 +5580,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 133.35 0)
+			(at 245.11 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,8 +5588,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 39.37 133.35 0)
+		(property "Description" "Diode"
+			(at 245.11 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 245.11 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 245.11 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,15 +5616,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "18fb0e0e-326f-48f4-aa34-c3befaea01fa")
+			(uuid "3326ff40-e11e-4274-805c-250a54287e2e")
 		)
 		(pin "1"
-			(uuid "befbf8fd-44ef-4f36-9779-f74d0bceeedf")
+			(uuid "048fa2fb-8f33-4949-b7f1-54867c3fe54d")
 		)
 		(instances
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "R27")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5178,16 +5701,16 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
-		(at 49.53 62.23 270)
+		(at 49.53 67.31 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "17b146f4-389f-4571-98c0-437905b882b2")
 		(property "Reference" "Q4"
-			(at 49.53 68.58 90)
+			(at 49.53 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,7 +5718,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 49.53 71.12 90)
+			(at 49.53 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5203,7 +5726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 67.31 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5212,7 +5735,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 36.83 62.23 0)
+			(at 36.83 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5221,7 +5744,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 49.53 62.23 0)
+			(at 49.53 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5230,7 +5753,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 32.385 62.23 0)
+			(at 32.385 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5239,7 +5762,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 30.48 62.23 0)
+			(at 30.48 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5771,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 34.29 62.23 0)
+			(at 34.29 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5544,6 +6067,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 232.41 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27f61de4-aa9b-4198-85ec-8918fe5a86a8")
+		(property "Reference" "#PWR044"
+			(at 237.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 234.95 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 232.41 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02f4c97a-49e3-479c-b783-e53b2365ca41")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 92.71 73.66 180)
 		(unit 1)
@@ -5682,34 +6270,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 246.38 116.84 0)
+		(lib_id "Device:R_Small")
+		(at 163.83 118.11 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "30d4fac1-495e-45f8-a9e9-fbd170a0b4c1")
-		(property "Reference" "C13"
-			(at 239.776 115.57 0)
+		(uuid "2f6dee2c-e4b3-4da0-bf3c-284d896519a4")
+		(property "Reference" "R27"
+			(at 164.338 122.936 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10uF, 16v"
-			(at 240.792 117.348 0)
+		(property "Value" "10mOhm"
+			(at 164.338 114.808 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 246.38 116.84 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 163.83 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +6304,76 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 116.84 0)
+			(at 163.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 163.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e85b25ac-278e-4472-b45a-2f699f50d786")
+		)
+		(pin "1"
+			(uuid "8c0d1b49-1c8b-4654-84b4-b5015c3faa86")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 261.62 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30d4fac1-495e-45f8-a9e9-fbd170a0b4c1")
+		(property "Reference" "C13"
+			(at 255.016 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF, 16v"
+			(at 256.032 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 261.62 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +6382,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 246.38 116.84 0)
+			(at 261.62 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,73 +6400,6 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 39.37 128.27 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "33b786c2-f54b-4542-9a64-3d87f635f130")
-		(property "Reference" "R26"
-			(at 37.084 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "150k"
-			(at 43.18 127.508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 39.37 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 39.37 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "35720f09-bc1e-4e1e-98cc-0245c1711b4e")
-		)
-		(pin "1"
-			(uuid "64786347-fe40-470a-a53e-d805cfceade7")
-		)
-		(instances
-			(project "esp32-s3 single motor & battery controller"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5948,34 +6536,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 243.84 114.3 0)
+		(lib_id "Device:C_Small")
+		(at 165.1 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "361dfe60-e59d-433b-8cbd-ed883e05907f")
-		(property "Reference" "#FLG05"
-			(at 243.84 112.395 0)
+		(uuid "35db6969-afef-4f93-adb7-0848127accd4")
+		(property "Reference" "C33"
+			(at 164.338 131.064 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 243.84 109.22 0)
+		(property "Value" "0.1uF"
+			(at 166.37 134.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 243.84 114.3 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 165.1 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5984,7 +6572,76 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 114.3 0)
+			(at 165.1 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 165.1 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ab872c0-6c69-4c2b-b42d-7a5ab069785e")
+		)
+		(pin "2"
+			(uuid "42e49d73-b48f-4fa5-be3a-7be3a8da7ab0")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 259.08 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "361dfe60-e59d-433b-8cbd-ed883e05907f")
+		(property "Reference" "#FLG05"
+			(at 259.08 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 259.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5993,7 +6650,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 243.84 114.3 0)
+			(at 259.08 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6150,33 +6807,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 25.4 102.87 180)
+		(lib_id "Device:R_Small")
+		(at 21.59 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4041e5a8-030f-4b49-9dcf-0f502fe26c3b")
-		(property "Reference" "D4"
-			(at 25.4 96.52 0)
+		(uuid "3b7e306f-c07b-4c0d-bc02-e05926fdd434")
+		(property "Reference" "R28"
+			(at 26.416 96.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 25.4 99.06 0)
+		(property "Value" "2ohm"
+			(at 23.622 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 25.4 102.87 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 21.59 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6841,144 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 102.87 0)
+			(at 21.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 21.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "26f11a70-f467-4801-9c93-c1a348bbe83b")
+		)
+		(pin "1"
+			(uuid "ad4cbb94-734b-4919-a08a-5ac8d0db3397")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 243.84 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cd215f8-a4c0-4360-b7c1-d5b30d5c42e0")
+		(property "Reference" "R32"
+			(at 245.11 133.858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 244.348 130.048 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 243.84 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "164c30a1-e55f-473f-b07b-4a8c26fd32c1")
+		)
+		(pin "1"
+			(uuid "7a37e80d-6c28-48dc-80c6-7f79703e0510")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 33.02 106.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4041e5a8-030f-4b49-9dcf-0f502fe26c3b")
+		(property "Reference" "D4"
+			(at 35.56 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 35.56 107.9499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6987,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 25.4 102.87 0)
+			(at 33.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6996,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 25.4 102.87 0)
+			(at 33.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +7005,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 25.4 102.87 0)
+			(at 33.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6230,6 +7023,73 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e0dcd7f-7ba3-4c5a-b35f-0d2e0fb8b906")
+		(property "Reference" "R31"
+			(at 240.03 131.318 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 239.268 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 238.76 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1439b9c2-6ced-46ca-b089-27ca5da2cbed")
+		)
+		(pin "1"
+			(uuid "62d4da80-cff7-4e95-abc8-de6d629c8d52")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -6304,7 +7164,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 161.29 130.81 180)
+		(at 173.99 104.14 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6313,15 +7173,15 @@
 		(fields_autoplaced yes)
 		(uuid "4f362f43-be53-480c-a9b6-6c40f7fad965")
 		(property "Reference" "J5"
-			(at 161.29 121.92 0)
+			(at 173.99 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x03"
-			(at 161.29 124.46 0)
+		(property "Value" "Batt Balance connector"
+			(at 173.99 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,7 +7189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 130.81 0)
+			(at 173.99 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +7198,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 161.29 130.81 0)
+			(at 173.99 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +7207,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 161.29 130.81 0)
+			(at 173.99 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6577,6 +7437,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 176.53 156.21 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b7c35eb-df79-48f1-a82e-ec34cc06f6c0")
+		(property "Reference" "Q7"
+			(at 174.244 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 176.53 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 189.23 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 176.53 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 193.675 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 195.58 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 191.77 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c9c1164b-20de-497a-9617-77fb1083177b")
+		)
+		(pin "1"
+			(uuid "6386fd0b-5732-47ac-96b2-1502b508a971")
+		)
+		(pin "2"
+			(uuid "c7e4cfed-efb8-4bdf-bc6b-027cd94b541e")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 31.75 86.36 180)
 		(unit 1)
@@ -6638,6 +7598,71 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 156.21 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e0b3a48-5018-4c9a-a8e2-d360e169cf8a")
+		(property "Reference" "#PWR046"
+			(at 151.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 152.146 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a245891-000a-4f01-b492-1922bfff864c")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -6774,6 +7799,71 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 21.59 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62501d95-d05b-48e4-b8e0-ceea2d823f77")
+		(property "Reference" "#PWR045"
+			(at 21.59 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 23.114 108.204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 21.59 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3630fd3-0250-4be1-86f9-7528bc958689")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7132,17 +8222,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 251.46 119.38 270)
+		(lib_id "Device:C_Small")
+		(at 238.76 135.89 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7be7ae75-31e9-41d4-93f6-224f378f8f6b")
-		(property "Reference" "H4"
-			(at 255.27 118.1099 90)
+		(uuid "79508414-9fb8-454f-88b7-647d337eecb0")
+		(property "Reference" "C36"
+			(at 234.696 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7150,8 +8239,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4mm_Pad"
-			(at 255.27 120.6499 90)
+		(property "Value" "1uf"
+			(at 239.268 136.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7159,8 +8248,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 251.46 119.38 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 238.76 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7169,7 +8258,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 251.46 119.38 0)
+			(at 238.76 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 238.76 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c95ea76-9d8b-44af-836c-eb96b41e998a")
+		)
+		(pin "2"
+			(uuid "572f5505-1b84-4a03-a7f9-63fa4f182f46")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 266.7 120.65 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7be7ae75-31e9-41d4-93f6-224f378f8f6b")
+		(property "Reference" "H4"
+			(at 270.51 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4mm_Pad"
+			(at 270.51 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+			(at 266.7 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,7 +8337,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 251.46 119.38 0)
+			(at 266.7 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7845,6 +9004,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 21.59 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "940c6549-e455-4a15-9c8f-87a0a8921f57")
+		(property "Reference" "C31"
+			(at 23.368 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uf"
+			(at 23.876 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 21.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 21.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b339110-08ae-4647-9f3e-705edf490661")
+		)
+		(pin "2"
+			(uuid "3e889e00-015d-4085-ab00-762a1ce78b5b")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 123.19 95.25 0)
 		(unit 1)
@@ -8014,6 +9242,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 233.68 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a115468b-c973-4bcb-9ab5-7079f9aaaf46")
+		(property "Reference" "C35"
+			(at 229.616 132.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uf"
+			(at 229.362 134.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 233.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 233.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f894f7b7-9c71-4f2a-a57d-d1137e703f9a")
+		)
+		(pin "2"
+			(uuid "cb71ec49-8b10-419a-a2bf-ced5a1255d33")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 31.75 67.31 90)
 		(unit 1)
@@ -8112,6 +9409,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 173.99 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a59aca49-29a1-45bf-a65d-161c5b9c324d")
+		(property "Reference" "#PWR047"
+			(at 179.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 178.054 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 173.99 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c421d1d-5ae5-4180-8b48-e6df7d78ead3")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 251.46 95.25 270)
 		(unit 1)
@@ -8180,7 +9542,7 @@
 	)
 	(symbol
 		(lib_id "BQ76905:BQ76905RGRR")
-		(at 175.26 123.19 0)
+		(at 184.15 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8189,7 +9551,7 @@
 		(fields_autoplaced yes)
 		(uuid "af95defd-2f9f-4ced-9cb9-d4e053cd4c7f")
 		(property "Reference" "U3"
-			(at 198.12 113.03 0)
+			(at 207.01 110.49 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8197,7 +9559,7 @@
 			)
 		)
 		(property "Value" "BQ76905RGRR"
-			(at 198.12 115.57 0)
+			(at 207.01 113.03 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8205,7 +9567,7 @@
 			)
 		)
 		(property "Footprint" "VQFN20_RGR_TEX"
-			(at 175.26 123.19 0)
+			(at 184.15 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8215,7 +9577,7 @@
 			)
 		)
 		(property "Datasheet" "BQ76905RGRR"
-			(at 175.26 123.19 0)
+			(at 184.15 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8225,7 +9587,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 123.19 0)
+			(at 184.15 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8376,7 +9738,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 25.4 93.98 180)
+		(at 26.67 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8385,7 +9747,7 @@
 		(fields_autoplaced yes)
 		(uuid "b11b9db7-d4da-4117-b4ff-a3cdb15110cc")
 		(property "Reference" "D2"
-			(at 25.4 87.63 0)
+			(at 26.67 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8393,7 +9755,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 25.4 90.17 0)
+			(at 26.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8401,7 +9763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 93.98 0)
+			(at 26.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8410,7 +9772,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 93.98 0)
+			(at 26.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8419,7 +9781,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 25.4 93.98 0)
+			(at 26.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8428,7 +9790,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 25.4 93.98 0)
+			(at 26.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8437,7 +9799,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 25.4 93.98 0)
+			(at 26.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8527,7 +9889,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 251.46 100.33 270)
+		(at 241.3 106.68 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8536,7 +9898,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb5093f3-b71c-401b-92dc-5623ca9ac49b")
 		(property "Reference" "H2"
-			(at 255.27 99.0599 90)
+			(at 245.11 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8545,7 +9907,7 @@
 			)
 		)
 		(property "Value" "4mm_Pad"
-			(at 255.27 101.5999 90)
+			(at 245.11 107.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8554,7 +9916,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 251.46 100.33 0)
+			(at 241.3 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8563,7 +9925,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 251.46 100.33 0)
+			(at 241.3 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8572,7 +9934,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 251.46 100.33 0)
+			(at 241.3 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,6 +10156,174 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 171.45 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c071a4bd-cf0d-40f9-b309-7a273a559e5e")
+		(property "Reference" "C34"
+			(at 170.688 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 172.72 134.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 171.45 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 171.45 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fb308ae-e484-4c31-8a28-faea2ff98260")
+		)
+		(pin "2"
+			(uuid "9a6b463d-0da0-45aa-8f58-41ce937e1610")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 166.37 156.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca498ecc-5a01-4aef-a98b-77dc83c2aa25")
+		(property "Reference" "Q6"
+			(at 168.656 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 166.37 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 153.67 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 166.37 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 149.225 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 147.32 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 151.13 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "19cae0f3-6674-4f3a-814f-3bfd2fbac0a6")
+		)
+		(pin "1"
+			(uuid "0bfb30c4-ae93-40dd-afd5-6c931653f7ef")
+		)
+		(pin "2"
+			(uuid "d041e8c2-2d48-451e-b3b3-ffd9dcac11cf")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 274.32 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8930,7 +10460,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 251.46 114.3 270)
+		(at 266.7 115.57 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8939,7 +10469,7 @@
 		(fields_autoplaced yes)
 		(uuid "ccc9fccc-814c-460c-9fa5-e1f6243674f7")
 		(property "Reference" "H3"
-			(at 255.27 113.0299 90)
+			(at 270.51 114.2999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8948,7 +10478,7 @@
 			)
 		)
 		(property "Value" "4mm_Pad"
-			(at 255.27 115.5699 90)
+			(at 270.51 116.8399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8957,7 +10487,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 251.46 114.3 0)
+			(at 266.7 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8966,7 +10496,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 251.46 114.3 0)
+			(at 266.7 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8975,7 +10505,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 251.46 114.3 0)
+			(at 266.7 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9195,6 +10725,160 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 158.75 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2b74253-73f1-41fd-9192-3711606459e2")
+		(property "Reference" "C32"
+			(at 157.988 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 160.02 134.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "607a850d-def9-4f1f-8a5e-25f22f8d61d8")
+		)
+		(pin "2"
+			(uuid "e8490cb1-c061-49ae-b6ac-5f7e3b896731")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 250.19 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2ef057e-30d9-4055-b9c8-a644cf0e4ac9")
+		(property "Reference" "D6"
+			(at 251.46 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 249.428 135.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7aa8d710-01a3-42f5-aaa6-ae3df6151fee")
+		)
+		(pin "1"
+			(uuid "4ceab630-288e-4070-9b49-d9d4f0eecb61")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 12.7 76.2 0)
 		(unit 1)
@@ -9261,7 +10945,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 241.3 119.38 0)
+		(at 256.54 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9269,7 +10953,7 @@
 		(dnp no)
 		(uuid "d5f48630-b26a-4e4b-bbb0-bb0ccd5dd1ba")
 		(property "Reference" "#PWR019"
-			(at 241.3 124.46 0)
+			(at 256.54 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9278,7 +10962,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.824 123.444 0)
+			(at 258.064 124.714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9286,7 +10970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 120.65 0)
+			(at 256.54 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9295,7 +10979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 120.65 0)
+			(at 256.54 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9304,7 +10988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 241.3 119.38 0)
+			(at 256.54 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9325,8 +11009,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 176.53 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7bf3181-1a50-4104-a7a1-f2eebbd44c40")
+		(property "Reference" "R29"
+			(at 176.784 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10ohm"
+			(at 176.784 127.254 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 176.53 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 176.53 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83ba4cd4-f935-4955-82f5-97adabcb7ac9")
+		)
+		(pin "1"
+			(uuid "d242004f-1129-48f6-ac27-0047acdbe65a")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 100.33 0)
+		(at 236.22 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9334,7 +11085,7 @@
 		(dnp no)
 		(uuid "d7cc9aa4-411d-4075-892e-194fc8d64aca")
 		(property "Reference" "#PWR037"
-			(at 246.38 105.41 0)
+			(at 236.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9343,7 +11094,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.316 102.87 0)
+			(at 232.156 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9351,7 +11102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 101.6 0)
+			(at 236.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9360,7 +11111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 101.6 0)
+			(at 236.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9369,7 +11120,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 100.33 0)
+			(at 236.22 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9390,16 +11141,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDPWR")
-		(at 39.37 134.62 0)
+		(lib_id "Device:R_Small")
+		(at 41.91 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d9fe9afe-4337-4adf-94e0-bca56343d2aa")
-		(property "Reference" "#PWR044"
-			(at 39.37 139.7 0)
+		(uuid "e1829b3e-1ba5-4dc9-9e3f-57a99333dd8b")
+		(property "Reference" "R26"
+			(at 40.64 130.556 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 41.148 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 41.91 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,16 +11174,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GNDPWR"
-			(at 40.894 138.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 135.89 0)
+		(property "Datasheet" "~"
+			(at 41.91 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9424,8 +11183,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 39.37 135.89 0)
+		(property "Description" "Resistor, small symbol"
+			(at 41.91 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9433,22 +11192,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 39.37 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "4c45d481-f608-4722-a481-2694842c5fa7")
 		)
 		(pin "1"
-			(uuid "7d1dd888-bcb3-496d-89cb-9100b238220e")
+			(uuid "8fc25d32-c52a-4c11-89e1-52ea1175a075")
 		)
 		(instances
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "#PWR044")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -9456,7 +11209,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 275.59 147.32 0)
+		(at 265.43 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9464,7 +11217,7 @@
 		(dnp no)
 		(uuid "e65c3d53-abb1-4277-88a0-6636f992bbf9")
 		(property "Reference" "#PWR021"
-			(at 275.59 152.4 0)
+			(at 265.43 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9473,7 +11226,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 277.114 151.384 0)
+			(at 266.954 157.734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9481,7 +11234,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 275.59 148.59 0)
+			(at 265.43 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9490,7 +11243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 275.59 148.59 0)
+			(at 265.43 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9499,7 +11252,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 275.59 147.32 0)
+			(at 265.43 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9514,6 +11267,71 @@
 			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 238.76 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9cc049b-f35b-4061-a138-6839f6aff727")
+		(property "Reference" "#PWR048"
+			(at 238.76 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 240.284 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 238.76 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "229a52b1-0653-46ee-8a95-6cd23a95c3c9")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -9816,6 +11634,73 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 175.26 137.16 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffe07ab5-5e0f-41f7-ab21-94f663ed4bb4")
+		(property "Reference" "R30"
+			(at 175.514 137.922 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10ohm"
+			(at 175.006 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 175.26 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bcb76edd-b8bb-463c-abac-6cb187ffa369")
+		)
+		(pin "1"
+			(uuid "b64a967d-b650-4ed0-a5d5-bd2ed32a9ace")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R30")
 					(unit 1)
 				)
 			)

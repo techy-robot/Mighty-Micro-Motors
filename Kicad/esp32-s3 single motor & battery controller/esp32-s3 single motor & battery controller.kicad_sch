@@ -6277,6 +6277,17 @@
 		)
 		(uuid "5963f314-e2c1-45e4-8fd1-5f06fa105442")
 	)
+	(label "SCL1"
+		(at 246.38 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5983b493-b78e-4546-8adc-a80a9347f68a")
+	)
 	(label "1CSA-A"
 		(at 161.29 118.11 180)
 		(fields_autoplaced yes)
@@ -6353,6 +6364,17 @@
 			(justify right bottom)
 		)
 		(uuid "6ca9c51b-c226-418f-b22b-50bfac0d915f")
+	)
+	(label "SDA1"
+		(at 246.38 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "74841761-8e66-4e72-972a-eeb19e8b28ee")
 	)
 	(label "MOTORPWR"
 		(at 71.12 166.37 180)
@@ -12800,6 +12822,26 @@
 				(justify left)
 			)
 			(uuid "563d499a-ef23-4557-a7a1-7ec5d2abfd05")
+		)
+		(pin "SCL" input
+			(at 246.38 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "19b8b68d-6167-4faa-ad0b-591736e5b7b7")
+		)
+		(pin "SDA" input
+			(at 246.38 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c373fbcc-0629-4c3a-b6e8-2321d8244175")
 		)
 		(instances
 			(project "esp32-s3 single motor & battery controller"
