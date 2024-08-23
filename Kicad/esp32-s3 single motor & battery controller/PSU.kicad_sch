@@ -3469,16 +3469,34 @@
 		(uuid "bdb64c85-07d4-4069-aa60-08871d24dff6")
 	)
 	(junction
+		(at 144.78 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c173f86b-30db-4846-bfc9-3f27afb5d97e")
+	)
+	(junction
 		(at 125.73 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbb4d02a-b096-4f79-9e75-6ede1a23b0e5")
 	)
 	(junction
+		(at 144.78 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d40c8010-f09f-4d93-b102-e4dc1c38d7f8")
+	)
+	(junction
 		(at 67.31 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db44250c-a6be-4fe2-9814-3b8ff50e804b")
+	)
+	(junction
+		(at 137.16 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dde821d9-c850-49d4-aba5-164f7f0aeeaf")
 	)
 	(junction
 		(at 261.62 115.57)
@@ -3517,8 +3535,16 @@
 		(uuid "425edb2d-8908-4680-95a5-49a4d56a627d")
 	)
 	(no_connect
+		(at 93.98 143.51)
+		(uuid "438cb1ab-0bb7-451d-a6d2-b0f628c9a8a8")
+	)
+	(no_connect
 		(at 53.34 148.59)
 		(uuid "4a30efd2-5959-4f49-b74b-66398dac7a6c")
+	)
+	(no_connect
+		(at 93.98 148.59)
+		(uuid "a5a532d1-fc2c-48ae-8ccd-3f081a10b2ca")
 	)
 	(no_connect
 		(at 184.15 143.51)
@@ -3774,6 +3800,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 123.19) (xy 144.78 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24137228-40b2-4270-bf84-c238bd4c7277")
+	)
+	(wire
+		(pts
 			(xy 233.68 40.64) (xy 241.3 40.64)
 		)
 		(stroke
@@ -3884,6 +3920,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 130.81) (xy 146.05 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "317acb35-9e34-4b58-863b-95abfe8c8166")
+	)
+	(wire
+		(pts
 			(xy 93.98 133.35) (xy 114.3 133.35)
 		)
 		(stroke
@@ -3921,6 +3967,16 @@
 			(type default)
 		)
 		(uuid "342fd302-743e-4699-a4d3-5390401c1f8f")
+	)
+	(wire
+		(pts
+			(xy 144.78 127) (xy 143.51 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35edd778-59fd-4892-a5fb-6992c3db3040")
 	)
 	(wire
 		(pts
@@ -4121,6 +4177,16 @@
 			(type default)
 		)
 		(uuid "55563082-57b2-4406-8898-da27f1486959")
+	)
+	(wire
+		(pts
+			(xy 146.05 127) (xy 144.78 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "574eb354-cedc-4d59-9b13-223770f9b451")
 	)
 	(wire
 		(pts
@@ -4824,6 +4890,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 118.11) (xy 157.48 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba9a89a-f22f-4464-a18a-605aa3bb6c6f")
+	)
+	(wire
+		(pts
 			(xy 93.98 110.49) (xy 101.6 110.49)
 		)
 		(stroke
@@ -5084,6 +5160,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 118.11) (xy 144.78 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee0b86be-9452-4185-b835-c9ebedcaac81")
+	)
+	(wire
+		(pts
 			(xy 261.62 120.65) (xy 264.16 120.65)
 		)
 		(stroke
@@ -5327,6 +5413,26 @@
 		)
 		(uuid "d3534e55-457f-4981-863a-5a6828673af7")
 	)
+	(text "Sot-23 mosfets"
+		(exclude_from_sim no)
+		(at 39.37 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2fdbc0bb-30d5-4294-9ad9-7a4c80e97c62")
+	)
+	(text "Sot-23 mosfets"
+		(exclude_from_sim no)
+		(at 112.014 109.728 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "347e6fbf-1019-4267-a605-3df9f9599714")
+	)
 	(text "Disable HW limit, set in software"
 		(exclude_from_sim no)
 		(at 35.814 135.636 0)
@@ -5336,6 +5442,26 @@
 			)
 		)
 		(uuid "61713af2-8f7d-42b1-8ad3-e80a678a6972")
+	)
+	(text "Power pack mosfet"
+		(exclude_from_sim no)
+		(at 184.658 162.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9190362b-ba3d-47e9-8652-28910dfce7ae")
+	)
+	(text "Power pack mosfet"
+		(exclude_from_sim no)
+		(at 139.7 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e622021c-0edd-4235-883d-80c1aa9927e7")
 	)
 	(label "BATT-"
 		(at 246.38 102.87 180)
@@ -5413,6 +5539,17 @@
 			(justify right bottom)
 		)
 		(uuid "3b8b2f1a-1c1f-498e-85ab-c363389d9a4b")
+	)
+	(label "Low"
+		(at 93.98 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4605a82a-4429-413f-b075-2dfe6cdc4543")
 	)
 	(label "REGN"
 		(at 36.83 128.27 180)
@@ -5536,7 +5673,7 @@
 		(uuid "e5a585a8-d89b-4827-b3a3-9e72fe2dbe9e")
 	)
 	(label "BATT+"
-		(at 137.16 118.11 0)
+		(at 157.48 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5641,6 +5778,75 @@
 			(justify left)
 		)
 		(uuid "f54ac128-ce4a-4de5-8f6a-708787ad2adc")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 144.78 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02b41ae1-09fd-4a40-8c7c-66dbb9fd4815")
+		(property "Reference" "C36"
+			(at 149.606 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 151.892 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 144.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1b968b6-f587-419b-92a9-12ed127728ca")
+		)
+		(pin "2"
+			(uuid "90003247-fa14-4ec6-93f5-693409c9914a")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
@@ -6081,7 +6287,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "NMOS, 12v"
 			(at 49.53 58.42 90)
 			(effects
 				(font
@@ -7415,7 +7621,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 239.268 127.508 90)
+			(at 239.014 128.778 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8906,7 +9112,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "89b56337-2bf8-44a4-873e-aa090bc77b0e")
 		(property "Reference" "L2"
 			(at 110.49 113.03 90)
@@ -8916,8 +9121,8 @@
 				)
 			)
 		)
-		(property "Value" "3.3uH"
-			(at 110.49 115.57 90)
+		(property "Value" "5.6uH, 2.2A < sat"
+			(at 113.03 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9053,7 +9258,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "NMOS, 12v"
 			(at 108.712 123.19 0)
 			(effects
 				(font
@@ -9356,7 +9561,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "NMOS,12v"
 			(at 129.54 96.5199 0)
 			(effects
 				(font
@@ -9663,7 +9868,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "NMOS, 12v"
 			(at 31.75 60.96 90)
 			(effects
 				(font
@@ -11196,7 +11401,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 143.51 127 90)
+		(at 146.05 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11204,7 +11409,7 @@
 		(dnp no)
 		(uuid "d289109d-c449-4139-b2a9-fceb9afefb84")
 		(property "Reference" "#PWR041"
-			(at 148.59 127 0)
+			(at 146.05 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11213,7 +11418,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 147.574 125.476 0)
+			(at 147.574 134.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11221,7 +11426,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 127 0)
+			(at 146.05 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11230,7 +11435,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 127 0)
+			(at 146.05 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11239,7 +11444,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 143.51 127 0)
+			(at 146.05 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11741,7 +11946,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "NMOS,12v"
 			(at 108.458 105.918 0)
 			(effects
 				(font
