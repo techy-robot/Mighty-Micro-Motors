@@ -3926,10 +3926,6 @@
 		(uuid "f95dbe11-8213-47c3-ac92-7d71ccb05ddd")
 	)
 	(no_connect
-		(at 53.34 161.29)
-		(uuid "138d2f85-528f-49b0-9602-4c1881dea340")
-	)
-	(no_connect
 		(at 53.34 133.35)
 		(uuid "1792bae0-5778-4b24-a647-ff63f9d0667b")
 	)
@@ -3938,16 +3934,8 @@
 		(uuid "256993e3-41ca-480e-9760-99f8c3d8d398")
 	)
 	(no_connect
-		(at 53.34 163.83)
-		(uuid "3d28dace-97ba-4c32-827f-becb155f9dc1")
-	)
-	(no_connect
 		(at 229.87 138.43)
 		(uuid "425edb2d-8908-4680-95a5-49a4d56a627d")
-	)
-	(no_connect
-		(at 93.98 143.51)
-		(uuid "438cb1ab-0bb7-451d-a6d2-b0f628c9a8a8")
 	)
 	(no_connect
 		(at 53.34 148.59)
@@ -4481,6 +4469,26 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 158.75) (xy 45.72 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4205abdd-e620-43f8-8fa0-71f774799752")
+	)
+	(wire
+		(pts
+			(xy 45.72 163.83) (xy 53.34 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "429f1bd0-418c-4ec3-a36e-5b3a4afd88f2")
+	)
+	(wire
+		(pts
 			(xy 180.34 144.78) (xy 180.34 138.43)
 		)
 		(stroke
@@ -4498,6 +4506,16 @@
 			(type default)
 		)
 		(uuid "4396d88d-0a64-4a13-9c4d-9f6b55c6c904")
+	)
+	(wire
+		(pts
+			(xy 45.72 156.21) (xy 39.37 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b97f82-3ce5-462a-b218-e483a45ef850")
 	)
 	(wire
 		(pts
@@ -5201,6 +5219,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 138.43) (xy 105.41 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8c39c5d-a523-4c02-956d-50a5db3e17f4")
+	)
+	(wire
+		(pts
 			(xy 173.99 158.75) (xy 184.15 158.75)
 		)
 		(stroke
@@ -5508,6 +5536,26 @@
 			(type default)
 		)
 		(uuid "cd257588-cd5d-4c8f-8fcb-35e8f941a932")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 53.34 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd80a830-6feb-47e9-8e46-dc015c4a2e60")
+	)
+	(wire
+		(pts
+			(xy 97.79 143.51) (xy 93.98 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ced16eda-39b2-4ed3-a065-0b7358f5b835")
 	)
 	(wire
 		(pts
@@ -5908,6 +5956,44 @@
 		)
 		(uuid "1709d1bc-e467-4ed0-93bf-84a192c07673")
 	)
+	(text_box "Adaptor must be above battery voltage (8.4v) to charge. I'm thinking 9 volt is pretty good"
+		(exclude_from_sim no)
+		(at -2.54 48.26 0)
+		(size 25.4 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7e23b795-95b9-4df5-9f8b-3682f3b9867a")
+	)
+	(text_box "Maybe I should have dedicated switch for batpres. Pulled high when bat removed internally"
+		(exclude_from_sim no)
+		(at 116.84 139.7 0)
+		(size 22.86 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8dd04608-3953-4222-8e03-744b09fa934d")
+	)
 	(text_box "In-rush current limiter. Need a big resistor size like a 1206."
 		(exclude_from_sim no)
 		(at -34.29 90.17 0)
@@ -5927,10 +6013,10 @@
 		)
 		(uuid "97959b01-5706-4cc7-9ec0-5407a42d83c4")
 	)
-	(text_box "Requires a low-power i2c device to function, configures charging"
+	(text_box "Requires a low-power i2c device to function, configures charging. It is up to the host to control the charge cycles, like CC/CV, ultra low charge, and time delays every 100ms"
 		(exclude_from_sim no)
-		(at 71.12 172.72 0)
-		(size 15.24 16.51)
+		(at 60.96 171.45 0)
+		(size 31.75 17.78)
 		(stroke
 			(width 0)
 			(type default)
@@ -5945,6 +6031,25 @@
 			(justify left top)
 		)
 		(uuid "9b8c58a4-d404-4a81-9168-40b6e02d33e4")
+	)
+	(text_box "To support hybrid power boost mode, input current must be set higher than 1536 mA for 10 mΩ input current\nsensing resistor. When input current is higher than 107% of input current limit in REG0x3F(), charger IC allows\nbattery discharge and charger converter changes from buck converter to boost converter."
+		(exclude_from_sim no)
+		(at 92.71 40.64 0)
+		(size 54.61 19.05)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a8fc1fd6-036c-430b-a428-22bbc58e219b")
 	)
 	(text_box "Have to short sense lines together for fewer cells"
 		(exclude_from_sim no)
@@ -5965,7 +6070,7 @@
 		)
 		(uuid "a907f078-8231-464e-9c3e-bf55f2d72b67")
 	)
-	(text_box "Acok is adaptor present indicator\nIDAP and IDCHG indicates adaptor and discharge current\nPMON is total system power scaled down\nTB_Stat indicated hybrid boost mode\nProcHot indicates a hotplug"
+	(text_box "Acok is adaptor present indicator\nIDAP and IDCHG indicates adaptor and discharge current\nPMON is total system power scaled down\nTB_Stat indicated hybrid boost mode\nProcHot indicates a hotplug\n\nILIM and ACOK should not be left floating "
 		(exclude_from_sim no)
 		(at 13.97 166.37 0)
 		(size 31.75 39.37)
@@ -6004,19 +6109,9 @@
 		)
 		(uuid "347e6fbf-1019-4267-a605-3df9f9599714")
 	)
-	(text "Maybe I should have dedicated switch for batpres"
+	(text "Tie to ground, not use"
 		(exclude_from_sim no)
-		(at 115.316 139.446 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4d4eb88e-8708-42e9-8114-263b11d2190d")
-	)
-	(text "Tie to ground?"
-		(exclude_from_sim no)
-		(at 103.378 144.526 0)
+		(at 103.632 143.256 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6026,7 +6121,7 @@
 	)
 	(text "Disable HW limit, set in software"
 		(exclude_from_sim no)
-		(at 35.814 135.636 0)
+		(at 30.988 133.604 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6132,7 +6227,7 @@
 		(uuid "3b8b2f1a-1c1f-498e-85ab-c363389d9a4b")
 	)
 	(label "Low"
-		(at 93.98 138.43 0)
+		(at 105.41 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6174,6 +6269,17 @@
 			(justify left bottom)
 		)
 		(uuid "6242a0ab-0864-4358-b314-50b01d8be6bc")
+	)
+	(label "REGN"
+		(at 39.37 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "823bb0b2-0bd6-4d16-97aa-1a12ab67ed65")
 	)
 	(label "REGN"
 		(at 100.33 153.67 0)
@@ -7563,6 +7669,71 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 97.79 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "306b4b70-61d8-492e-81dc-492b12d64f4a")
+		(property "Reference" "#PWR026"
+			(at 97.79 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 102.108 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 97.79 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1349695-d8f3-4e32-be81-f7187f8f21df")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -9926,6 +10097,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 39.37 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "823c5fad-ea97-4479-9d29-ffbb1874a34a")
+		(property "Reference" "R8"
+			(at 40.894 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 36.068 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 39.37 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 39.37 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "be099321-fa18-4075-9398-56becbeead7c")
+		)
+		(pin "1"
+			(uuid "c66ba428-9e84-49d1-9cdc-da1e431b90f7")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 53.34 95.25 0)
 		(unit 1)
@@ -11598,6 +11836,73 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 45.72 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bac5e743-2f5f-4d05-89f6-5faaafafd7c3")
+		(property "Reference" "R18"
+			(at 47.244 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 42.418 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 45.72 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 45.72 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69ae5ea9-5e7c-4509-8f2e-2c0bd5fcfc18")
+		)
+		(pin "1"
+			(uuid "50b70dad-bb3c-4cd0-9b74-d3f1c2049126")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "R18")
 					(unit 1)
 				)
 			)
