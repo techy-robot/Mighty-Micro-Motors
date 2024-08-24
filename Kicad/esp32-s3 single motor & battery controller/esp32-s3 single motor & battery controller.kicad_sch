@@ -13,23 +13,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 13.97 0)
+			(property "Reference" "U6"
+				(at 2.1941 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "74HC595"
-				(at -7.62 -16.51 0)
+				(at 2.1941 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -212,6 +214,24 @@
 						)
 					)
 					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12405,6 +12425,9 @@
 		)
 		(pin "10"
 			(uuid "5b6b55af-b807-4f9b-a21b-dc2bf9129db7")
+		)
+		(pin "17"
+			(uuid "609eec71-d883-4292-a615-4468e40762ce")
 		)
 		(instances
 			(project ""
