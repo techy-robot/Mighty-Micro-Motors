@@ -12910,7 +12910,7 @@
 		(instances
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(page "3")
+					(page "2")
 				)
 			)
 		)
