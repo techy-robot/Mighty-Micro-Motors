@@ -3983,12 +3983,6 @@
 		(uuid "261ffdb0-4852-48e7-8311-05e2176282c6")
 	)
 	(junction
-		(at 74.93 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3dfe1e71-39bd-4a2b-bbde-9bf5e83907fd")
-	)
-	(junction
 		(at 92.71 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4896,16 +4890,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 177.8) (xy 74.93 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61c8b701-f219-47d1-b582-f4d9772abb39")
-	)
-	(wire
-		(pts
 			(xy 58.42 119.38) (xy 67.31 119.38)
 		)
 		(stroke
@@ -5276,16 +5260,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 166.37) (xy 74.93 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d2f9768-f866-497b-85da-b1a68417cece")
-	)
-	(wire
-		(pts
 			(xy 53.34 123.19) (xy 63.5 123.19)
 		)
 		(stroke
@@ -5403,16 +5377,6 @@
 			(type default)
 		)
 		(uuid "afd1ac6d-5ae9-428c-862d-6b5594670ade")
-	)
-	(wire
-		(pts
-			(xy 74.93 166.37) (xy 74.93 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b121059c-8598-4812-a691-3e794104ecc8")
 	)
 	(polyline
 		(pts
@@ -5626,16 +5590,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 175.26) (xy 74.93 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d001cefe-5aa1-42bc-94a7-057118c40a68")
-	)
-	(wire
-		(pts
 			(xy 245.11 97.79) (xy 255.27 97.79)
 		)
 		(stroke
@@ -5833,16 +5787,6 @@
 			(type default)
 		)
 		(uuid "f18e5fba-6744-4155-8072-448d6a1bba7a")
-	)
-	(wire
-		(pts
-			(xy 74.93 177.8) (xy 81.28 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2c48ae0-69d8-4c0e-8930-8ce5fcdedc2a")
 	)
 	(wire
 		(pts
@@ -6088,38 +6032,6 @@
 			)
 		)
 		(uuid "cd7cf6d4-ed8b-4ee2-af27-9ad2b6613d1d")
-	)
-	(text "Out En"
-		(exclude_from_sim no)
-		(at 134.112 96.012 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "df72c552-8b57-4f3a-8fe1-6fb4a92a996c")
-	)
-	(label "VBATT"
-		(at 81.28 177.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0bd55a31-4783-4a40-a09a-a2c913ab59dd")
-	)
-	(label "VBATT"
-		(at 62.23 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "164fff05-dc6f-4577-9a1e-d2a0fe413c81")
 	)
 	(label "SDA1"
 		(at 63.5 86.36 180)
@@ -6395,17 +6307,6 @@
 			(justify left bottom)
 		)
 		(uuid "74841761-8e66-4e72-972a-eeb19e8b28ee")
-	)
-	(label "MOTORPWR"
-		(at 71.12 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "862adccf-2a25-47c2-907c-a99dcd1e1539")
 	)
 	(label "1CSA-A"
 		(at 63.5 63.5 180)
@@ -7325,7 +7226,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "KMR2"
 			(at 117.094 155.448 90)
 			(effects
 				(font
@@ -7648,71 +7549,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "28806151-b6d2-4cc6-b5cf-5e21793879e3")
-		(property "Reference" "#PWR026"
-			(at 74.93 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.676 188.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "41c323bb-ac53-412e-be93-b12b72294ba0")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 80.01 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7771,73 +7607,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 74.93 181.61 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2d572df4-5733-4d31-976c-91afc6a02a79")
-		(property "Reference" "R18"
-			(at 70.104 182.118 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "150k"
-			(at 78.232 182.372 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 74.93 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 74.93 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3840ecf4-9fb8-443a-a36e-188c047b565d")
-		)
-		(pin "1"
-			(uuid "c4126cb6-162f-4724-960c-4c8a88e8e959")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8108,73 +7877,6 @@
 			(project "esp32-s3 and DRV8311 single motor board"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
 					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 74.93 172.72 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3656c552-445f-402a-a1d0-4af4e8deb12a")
-		(property "Reference" "R17"
-			(at 70.104 173.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 78.232 173.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 74.93 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 74.93 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ef23bbaf-bf94-4d75-ad76-a28bcbc99fd1")
-		)
-		(pin "1"
-			(uuid "4d3d8cd9-3751-4680-a0f4-2ed0b4fcf9d3")
-		)
-		(instances
-			(project "stm32g070 and DRV8311 single motor board - V1 Alpha"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -11598,6 +11300,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 62.23 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b80506eb-970a-4e2a-b31f-a4c7b05150fa")
+		(property "Reference" "TP5"
+			(at 62.23 94.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 62.484 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 62.23 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78a12463-0d74-4429-a77a-5a3a16c82f6f")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 87.63 43.18 0)
 		(unit 1)
@@ -12009,7 +11775,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "KMR2"
 			(at 61.468 56.642 0)
 			(effects
 				(font
