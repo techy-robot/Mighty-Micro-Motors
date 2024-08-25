@@ -4217,7 +4217,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "300k"
 			(at 98.552 63.5 90)
 			(effects
 				(font
@@ -4834,7 +4834,7 @@
 				)
 			)
 		)
-		(property "Value" "300k"
+		(property "Value" "100k"
 			(at 98.552 70.104 90)
 			(effects
 				(font
