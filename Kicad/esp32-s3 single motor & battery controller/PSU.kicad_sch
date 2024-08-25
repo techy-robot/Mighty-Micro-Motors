@@ -1169,6 +1169,108 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -3764,6 +3866,12 @@
 		(uuid "885cb0c7-0fb3-4c46-804d-42a7f04f7db2")
 	)
 	(junction
+		(at 99.06 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8af73334-12ee-44bc-a31a-afebae5b865f")
+	)
+	(junction
 		(at 93.98 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5219,7 +5327,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 138.43) (xy 105.41 138.43)
+			(xy 93.98 138.43) (xy 99.06 138.43)
 		)
 		(stroke
 			(width 0)
@@ -5769,6 +5877,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 138.43) (xy 105.41 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba3e96f-fad7-449f-874d-502c5587db16")
+	)
+	(wire
+		(pts
 			(xy 137.16 118.11) (xy 144.78 118.11)
 		)
 		(stroke
@@ -6070,7 +6188,7 @@
 		)
 		(uuid "a907f078-8231-464e-9c3e-bf55f2d72b67")
 	)
-	(text_box "Acok is adaptor present indicator\nIDAP and IDCHG indicates adaptor and discharge current\nPMON is total system power scaled down\nTB_Stat indicated hybrid boost mode\nProcHot indicates a hotplug\n\nILIM and ACOK should not be left floating "
+	(text_box "Acok is adaptor present indicator\nIDAP and IDCHG indicates adaptor and discharge current\nPMON is total system power scaled down\nTB_Stat indicated hybrid boost mode\nProcHot indicates system limit failure\n\nILIM and ACOK should not be left floating "
 		(exclude_from_sim no)
 		(at 13.97 166.37 0)
 		(size 31.75 39.37)
@@ -6108,6 +6226,16 @@
 			)
 		)
 		(uuid "347e6fbf-1019-4267-a605-3df9f9599714")
+	)
+	(text "All Sot23-3 mosfets are PJA3430_R1_00001"
+		(exclude_from_sim no)
+		(at 53.34 36.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b15d471-d0b4-43ca-933c-0053495b6e98")
 	)
 	(text "Tie to ground, not use"
 		(exclude_from_sim no)
@@ -11181,6 +11309,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 99.06 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1baeb98-1df4-4d70-99d3-b489698ab8cc")
+		(property "Reference" "TP6"
+			(at 102.108 135.382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 99.314 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 104.14 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 99.06 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a2e81a2-2c88-458e-bada-c368970375d4")
+		)
+		(instances
+			(project "esp32-s3 single motor & battery controller"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 31.75 67.31 90)
 		(unit 1)
@@ -13392,7 +13584,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "10k"
 			(at 41.148 124.46 90)
 			(effects
 				(font
