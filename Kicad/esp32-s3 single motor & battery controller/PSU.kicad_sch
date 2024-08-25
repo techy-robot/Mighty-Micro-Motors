@@ -3650,12 +3650,6 @@
 		(uuid "0e7ba87a-d8c2-4e25-9bc2-6fb59fe4dbc4")
 	)
 	(junction
-		(at 250.19 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f7a76c6-a73d-4049-9da3-c4a35c1dee91")
-	)
-	(junction
 		(at 53.34 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3732,6 +3726,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44200310-0136-4948-a377-db5f6902aa82")
+	)
+	(junction
+		(at 250.19 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44afb77a-b58d-4d8a-8b67-d93c8c821a43")
 	)
 	(junction
 		(at 261.62 72.39)
@@ -4659,6 +4659,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 62.23) (xy 251.46 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4903b33f-f3bd-4134-bb00-1f8a1884a18c")
+	)
+	(wire
+		(pts
 			(xy 184.15 140.97) (xy 168.91 140.97)
 		)
 		(stroke
@@ -4829,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 62.23) (xy 251.46 62.23)
+			(xy 247.65 62.23) (xy 250.19 62.23)
 		)
 		(stroke
 			(width 0)
@@ -5749,16 +5759,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 62.23) (xy 250.19 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e059bf8d-74f0-4cdc-a1fe-9ae9be0c3280")
-	)
-	(wire
-		(pts
 			(xy 53.34 105.41) (xy 49.53 105.41)
 		)
 		(stroke
@@ -5826,6 +5826,16 @@
 			(type default)
 		)
 		(uuid "eadd1998-ba5b-4770-b68a-6b28ddce1910")
+	)
+	(wire
+		(pts
+			(xy 250.19 62.23) (xy 250.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb05851f-f31e-4cdb-9b2a-ef8b4777ed8a")
 	)
 	(wire
 		(pts
@@ -8215,73 +8225,6 @@
 			(project "esp32-s3 single motor & battery controller"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 250.19 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3b2002fa-2222-442f-9ac4-f243018e8f0c")
-		(property "Reference" "R32"
-			(at 248.412 65.278 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 252.476 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 250.19 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 250.19 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2944e80e-305b-4692-82c9-150ff66ee441")
-		)
-		(pin "1"
-			(uuid "738fe421-df30-4b3e-9068-3930fdfad43f")
-		)
-		(instances
-			(project "esp32-s3 single motor & battery controller"
-				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03"
-					(reference "R32")
 					(unit 1)
 				)
 			)
