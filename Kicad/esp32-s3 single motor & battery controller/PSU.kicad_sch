@@ -3866,12 +3866,6 @@
 		(uuid "885cb0c7-0fb3-4c46-804d-42a7f04f7db2")
 	)
 	(junction
-		(at 99.06 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8af73334-12ee-44bc-a31a-afebae5b865f")
-	)
-	(junction
 		(at 93.98 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5877,16 +5871,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 138.43) (xy 105.41 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eba3e96f-fad7-449f-874d-502c5587db16")
-	)
-	(wire
-		(pts
 			(xy 137.16 118.11) (xy 144.78 118.11)
 		)
 		(stroke
@@ -6372,17 +6356,6 @@
 			(justify right bottom)
 		)
 		(uuid "3b8b2f1a-1c1f-498e-85ab-c363389d9a4b")
-	)
-	(label "Low"
-		(at 105.41 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4605a82a-4429-413f-b075-2dfe6cdc4543")
 	)
 	(label "REGN"
 		(at 36.83 128.27 180)
