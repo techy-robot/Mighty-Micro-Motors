@@ -10472,7 +10472,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "7 pin FPC 0.3mm"
+		(property "Value" "7 pin FPC 0.3mm Panasonic Y3b"
 			(at 261.62 91.4399 0)
 			(effects
 				(font

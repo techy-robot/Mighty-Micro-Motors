@@ -6,7 +6,7 @@ You can check out my project log [here](Progress%20Log.md).
 ## Gearbox
 This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The drone motors are 10mm in diameter, so the gearbox should be a similar size.
 
-I'm currently thinking about having a cycloidal or split-ring planetary gearbox, due to the compact size and high reduction rations
+I'm currently thinking about having a cycloidal or split-ring planetary gearbox, due to the compact size and high reduction ratios
 
 Preliminary CAD designs are on onshape, you can watch my progress here: [Mighty Micro Motors - Onshape](https://cad.onshape.com/documents/c861ec30af8169cf9c14bd7f/w/e538486c85e6a5fe77cd1d33/e/19bd07544dbaacbeb2fafd06). Step files and STL files will also be uploaded to this repo.
 
@@ -41,10 +41,7 @@ At it's current state the control PCB has been assembled and power tested. Nothi
 The motor driver section is 16x11mm, which hopefully is small enough and easily tileable for a small robot controller with lots of motors. The biggest part of the board is the power management, followed by the stm32.
 
 **Ordering info**
-
-I ordered my pcbs from JLCPCB, because they are inexpensive and can do advanced pcbs. 
-
-The pcb is a 4 layer board, with 1 oz copper. The power trace is exposed for solder if extra conductivity is needed. Also, it is **strongly recommended** to order a stencil for both PCBs and to do a good job pasting the board. I fortunately ordered a stencil for the controller, but I put too much solder paste on and had to fix a lot of bridges after the fact. For the encoder board I manually pasted it, and that was a real pain to do a tiny QFN chip.
+The pcb is a 4 layer board, with 1 oz copper. Also, it is **strongly recommended** to order a stencil for both PCBs and to do a good job pasting the board. I fortunately ordered a stencil for the controller, but I put too much solder paste on and had to fix a lot of bridges after the fact. For the encoder board I manually pasted it, and that was a real pain to do a tiny QFN chip.
 
 #### Tested functionality:
 - Can be powered on without exploding
@@ -65,12 +62,37 @@ Assembled:
 
 (Note that I messed up on the mosfets I ordered which were too tiny. I have the correct mosfet specified now)
 
+### Version 2
+My second test control board has had a lot of the components switched, and actually split the DRV8311 onto a separate board.
+
+I am testing a lot of the same functionality as last time, and its still a single motor system.
+
+[Schematic](Kicad/esp32-s3%20single%20motor%20&%20battery%20controller/esp32-s3%20single%20motor%20&%20battery%20controller.pdf)
+
+
+**Specs:**
+- TI BQ24780S 2-cell battery charger along with a BQ276905 battery balancer, monitor, and protection chip. 
+- 2 power mosfets on board to control system power, 60+ amps of current, 4 additional smaller mosfets for charging
+- ESP32-S3 microcontroller, clocked at 240mhz and can support 4 motors (not in this version)
+- TI DRV8311 controlling the motor, except on a separate PCB located on the back of the motor.
+- 7 pin FPC connector for the V2 encoder
+
+#### Photos
+<img src="Media/top v2.png" width="200">
+<img src="Media/In1 V2.png" width="200">
+<img src="Media/In2 V2.png" width="200">
+<img src="Media/bottom V2.png" width="200">
+
+Off board controller
+
+<img src="Media/On-motor-driver.png" width="400">
+
 ## Encoder board
 <img src="Media/magnetic encoder board.jpg" width="200">
 
 This is a little magnetic board I designed to be attached to the end of the motor. It has a MA735 chip, which is low cost and seemed perfect for my needs. The resolution is inversely proportional to rotational reading speeds, so I will be fine no matter which end of the gearbox I stick it on. Low resolution on the high-speed end will mean I still have high resolution positioning on the output, and high resolution on the output side is fine because the output is slower.
 
-The board is barely bigger than the jst sh connector on top for SPI communication!
+The board is barely bigger than the jst sh connector on top for SPI communication! V2 of the board is mounted on a flex cable so it doesn't need wires.
 
 The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymium magnet to operate. I used a 6x3mm from K&J magnetics: [D42DIA](https://www.kjmagnetics.com/proddetail.asp?prod=D42DIA).
 
