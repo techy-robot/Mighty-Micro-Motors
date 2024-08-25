@@ -9086,7 +9086,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "JST SH SM04B"
+		(property "Value" "JST SH SM04B/Qwiic"
 			(at 255.27 150.2155 0)
 			(effects
 				(font

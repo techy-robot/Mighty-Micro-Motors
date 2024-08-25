@@ -6104,7 +6104,7 @@
 	)
 	(text_box "Current sense resistor can only be scaled double or half. Right here I have it at half"
 		(exclude_from_sim no)
-		(at 64.77 45.72 0)
+		(at 64.77 43.18 0)
 		(size 20.32 12.7)
 		(stroke
 			(width 0)
@@ -6178,27 +6178,7 @@
 		)
 		(uuid "d3534e55-457f-4981-863a-5a6828673af7")
 	)
-	(text "Sot-23 mosfets"
-		(exclude_from_sim no)
-		(at 39.37 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2fdbc0bb-30d5-4294-9ad9-7a4c80e97c62")
-	)
-	(text "Sot-23 mosfets"
-		(exclude_from_sim no)
-		(at 112.014 109.728 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "347e6fbf-1019-4267-a605-3df9f9599714")
-	)
-	(text "All Sot23-3 mosfets are PJA3430_R1_00001"
+	(text "Sot23-3 mosfets are PJA3430, 20v, Nmos, 2amps"
 		(exclude_from_sim no)
 		(at 53.34 36.576 0)
 		(effects
@@ -6228,25 +6208,15 @@
 		)
 		(uuid "61713af2-8f7d-42b1-8ad3-e80a678a6972")
 	)
-	(text "Power pack mosfet"
+	(text "GSDH3005 is a 30v, 500ma Schotkey diode 0402 package"
 		(exclude_from_sim no)
-		(at 180.594 155.956 0)
+		(at 53.848 28.194 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "9190362b-ba3d-47e9-8652-28910dfce7ae")
-	)
-	(text "Power pack mosfet"
-		(exclude_from_sim no)
-		(at 139.7 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e622021c-0edd-4235-883d-80c1aa9927e7")
+		(uuid "e9689566-81d4-4ecd-a927-3e685f8269d8")
 	)
 	(label "BATT-"
 		(at 246.38 102.87 180)
@@ -6918,7 +6888,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "GSDH3005"
 			(at 244.348 132.588 0)
 			(effects
 				(font
@@ -6926,7 +6896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 245.11 130.81 0)
 			(effects
 				(font
@@ -7073,7 +7043,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS, 12v"
+		(property "Value" "PJA3430"
 			(at 49.53 58.42 90)
 			(effects
 				(font
@@ -7574,7 +7544,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uH"
+		(property "Value" "4.7uH, MAMK2520T4R7M"
 			(at 285.75 59.944 90)
 			(effects
 				(font
@@ -7642,7 +7612,7 @@
 				)
 			)
 		)
-		(property "Value" "1mOhm, CS"
+		(property "Value" "1mOhm, CS wshp2818"
 			(at 160.528 162.052 90)
 			(effects
 				(font
@@ -8316,7 +8286,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "GSDH3005"
 			(at 35.56 107.9499 90)
 			(effects
 				(font
@@ -8325,7 +8295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 33.02 106.68 0)
 			(effects
 				(font
@@ -8599,7 +8569,7 @@
 				)
 			)
 		)
-		(property "Value" "5mOhm CS"
+		(property "Value" "5mOhm CS wshp2818"
 			(at 70.358 61.468 90)
 			(effects
 				(font
@@ -8666,7 +8636,7 @@
 				)
 			)
 		)
-		(property "Value" "Batt Balance connector"
+		(property "Value" "JST XH-S"
 			(at 161.544 87.884 0)
 			(effects
 				(font
@@ -8937,7 +8907,7 @@
 				)
 			)
 		)
-		(property "Value" "5mOhm, CS"
+		(property "Value" "5mOhm, CS wshp2818"
 			(at 133.858 114.808 90)
 			(effects
 				(font
@@ -9006,7 +8976,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS,12v,PPak"
+		(property "Value" "Vishay sir404dp"
 			(at 168.91 165.1 90)
 			(effects
 				(font
@@ -10329,7 +10299,7 @@
 				)
 			)
 		)
-		(property "Value" "5.6uH, 2.2A < sat"
+		(property "Value" "5.6uH Bourns SDE0604A"
 			(at 113.03 115.824 90)
 			(effects
 				(font
@@ -10466,7 +10436,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS, 12v"
+		(property "Value" "PJA3430"
 			(at 108.712 123.19 0)
 			(effects
 				(font
@@ -10836,7 +10806,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS,12v,PPak"
+		(property "Value" "Vishay sir404dp"
 			(at 129.54 96.5199 0)
 			(effects
 				(font
@@ -11213,7 +11183,7 @@
 				)
 			)
 		)
-		(property "Value" "NMOS, 12v"
+		(property "Value" "PJA3430"
 			(at 31.75 60.96 90)
 			(effects
 				(font
@@ -11643,7 +11613,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "GSDH3005"
 			(at 26.67 90.17 0)
 			(effects
 				(font
@@ -11651,7 +11621,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 26.67 93.98 0)
 			(effects
 				(font
@@ -13605,7 +13575,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS,12v"
+		(property "Value" "PJA3430"
 			(at 108.458 105.918 0)
 			(effects
 				(font
