@@ -6150,9 +6150,28 @@
 		)
 		(uuid "9b8c58a4-d404-4a81-9168-40b6e02d33e4")
 	)
+	(text_box "Current sense resistor can only be scaled double or half. Right here I have it at half"
+		(exclude_from_sim no)
+		(at 64.77 45.72 0)
+		(size 20.32 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a049c6a9-60db-4d45-a050-a51b4bd582e3")
+	)
 	(text_box "To support hybrid power boost mode, input current must be set higher than 1536 mA for 10 mΩ input current\nsensing resistor. When input current is higher than 107% of input current limit in REG0x3F(), charger IC allows\nbattery discharge and charger converter changes from buck converter to boost converter."
 		(exclude_from_sim no)
-		(at 92.71 40.64 0)
+		(at 111.76 41.91 0)
 		(size 54.61 19.05)
 		(stroke
 			(width 0)
@@ -7752,7 +7771,7 @@
 				)
 			)
 		)
-		(property "Value" "10mOhm, CS"
+		(property "Value" "1mOhm, CS"
 			(at 160.528 162.052 90)
 			(effects
 				(font
@@ -8776,7 +8795,7 @@
 				)
 			)
 		)
-		(property "Value" "10mOhm CS"
+		(property "Value" "5mOhm CS"
 			(at 70.358 61.468 90)
 			(effects
 				(font
@@ -9114,7 +9133,7 @@
 				)
 			)
 		)
-		(property "Value" "10mOhm, CS"
+		(property "Value" "5mOhm, CS"
 			(at 133.858 114.808 90)
 			(effects
 				(font
