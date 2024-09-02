@@ -4,13 +4,13 @@ My goal with this project is to recreate the expensive and highly advanced motor
 You can check out my project log [here](Progress%20Log.md).
 
 ## Gearbox
-This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The drone motors are 10mm in diameter, so the gearbox should be a similar size.
+This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The brushless drone motors (HappyModel SE0802) are 10mm in diameter, so the gearbox ideally should be a similar size.
 
 I'm currently thinking about having a cycloidal or split-ring planetary gearbox, due to the compact size and high reduction ratios
 
 Preliminary CAD designs are on onshape, you can watch my progress here: [Mighty Micro Motors - Onshape](https://cad.onshape.com/documents/c861ec30af8169cf9c14bd7f/w/e538486c85e6a5fe77cd1d33/e/19bd07544dbaacbeb2fafd06). Step files and STL files will also be uploaded to this repo.
 
-Cycloidal 16-to-1 reduction:
+### Cycloidal 16-to-1 reduction:
 
 Currently the design is twice as big as my ideal, with a 19mm diameter. I can not reduce the diameter without removing the bearings, possible reducing the lifespan. This *really* needs to be smaller, so I may do some testing and just remove some bearings. I'm not actually sure how well the 1x3x1mm bearings roll compared to just a smooth shaft. I could also cut the hole count down if the screws were also the shafts.
 
@@ -20,6 +20,16 @@ Currently the design is twice as big as my ideal, with a 19mm diameter. I can no
 
 In real life:
 ![](Media/Build%20Log/IMG_20240804_110446.jpg)
+
+### Split Ring Compound Planetary gearbox 74.66-to-1 reduction:
+
+This goes by a variety of names, but basically this is a two-stage planetary gearbox, with the planets merged together. Due to some interesting mechanics, this type of gearbox can have **an extreme** reduction ratio in a relatively small size. The reduction ratio is the first stage ratio(ring teeth / sun teeth) multiplied by 2nd stage ring teeth, divided by the number of planets (simplified, this only works if both planet gear sets have the same number of teeth). The 2nd stage is advanced by a few teeth every revolution of the first. This operates on the same principle as a cycloidal drive and a harmonic drive, but with the added reduction ratio of the planetary gears, and without the vibration.
+
+One thing to note with this type of gearbox is that the output encoder wires cannot fit through the center like my other gearbox, which limits the usable motion range to 270 degrees.
+
+My particular version is a 74.66:1, in a much smaller form-factor than my cycloidal drive!
+![](Media/Split%20Ring%20Compound%20Planetary%20Outside.png)
+![](Media/Split%20Ring%20Compount%20Planetary%20Inside.png)
 
 
 ## Control board
@@ -50,6 +60,7 @@ The pcb is a 4 layer board, with 1 oz copper. Also, it is **strongly recommended
 - Can be clocked to a max 64mhz
 - Power mosfet switching works on the charger
 - Can communicate over SPI, UART and the debug interface
+- Can drive a brushless drone motor at 10k rpm
 
 #### Photos
 <img src="Media/top.png" width="200">
@@ -97,4 +108,6 @@ The board is barely bigger than the jst sh connector on top for SPI communicatio
 The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymium magnet to operate. I used a 6x3mm from K&J magnetics: [D42DIA](https://www.kjmagnetics.com/proddetail.asp?prod=D42DIA).
 
 ## Code
-There is not that much code currently, just some tests to verify the board works, and a programmer definition for my Flipper Zero. I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point for the motor control, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
+There is not that much code currently, just some tests to verify the board and motors work, and a programmer definition for my Flipper Zero. I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point for the motor control, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
+
+I have tuned the PID algorithms for my particular HappyModel SE0802 brushless drone motors.
