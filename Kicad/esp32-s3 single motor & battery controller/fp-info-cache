@@ -1,4 +1,4 @@
-23715897973572588
+23724519347928890
 ABM8
 ABM8_ABR
 
@@ -34,6 +34,34 @@ audio belton reverb
 0
 7
 7
+BQ24780
+RUY0028A
+
+BQ24780SRUYR 
+0
+34
+29
+BQ76905
+VQFN20_RGR_TEX
+
+BQ76905RGRR 
+0
+21
+21
+BQ76905
+VQFN20_RGR_TEX-L
+
+BQ76905RGRR 
+0
+21
+21
+BQ76905
+VQFN20_RGR_TEX-M
+
+BQ76905RGRR 
+0
+21
+21
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -96410,6 +96438,13 @@ custom_testpoints
 0
 7
 7
+custom_testpoints
+PinHeader_1x01_P1.27mm_Round
+Through hole straight pin header, 1x02, 1.27mm pitch, single row
+Through hole pin header THT 1x02 1.27mm single row
+0
+1
+1
 custom_testpoints
 TestPoint_Pad_D1.0mm_x6
 SMD pad as test Point, diameter 1.0mm
