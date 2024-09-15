@@ -3,6 +3,8 @@ My goal with this project is to recreate the expensive and highly advanced motor
 
 You can check out my project log [here](Progress%20Log.md).
 
+This project is sponsored by [PCBWay](https://www.pcbway.com/)
+
 ## Gearbox
 This has to be a resin printed or precision machined gearbox, just from the sheer smallness of everything. The brushless drone motors (HappyModel SE0802) are 10mm in diameter, so the gearbox ideally should be a similar size.
 
@@ -106,6 +108,14 @@ This is a little magnetic board I designed to be attached to the end of the moto
 The board is barely bigger than the jst sh connector on top for SPI communication! V2 of the board is mounted on a flex cable so it doesn't need wires.
 
 The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymium magnet to operate. I used a 6x3mm from K&J magnetics: [D42DIA](https://www.kjmagnetics.com/proddetail.asp?prod=D42DIA).
+
+## Sponsorship
+![PCBWay-Logo](Media/pcbway-logo.png)
+
+Thanks to PCBWay for reaching out to sponsor my project. They kindly offered to allow me to test their pcb manufacturing capabilites with this project.
+
+Try them out if you haven't! [https://www.pcbway.com/](https://www.pcbway.com/). They offer a ton of helpful services for hackers and DIYers for rapid prototyping.
+
 
 ## Code
 There is not that much code currently, just some tests to verify the board and motors work, and a programmer definition for my Flipper Zero. I am planning on using the wonderful [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) library as a starting point for the motor control, building out my own communication protocol or going with ROS 2 style communication. I may also add some motor control algorithms as I discover more.
