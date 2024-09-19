@@ -1,0 +1,15 @@
+### Footprint positions - created on 2024-09-19T17:30:06-0600 ###
+### Printed by KiCad version 8.0.5-8.0.5-0~ubuntu24.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val           Package                            PosX       PosY       Rot  Side
+C1        4.7uF         C_0402_1005Metric              173.5000  -103.0500  150.0000  top
+C2        0.1uF,_16v    C_0402_1005Metric              169.9500   -96.9500   90.0000  top
+C3        0.1uF,_16v    C_0402_1005Metric              168.7000   -96.8000   90.0000  top
+J1        B             PinHeader_1x01_P1.27mm_Round   166.9000  -102.3500    0.0000  top
+J2        A             PinHeader_1x01_P1.27mm_Round   166.6000  -101.1000    0.0000  top
+J3        C             PinHeader_1x01_P1.27mm_Round   167.6000  -103.4500    0.0000  top
+R2        100k          R_0402_1005Metric              169.0500  -104.1000   90.0000  top
+R3        47k           R_0402_1005Metric              174.2500  -101.5500   60.0000  top
+U1        DRV8311HRRWR  DRV8311_0.3mmVias              171.2500  -100.4200  -90.0000  top
+## End

@@ -80,18 +80,6 @@
   "project": {
     "files": [
       {
-        "name": "esp32-s3 single motor & battery controller.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": 384,
-          "pos_y": 99,
-          "size_x": 768,
-          "size_y": 721
-        }
-      },
-      {
         "name": "esp32-s3 single motor & battery controller.kicad_pcb",
         "open": false,
         "window": {

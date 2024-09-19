@@ -1,0 +1,57 @@
+### Footprint positions - created on 2024-09-19T17:27:45-0600 ###
+### Printed by KiCad version 8.0.5-8.0.5-0~ubuntu24.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                         Package                                                PosX       PosY       Rot  Side
+C3        16pF                        C_0603_1608Metric_Pad1.08x0.95mm_HandSolder        126.0500  -100.3000   90.0000  top
+C4        16pF                        C_0603_1608Metric_Pad1.08x0.95mm_HandSolder        128.8000   -97.8000  180.0000  top
+C5        47nF                        C_0603_1608Metric                                  116.9000  -126.3000    0.0000  top
+C7        1nF                         C_0603_1608Metric                                  112.9000  -122.3000    0.0000  top
+C8        47nf                        C_0603_1608Metric                                  115.9000  -121.7000  180.0000  top
+C9        0.1uF                       C_0603_1608Metric                                  115.9000  -123.2000    0.0000  top
+C10       0.1uF                       C_0603_1608Metric                                  118.9000  -123.2728    0.0000  top
+C11       0.1uF                       C_0603_1608Metric                                  124.7891  -123.3144    0.0000  top
+C14       2.2uf                       C_0603_1608Metric                                  116.8500  -127.8000    0.0000  top
+C15       0.1uF                       C_0603_1608Metric                                  130.2500  -130.7500    0.0000  top
+C16       0.1uF                       C_0603_1608Metric                                  133.4250  -130.7500    0.0000  top
+C17       0.1uF                       C_0603_1608Metric                                  136.6000  -130.7500    0.0000  top
+C20       0.1uF                       C_0603_1608Metric                                  128.5000  -103.1000    0.0000  top
+C21       1uF                         C_0603_1608Metric                                  128.2000  -104.6000    0.0000  top
+C22       0.1uF                       C_0603_1608Metric                                  133.9000   -98.5000   45.0000  top
+C25       0.1uF                       C_0603_1608Metric                                  139.2000  -108.7000  -45.0000  top
+C29       10uF                        C_0603_1608Metric                                  128.4725  -119.2728   90.0000  top
+C30       10uF                        C_0603_1608Metric                                  126.9725  -119.2978   90.0000  top
+C35       2.2uf                       C_0603_1608Metric                                  137.6000  -121.5000  -90.0000  top
+C41       220uF,APA0609221M016R       CP_Elec_6.3x9.9                                    147.8000  -111.3000   90.0000  top
+D3        Osram_LT_Q99G.01_green_led  LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder      125.1500  -104.7000   90.0000  top
+D5        GSDH3005                    D_0402_1005Metric                                  138.4000  -118.6000    0.0000  top
+J1        JST_SH_SM04B/Qwiic          JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal   127.1500   -93.4500  180.0000  top
+J3        Conn_01x03                  PinHeader_1x03_P1.27mm_Vertical                    149.0000   -94.0000  180.0000  top
+J4        Conn_01x03                  PinHeader_1x03_P1.27mm_Vertical                    149.0000   -98.8700  180.0000  top
+J5        JST_XH-S                    JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal            143.3725  -125.0728   90.0000  top
+L2        5.6uH_Bourns_SDE0604A       L_Bourns_SDR0604                                   125.4500  -127.3500   90.0000  top
+Q1        PJA3430                     SOT-323_SC-70                                      120.5000  -125.4000    0.0000  top
+Q2        PJA3430                     SOT-323_SC-70                                      120.9000  -128.4000  -90.0000  top
+Q3        Vishay_sir404dp             PQFN-8-EP_6x5mm_P1.27mm_Generic                    132.2075  -121.1478  -90.0000  top
+Q4        PJA3430                     SOT-323_SC-70                                      116.1225  -119.2228  -90.0000  top
+Q5        PJA3430                     SOT-323_SC-70                                      113.5225  -119.2228   90.0000  top
+R1        10ohm                       R_0603_1608Metric                                  116.9500  -130.9000  180.0000  top
+R9        5mOhm_CS_wshp2818           R_2816_7142Metric                                  121.7725  -120.0228  180.0000  top
+R12       866k                        R_0603_1608Metric                                  110.4000  -123.3000   90.0000  top
+R13       133k                        R_0603_1608Metric                                  108.9000  -123.3000  -90.0000  top
+R16       10k                         R_0603_1608Metric                                  132.5500   -96.6000   90.0000  top
+R21       100k                        R_0603_1608Metric                                  132.9500  -109.0000  -45.0000  top
+R22       5mOhm,_CS_wshp2818          R_2816_7142Metric                                  133.0000  -127.5000  180.0000  top
+R23       10ohm                       R_0603_1608Metric                                  120.0000  -130.8500  180.0000  top
+R24       10ohm                       R_0603_1608Metric                                  127.7725  -123.3728  180.0000  top
+R25       4.02kohm                    R_0603_1608Metric                                  127.7725  -121.8728  180.0000  top
+R26       10k                         R_0603_1608Metric                                  116.8000  -129.3500  180.0000  top
+R31       10k                         R_0603_1608Metric                                  136.1000  -119.3000  -90.0000  top
+R36       5.1k                        R_0603_1608Metric                                  139.0500  -125.9500    0.0000  top
+SW1       KMR2                        SW_Push_1P1T_NO_CK_KMR2                            126.9000  -108.5000  180.0000  top
+SW2       KMR2                        SW_Push_1P1T_NO_CK_KMR2                            126.9000  -112.1000  180.0000  top
+U4        BQ24780SRUYR                RUY0028A                                           112.0000  -127.4000  -90.0000  top
+U5        ESP32-S3                    QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm                    135.5000  -104.1500   45.0000  top
+U6        74HC595                     DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm             138.4125   -95.2000  -90.0000  top
+Y1        40mhz,_10ppm                Crystal_SMD_3225-4Pin_3.2x2.5mm                    128.9000  -100.2500  180.0000  top
+## End

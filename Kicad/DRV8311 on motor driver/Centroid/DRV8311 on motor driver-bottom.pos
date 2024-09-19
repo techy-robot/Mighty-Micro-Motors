@@ -1,0 +1,11 @@
+### Footprint positions - created on 2024-09-19T17:30:06-0600 ###
+### Printed by KiCad version 8.0.5-8.0.5-0~ubuntu24.04.1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val         Package                 PosX       PosY       Rot  Side
+C4        22uF        C_0402_1005Metric   172.4500   -96.7500  -90.0000  bottom
+C5        22uF        C_0402_1005Metric   173.4000   -96.7500  -90.0000  bottom
+C6        0.1uF,_16v  C_0402_1005Metric   168.3000  -101.7500  -60.0000  bottom
+C7        0.1uF       C_0402_1005Metric   174.6000  -101.5000  -120.0000  bottom
+R1        300k        R_0402_1005Metric   169.0500  -104.1000  -90.0000  bottom
+## End

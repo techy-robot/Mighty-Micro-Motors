@@ -494,7 +494,7 @@
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
+      "pos_files": "Centroid/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
