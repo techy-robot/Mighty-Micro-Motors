@@ -96,6 +96,10 @@ I am testing a lot of the same functionality as last time, and its still a singl
 <img src="Media/In2 V2.png" width="200">
 <img src="Media/bottom V2.png" width="200">
 
+![](Media/pcbv2%20top.jpg)
+
+![](Media/pcbv2%20bottom.jpg)
+
 Off board controller
 
 <img src="Media/On-motor-driver.png" width="400">
@@ -112,9 +116,14 @@ The encoder chips datasheet recommends a diametrically magnetized 5x3mm neodymiu
 ## Sponsorship
 ![PCBWay-Logo](Media/pcbway-logo.png)
 
+
 Thanks to PCBWay for reaching out to sponsor my project. They kindly offered to allow me to test their pcb manufacturing capabilites with this project.
 
-Try them out if you haven't! [https://www.pcbway.com/](https://www.pcbway.com/). They offer a ton of helpful services for hackers and DIYers for rapid prototyping.
+I liked the quality of the pcbs I received for the V2 boards, everything was soldered correctly with only minor burn marks on the through-hole components. The assembly service they offered was also top-notch, much easier than hand assembling at home. When I made a mistake on one of the PCB assemblies I ordered, they were quick to ask what should be done, and were willing to let me have the misplaced parts (sot-23 transitors instead of sot23-5) so I could fix it myself with some bodge wires. The one downside to PCBway is the cost of the boards, I would not normally pay for prototype pcbs at their prices.
+
+Try them out if you haven't [https://www.pcbway.com/](https://www.pcbway.com/).
+
+See the section **Version 2/Photos** above for pictures.
 
 
 ## Code
