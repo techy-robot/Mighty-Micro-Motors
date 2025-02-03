@@ -14,4 +14,7 @@
 - I forgot to add a series resistor on the 40mhz crystal.
 - There is a 10**thousand** ohm resistor on the VCC pin for the charger chip, limiting the current to 0.9 milliamps and effectively crippling the chip. It should have been a 10 ohm resistor to limit spikes.
 - I have a redundant input current rush limiter circuit on VCC and on the adaptor input.
-- 
+- The small mosfets have the wrong footprint, Sot323 instead of Sot23, meaning the part is  too large to fit on the pads.
+- All the Mosfets have the wrong pin numbers assigned to them in the schematic! The large mosfets have source and drain swapped, and the small mosfets have gate and drain swapped
+- I have one capacitor that was supposed to be on the current sense line instead being on the charger input line. It will be noisy!
+- The i2c lines are crossing a ground plane split, and are going right near noisy components!
